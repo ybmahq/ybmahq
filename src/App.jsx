@@ -1,4 +1,8 @@
+import { useState } from 'react'
+
 function App() {
+  const [visitors, setVisitors] = useState(1)
+
   return (
     <>
       <center>
@@ -119,7 +123,14 @@ function App() {
                 <font face="Times New Roman" size="1">
                   &copy; 2026 YBMA Ltd. All Rights Reserved.
                   <br />
-                  Visitors: 000001
+                  Visitors:{' '}
+                  <span
+                    onClick={() => setVisitors((v) => v + 1)}
+                    title="you found the button. congratulations."
+                    style={{ cursor: 'pointer' }}
+                  >
+                    {String(visitors).padStart(6, '0')}
+                  </span>
                   <br />
                   Best viewed in 1024x768
                   <br />
