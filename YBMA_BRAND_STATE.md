@@ -4,7 +4,7 @@
 > Read this file completely before doing any branding work in a new session.
 > Nothing in this file is CONFIRMED unless the founders explicitly agreed to it.
 
-Last updated: 2026-09-14 (Session 24)
+Last updated: 2026-09-15 (Session 31)
 
 **Standing rule:** every deliverable ships as a Markdown file in this workspace (decision D3).
 Status tags are written inline so they survive copy-paste into other tools.
@@ -29,7 +29,141 @@ presented; the founders decide. Recommendations are never recorded as decisions.
 
 ## Current Stage
 
-**WORDMARK REPLACED AT FOUNDER DECISION · TURNED + U3 · READY WITH TWO CONDITIONS**
+**WEBSITE: POSITIONING, IMAGERY, NAVBAR MARK AND LEGAL PAGES (Session 31) · identity unchanged**
+
+Status: **Session 31 repositioned the site away from an industrial drift: photography now shows
+technology in the flow of real work in modern African businesses; YBMA Technology is described as
+a horizontal capability inside an operating company (no industry, workflow or software category as
+a market); the U3 symbol is the mark in the navbar; privacy and terms pages added with counsel
+points flagged.** See `YBMA_STRATEGY_ITERATION_31.md`.
+
+*(Session 30 status retained below.)*
+
+**WEBSITE: GEOGRAPHY, IMAGERY AND CONTACT PASS COMPLETE (Session 30) · identity unchanged**
+
+Status: **Session 30 removed all geographic positioning from the public site (copy, metadata, alt
+text, footer; no Africa substitute), replaced the three photographs with naturally diverse people
+doing real work in three complementary contexts (credits in `site/src/photos/SOURCES.md`), and
+confirmed the public email `hello@ybmahq.com` and domain `ybmahq.com`.** See
+`YBMA_STRATEGY_ITERATION_30.md`.
+
+*(Session 29 status retained below.)*
+
+**WEBSITE: CONTENT AND POSITIONING PASS COMPLETE (Session 29) · identity unchanged**
+
+Status: **Session 28 built the parent website (`site/`) on the locked identity; Session 29 corrected
+its content.** Public copy no longer exposes internal strategy, structure, hypotheses or future
+plans; origin is stated once (*Founded in Nigeria. Built to a standard that travels.*); "built for
+Nigerian conditions" is off the public site; YBMA Technology is positioned as business systems in
+their full breadth with inventory as one example; three licensed stock photographs stand in for
+documentary photography (credits in `site/src/photos/SOURCES.md`); zero em dashes. Founder decisions
+outstanding: contact address confirmation; whether and when the Technology commercial commitments
+and sector examples return; the hero line. See `YBMA_STRATEGY_ITERATION_29.md` and
+`site/CONTENT-CHECKLIST.md`.
+
+*(Session 27 status retained below.)*
+
+
+**IDENTITY LOCKED · PRODUCTION-READY · BRAND GUIDELINE v1.0 · NEXT: THE YBMA PARENT WEBSITE**
+
+Status: **Iteration 27 complete. Founder decisions on 14 September: wordmark CONFIRMED · U3
+CONFIRMED · Söhne CONFIRMED · Amber removed · Indigo + Ink + Chalk APPROVED. Production-readiness
+pass complete: master artwork package, file structure, tokens, component library, ten-situation
+stress test, physical-production specification, web foundation, guideline v1.0.**
+
+> ### LOGO `[CONFIRMED]` · SYMBOL U3 `[CONFIRMED]` · TYPEFACE SÖHNE `[CONFIRMED]` · COLOUR SYSTEM
+> INDIGO #1F2C6B + INK #151412 + CHALK #F5F4F0 `[CONFIRMED]` · no accent colour.
+> Strategic foundations locked: the Operator · Nigerian by authorship, global by standard · parent
+> independent of YBMA Technology · plain speech · young + serious · professional + human · one identity
+> across future businesses.
+
+**Guideline v1.0 (visual):** https://claude.ai/code/artifact/382cf677-7758-42fb-a0e0-cbe56b8d75ea
+**Component library:** https://claude.ai/code/artifact/d5a8c1e0-0fb4-4b65-82cf-9c7086eabaaa ·
+**Stress test:** https://claude.ai/code/artifact/9d0901b5-05ea-4c02-97d1-06497070f08e
+**Written:** `identity/guidelines/YBMA_BRAND_GUIDELINE_v1.0.md` · **Session:** `YBMA_STRATEGY_ITERATION_27.md`
+**Files:** `identity/` — `README.md` (structure, naming) · `logo/master/ybma-logo.js` (source of truth) +
+`export.js` · `logo/{wordmark,symbol,lockups,reversed}/` 60 exports (SVG · PDF · PNG × ink · indigo ·
+white) · `brand/colour/tokens.css|json` · `brand/typography/TYPOGRAPHY.md` · `brand/icons/` ·
+`brand/web/ybma.css`, `components.html`, `WEB_FOUNDATION.md` · `guidelines/PRODUCTION.md`,
+`stress-test.html`, `guideline.html` · `templates/README.md`.
+
+**Production desk test on record:** no mark fails at its guideline minimum in print; the symbol's
+joint (9.2% of the side) is the tightest feature and sets the physical floors — stamp 15 mm,
+embroidery 25 mm (wordmark 8 mm / 15 mm). Pantone 2758 C is a **provisional** direction until a
+physical swatch is signed. Geometry unchanged.
+
+**REMAINING — OPERATIONAL ONLY:** Söhne licences · physical proof and Pantone sign-off · templates ·
+first photo shoot · verbal identity · physical items from the PDF masters.
+
+**NEXT PHASE: the YBMA parent website** — an implementation of `identity/brand/`, not an extension.
+
+*(Session 26 status retained below.)*
+
+**LOGO · SYMBOL · TYPEFACE CONFIRMED · COLOUR SYSTEM (INDIGO + INK + CHALK) PROPOSED PENDING REVIEW · GUIDELINE v0.2** `[SUPERSEDED S27 — colour confirmed, v1.0]`
+
+Status: **Iteration 26 complete. Founder decisions on 14 September: the wordmark CONFIRMED · U3
+CONFIRMED unchanged · Söhne CONFIRMED throughout · Amber avoided. A focused refinement pass rebuilt
+the colour system on three colours without introducing a replacement accent; emphasis now comes
+from scale, the field, the curve, weight and photography. Guideline revised to v0.2.**
+
+**Guideline (visual, v0.2):** https://claude.ai/code/artifact/382cf677-7758-42fb-a0e0-cbe56b8d75ea
+**Guideline (written, v0.2):** `YBMA_BRAND_GUIDELINE.md` · **Session:** `YBMA_STRATEGY_ITERATION_26.md`
+**Geometry:** `identity/ybma-logo.js` · `identity/logo/*.svg` · **Tokens:** `identity/tokens.css`
+
+> ### LOGO `[CONFIRMED]` · SYMBOL U3 `[CONFIRMED]` · TYPEFACE SÖHNE `[CONFIRMED]`
+> ### COLOUR `[PROPOSED · PENDING REVIEW]`: **YBMA Indigo #1F2C6B · Ink #151412 · Chalk #F5F4F0.**
+> Ink is the working colour and a legitimate ground; indigo is a full field or the one emphasised
+> element on chalk — never a tint, never twice on one surface; indigo and ink never meet. No accent.
+> Emphasis: scale · the field · the curve · weight and the stem · photography.
+
+**Söhne cuts:** Buch (body) · Kräftig (labels, data, UI) · Halbfett (display, headings) · Söhne Mono
+Buch (product) · Söhne Breit Kräftig for a single cover word only. Licensing documented separately;
+Helvetica Neue stands in until installed. Archivo withdrawn.
+
+**Assessment on record (S26):** stronger — coherence, the mark's prominence, seriousness for finance
+and property, photography as the source of colour, two-colour print. Weaker — the instant read of
+attention, sameness risk in feeds, execution dependence. Still distinctive, still young (narrower
+margin), Nigerian → global more honestly than before. **No brand reason to keep an accent;** product
+states get semantic UI colours outside the brand palette.
+
+**DECISION NEEDED (founders):** review the revised applications and a printed indigo swatch; lock or
+correct the colour system. Then: division wording (as each exists) · partner-endorsement wording ·
+Söhne licence scope.
+
+*(Session 25 status retained below.)*
+
+**LOGO APPROVED `[CONFIRMED]` · IDENTITY SYSTEM PROPOSED · BRAND GUIDELINE v0.1** `[REVISED S26 — v0.2]`
+
+Status: **Iteration 25 complete. Founders approved the logo — the mirror side-study wordmark
+("one arch, four letters", https://claude.ai/code/artifact/92298032-0841-475c-a5bb-30987259383e) —
+and closed exploration. Production geometry built and verified against the approved drawing. The
+complete identity system is proposed in a first brand guideline.**
+
+**Guideline (visual):** https://claude.ai/code/artifact/382cf677-7758-42fb-a0e0-cbe56b8d75ea
+**Guideline (written):** `YBMA_BRAND_GUIDELINE_v0.1.md` · **Session:** `YBMA_STRATEGY_ITERATION_25.md`
+**Geometry:** `identity/ybma-logo.js` (source of truth) · `identity/logo/*.svg` · `identity/tokens.css`
+
+> ### THE LOGO `[CONFIRMED · 14 Sep 2026]`: **YBMA — one arch, four letters.** Cap 100 · stroke 16 ·
+> one radius 21 · tracking 12 · Y cup on a stem · B two bowls lying · M two arches standing · A one
+> arch over a bar · **315 × 100.** Production outlines match the approved strokes exactly; one
+> correction — 1.2-unit crown overshoot on M and A. **Symbol: U3, unchanged** (confirmation
+> requested — see decisions). **Turned + U3 (S24) and Cut + U3 (S23) are superseded.**
+
+**PROPOSED `[NOT CONFIRMED]`:** colour — **YBMA Indigo #1F2C6B** ground, Ink/Chalk, **Amber #F2B31F**
+signal ≤5%, warm neutrals · typography — **Söhne** recommended, **Archivo** working alternative ·
+visual language — **one curved end, one square end** · photography documentary · architecture —
+descriptors, no division colours · endorsement — U3 · A YBMA COMPANY · 20 applications.
+
+**DECISIONS NEEDED (founders):** confirm U3 · colour (on a printed swatch) · typeface (Söhne or
+Archivo) · future division wording · partner-endorsement wording.
+
+**NEXT PHASE (after approval):** master artwork → print proof (incl. the S18 stamp/stitch test) →
+templates → website → product UI kit → photo shoot → physical → verbal identity → guideline v1.0 →
+launch.
+
+*(Session 24 status retained below.)*
+
+**WORDMARK REPLACED AT FOUNDER DECISION · TURNED + U3 · READY WITH TWO CONDITIONS** `[SUPERSEDED S25 — logo approved]`
 
 Status: **Iteration 24 complete. Immediately after the Session 23 lock recommendation the founders
 replaced the CUT wordmark with TURNED (Session 20 D3), no tail, and pointed at the Session 20
@@ -1114,6 +1248,74 @@ the tested load, not an adjective; (6) built for Nigerian conditions; (7) the sc
 ### Verbal identity — **NOT STARTED** *(next stage)*
 
 ### Mission / vision statements — **NOT STARTED**
+
+---
+
+## PRODUCTION READINESS — Identity locked · Guideline v1.0 (Session 27) `[CONFIRMED]`
+
+**Founder decisions:** wordmark, U3, Söhne confirmed; Amber removed; Indigo + Ink + Chalk approved.
+**Produced:** master artwork package (60 files from the locked geometry; vector PDFs verified) ·
+production file structure with naming convention · tokens in three explicit groups (brand /
+supporting-UI / semantic product status) · Söhne implementation with licensing as an operational
+note · component library (`ybma.css`) · ten-situation stress test (incl. Real Estate, Agriculture,
+Financial Services with no division colours) · physical-production specification (Pantone 2758 C
+provisional; stamp/embroidery/vinyl/signage floors; desk test passed, geometry unchanged) · web
+foundation · brand guideline v1.0 in twenty sections. **Next: the YBMA parent website.**
+
+---
+
+## REFINEMENT PASS — Indigo + Ink + Chalk · Söhne (Session 26) `[TYPEFACE CONFIRMED · COLOUR PROPOSED PENDING REVIEW]`
+
+**Visual (v0.2):** https://claude.ai/code/artifact/382cf677-7758-42fb-a0e0-cbe56b8d75ea
+**Written:** `YBMA_BRAND_GUIDELINE.md` (v0.2) · `YBMA_STRATEGY_ITERATION_26.md`
+
+**Founder decisions:** wordmark, U3 and Söhne confirmed; amber avoided. **Instruction:** determine
+whether YBMA can be strong and distinctive on a restrained palette; do not introduce a replacement
+accent; make YBMA distinctive through its system.
+
+**Colour roles:** Ink — all text, logo on light, rules/icons/buttons, and the night ground. Indigo —
+a full field or the one emphasised element on chalk; never a tint; never twice; never on ink.
+Chalk — default ground ≥60%, type on indigo/ink. Proportion on chalk 64 · 20 · 10 · 6; surfaces
+alternate chalk and indigo (the turn, in colour). Indigo 60 confined to product UI states.
+
+**Emphasis without an accent:** scale · the field · the curve (the key bar is the only round-ended
+bar) · weight and the stem (underlined ink links, ink buttons) · photography ("colour comes from the
+world, not from the palette").
+
+**Söhne:** Buch · Kräftig · Halbfett · Mono Buch; Breit Kräftig for one cover word. Licensing note
+separate from the design decision. Archivo withdrawn.
+
+**Re-tested:** architecture reversed on indigo (no division colours needed) · data viz · links ·
+CTAs · charts · photography (new treatment: the cut) · signage · workwear · slides · social ·
+website hero · YBMA Technology header and dashboard (semantic status colours belong to the UI kit).
+
+**Assessment:** see Current Stage. **Recommendation:** proceed; judge on the revised applications and
+a printed swatch; if a surface feels flat, a bigger number or an inverted field before colour.
+
+---
+
+## IDENTITY SYSTEM — Brand Guideline v0.1 (Session 25) `[LOGO CONFIRMED · SYSTEM PROPOSED]`
+
+**Visual:** https://claude.ai/code/artifact/382cf677-7758-42fb-a0e0-cbe56b8d75ea
+**Written:** `YBMA_BRAND_GUIDELINE_v0.1.md` · `YBMA_STRATEGY_ITERATION_25.md`
+
+**Approved logo:** the mirror study wordmark, branch A second pass (one arch, four letters), with U3.
+**Production geometry** in `identity/ybma-logo.js`; exports in `identity/logo/`. Verified by overlay.
+One optical correction (crown overshoot 1.2). Recorded and not changed: the M's lowercase ancestry
+and the soft register of a rounded monoline — the system supplies the seriousness (hard grotesque,
+square layouts, ink text, one deep ground, documentary photography).
+
+**System proposed:** logo family of five (no small-size variant) · clear space 32/24 · minimums
+20/16/24 px · colour (indigo ground, ink/chalk, amber signal, warm neutrals; contrast matrix) ·
+typography (Söhne / Archivo; six roles; mono for product only) · visual language (one curved end,
+one square end; the turn; stems; grid) · photography · iconography · architecture (descriptors, no
+division colours) · endorsement (required/omitted surfaces) · 20 applications · do/don't.
+
+**Why indigo + amber:** Nigeria's dye colour and the world's denim — origin without motif; one
+signal colour, never a background, never metallic. Nothing else is a brand colour.
+
+**Decisions for the founders:** U3 confirmation · colour on a printed swatch · typeface · future
+division wording · partner-endorsement wording.
 
 ---
 

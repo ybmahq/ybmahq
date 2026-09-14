@@ -1,0 +1,76 @@
+<title>YBMA Identity Stress Test</title>
+<link rel="stylesheet" href="../brand/colour/tokens.css">
+<link rel="stylesheet" href="../brand/web/ybma.css">
+<style>
+  body { margin:0; background:#F5F4F0; }
+  .doc { font: 400 15px/1.5 "Söhne","Soehne","Helvetica Neue",Helvetica,Arial,sans-serif; color:#151412; }
+  .doc header { padding:56px 0 24px; border-bottom:2px solid #151412; }
+  .doc h1 { font-size:44px; font-weight:600; letter-spacing:-.03em; line-height:1; margin:10px 0 10px; }
+  .doc .eyebrow { font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:#7A7873; font-weight:500; }
+  .doc p.lead { color:#4B4A46; max-width:70ch; margin:0; }
+  .cases { display:grid; grid-template-columns:1fr 1fr; gap:28px; padding:36px 0; } @media (max-width:900px) { .cases { grid-template-columns:1fr; } }
+  .case { display:flex; flex-direction:column; gap:10px; }
+  .case .n { font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:#7A7873; font-weight:500; }
+  .case .n b { color:#151412; margin-right:8px; }
+  .mock { background:#fff; border:1px solid #DAD8D2; overflow:hidden; } .mock.y-on-indigo { background:#1F2C6B; border-color:#1F2C6B; color:#fff; } .mock.y-on-ink { background:#151412; border-color:#151412; color:#F5F4F0; }
+  .cap { font-size:12.5px; color:#7A7873; line-height:1.45; margin:0; }
+  .ph { background:linear-gradient(160deg,#b0865c,#3b2c1c); color:rgba(255,255,255,.85); font-size:11px; letter-spacing:.08em; text-transform:uppercase; display:flex; align-items:flex-end; padding:12px; font-weight:500; }
+  .ph.cool { background:linear-gradient(160deg,#8e9aa8,#2b3340); } .ph.green { background:linear-gradient(160deg,#6d7a52,#232a18); } .ph.warm2 { background:linear-gradient(160deg,#c9a27a,#5a3f2a); }
+  .verdict { border:2px solid #151412; padding:24px 28px; margin:12px 0 60px; }
+  .verdict h2 { font-size:22px; font-weight:600; letter-spacing:-.02em; margin:0 0 10px; }
+  .verdict p { color:#4B4A46; max-width:80ch; margin:0 0 8px; }
+  /* mock internals */
+  .hero { display:grid; grid-template-columns:1.1fr 1fr; min-height:300px; } .hero .t { padding:36px 24px; }
+  .a4 { aspect-ratio:210/297; display:flex; flex-direction:column; justify-content:space-between; padding:9% 10%; }
+  .deck { aspect-ratio:16/9; display:flex; flex-direction:column; justify-content:space-between; padding:6% 7%; }
+  .post { aspect-ratio:1; display:flex; flex-direction:column; justify-content:space-between; padding:9%; }
+  .ui { font-size:11px; } .ui .top { background:#fff; border-bottom:1px solid #DAD8D2; padding:10px 14px; display:flex; align-items:center; gap:16px; font-weight:500; } .ui .top span { color:#7A7873; }
+  .ui .body { display:grid; grid-template-columns:140px 1fr; min-height:230px; } .ui .navc { background:#fff; border-right:1px solid #DAD8D2; padding:12px; display:flex; flex-direction:column; gap:8px; } .ui .navc i { display:block; height:8px; width:70%; background:#DAD8D2; } .ui .navc i.on { background:#1F2C6B; width:85%; }
+  .ui .main { padding:14px; display:grid; grid-template-columns:repeat(3,1fr); gap:10px; align-content:start; background:#F5F4F0; } .ui .tile { background:#fff; border:1px solid #DAD8D2; padding:12px; border-radius:4px; } .ui .tile b { display:block; font-size:22px; letter-spacing:-.02em; font-variant-numeric:tabular-nums; font-weight:500; } .ui .tile span { color:#7A7873; font-size:10px; letter-spacing:.08em; text-transform:uppercase; }
+  .ui .tile.inv { background:#1F2C6B; border-color:#1F2C6B; color:#fff; } .ui .tile.inv span { color:rgba(255,255,255,.7); }
+  .ui .chart { grid-column:1/-1; background:#fff; border:1px solid #DAD8D2; padding:12px; height:100px; border-radius:4px; }
+</style>
+<div class="doc y-root"><div class="y-wrap">
+  <header>
+    <div class="eyebrow">YBMA · Identity stress test · Session 27 · 14 September 2026</div>
+    <h1>Ten situations, one system</h1>
+    <p class="lead">Not mockups for their own sake. Ten completely different contexts built from the same components, three colours and one typeface, to show the identity stays coherent — including three divisions that do not yet exist and receive no colour of their own.</p>
+  </header>
+  <div class="cases">
+    <div class="case"><div class="n"><b>01</b> YBMA website hero</div><div class="mock" id="c1"></div><p class="cap">Chalk ground, wordmark in the bar, the headline as the largest element, the photograph with the one round corner, an underlined ink link and an ink button. No indigo on this surface at all — and it is still YBMA.</p></div>
+    <div class="case"><div class="n"><b>02</b> YBMA company profile</div><div class="mock a4" id="c2" style="padding:0"></div><p class="cap">Full-bleed photograph with one round corner; the proof in the one indigo field; body below. Label → headline → body → proof.</p></div>
+    <div class="case"><div class="n"><b>03</b> Proposal cover</div><div class="mock a4 y-on-indigo" id="c3"></div><p class="cap">Indigo field, Halbfett display, labels, wordmark at the foot. The whole surface is the field.</p></div>
+    <div class="case"><div class="n"><b>04</b> Presentation cover</div><div class="mock deck y-on-ink" id="c4"></div><p class="cap">The ink ground — the night surface. Chalk type, white wordmark. Indigo is absent, which is allowed and useful: decks alternate ink, chalk and indigo.</p></div>
+    <div class="case"><div class="n"><b>05</b> Social post</div><div class="mock post" id="c5"></div><p class="cap">Chalk: one number. The feed alternates indigo (a sentence), chalk (a number), photograph (colour).</p></div>
+    <div class="case"><div class="n"><b>06</b> YBMA Technology header</div><div class="mock" id="c6"></div><p class="cap">Descriptor beside the wordmark on the baseline; the hero splits chalk and an indigo field carrying the proof.</p></div>
+    <div class="case"><div class="n"><b>07</b> Technology dashboard</div><div class="mock ui" id="c7"></div><p class="cap">Chalk UI, 4 px product radius, ink text, indigo for the selected item and the one inverted tile, the key bar the only round-ended one, a desaturated status indicator. The brand is present without a single brand shape being misused.</p></div>
+    <div class="case"><div class="n"><b>08</b> YBMA Real Estate</div><div class="mock" id="c8"></div><p class="cap">Stacked descriptor lockup on chalk; the photograph (a site, a building under construction) with the one round corner; a proof block. No navy, no gold — the same three colours.</p></div>
+    <div class="case"><div class="n"><b>09</b> YBMA Agriculture</div><div class="mock y-on-indigo" id="c9"></div><p class="cap">Indigo field with the descriptor lockup reversed; the cut — a square photograph of a farm (its green is the photograph's, not the palette's) beside the statement. No green anywhere in the identity.</p></div>
+    <div class="case"><div class="n"><b>10</b> YBMA Financial Services</div><div class="mock a4" id="c10"></div><p class="cap">A document: descriptor lockup, ink text, a stem holding the commitment, a proof number. The most conservative context, and the system needs nothing extra to look institutional.</p></div>
+  </div>
+  <div class="verdict">
+    <h2>Read</h2>
+    <p><strong>Coherent across all ten.</strong> The same four moves — scale, field, curve, stem — carry a marketing hero, a product dashboard and a financial document without a change of register, and the three future divisions are unmistakably the same company with nothing but a descriptor.</p>
+    <p><strong>Where the discipline matters most:</strong> 01 and 10 have no indigo at all and depend entirely on typography and hierarchy — they are the surfaces a careless designer would "brighten". They must not be. The rule is a bigger number or an inverted field first, and colour never.</p>
+  </div>
+</div></div>
+<script src="../logo/master/ybma-logo.js"></script>
+<script>
+(function(){
+  const W=YBMA.wordmark(), svg=(p,o={})=>YBMA.svgWrap(p,o);
+  const wm=(o={})=>`<span class="y-logo">${svg({inner:YBMA.wordmarkSVG(o),width:W.width,height:100})}</span>`;
+  const sym=(o={})=>`<span class="y-logo y-logo--symbol">${svg({inner:YBMA.symbolSVG(o),width:120,height:120})}</span>`;
+  const div=(n,o={},inline=false,size=40,color='')=>`<span class="y-division${inline?' y-division--inline':''}" style="font-size:${size}px${color?';color:'+color:''}">${wm(o)}<span class="y-division__name">${n}</span></span>`;
+  const $=id=>document.getElementById(id);
+  $('c1').innerHTML=`<nav class="y-nav" style="padding:14px 22px">${wm()}<div class="y-nav__links" style="font-size:12px"><a href="#">What we build</a><a href="#">How we work</a><a href="#">Companies</a></div><a class="y-btn" style="padding:8px 12px;font-size:12px" href="#">Talk to us</a></nav><div class="hero"><div class="t"><div class="y-label">YBMA</div><h3 class="y-display" style="font-size:34px;margin-bottom:12px">Built to do more than it had to.</h3><p class="y-body" style="font-size:13.5px">We build systems and businesses properly, and stay responsible for how they run. <a class="y-link" href="#">How we work</a></p></div><div class="ph y-crop--bl">photo · a warehouse count, mid-morning</div></div>`;
+  $('c2').innerHTML=`<div class="ph y-crop--br" style="height:46%">photo · founders on site, full bleed</div><div style="display:grid;grid-template-columns:1fr 1fr;height:54%"><div class="y-field" style="padding:10%;min-height:0"><div class="y-label">Systems delivered · still in use</div><div class="y-proof"><div class="y-proof__n" style="font-size:40px">31<span style="opacity:.5">/</span>31</div></div></div><div style="padding:10%;display:flex;flex-direction:column;justify-content:space-between"><p class="y-body" style="font-size:10px">Every system handed over with its code, its accounts and a support window with a date.</p><span style="font-size:18px">${wm()}</span></div></div>`;
+  $('c3').innerHTML=`<div class="y-label">Proposal · Kobo Foods · September 2026</div><h3 class="y-display" style="font-size:26px;color:#fff">A stock system you will still be using in 2031.</h3><span style="font-size:22px">${wm({fill:'#fff'})}</span>`;
+  $('c4').innerHTML=`<div class="y-label">Company overview · 2026</div><h3 class="y-display" style="font-size:34px;color:#F5F4F0">Built to do more than it had to.</h3><div style="display:flex;justify-content:space-between;align-items:flex-end"><span style="font-size:20px">${wm({fill:'#F5F4F0'})}</span><span class="y-label" style="margin:0">01 / 24</span></div>`;
+  $('c5').innerHTML=`<div class="y-label">Support window</div><div class="y-proof"><div class="y-proof__n" style="font-size:72px">180</div><div class="y-proof__u">days, with a date on it</div></div><span style="font-size:18px">${wm()}</span>`;
+  $('c6').innerHTML=`<nav class="y-nav" style="padding:14px 22px">${div('Technology',{},true,18)}<a class="y-btn" style="padding:8px 12px;font-size:12px" href="#">Start a project</a></nav><div class="hero" style="min-height:0"><div class="t" style="padding:24px 22px"><h3 class="y-h" style="font-size:24px">Systems that show you what is actually happening.</h3><p class="y-body" style="font-size:12.5px">Built for Nigerian conditions. Owned by you from day one.</p></div><div class="y-field" style="padding:22px;min-height:0"><div class="y-label">Handover</div><div class="y-proof"><div class="y-proof__n" style="font-size:34px">14 days</div></div></div></div>`;
+  $('c7').innerHTML=`<div class="top"><span style="font-size:16px">${sym()}</span><span>Kobo Foods · Operations</span><span style="margin-left:auto" class="y-status y-status--warn">3 below minimum</span></div><div class="body"><div class="navc"><i class="on"></i><i></i><i></i><i></i><i></i></div><div class="main"><div class="tile"><span>Sales today</span><b>₦412,300</b></div><div class="tile inv"><span>Stock below minimum</span><b>3 <em style="font-size:11px;font-style:normal;opacity:.7">items</em></b></div><div class="tile"><span>Cash in hand</span><b>₦88,150</b></div><div class="chart"><div class="y-bars" style="height:100%"><i style="height:35%"></i><i style="height:50%"></i><i style="height:42%"></i><i style="height:70%"></i><i style="height:62%"></i><i style="height:80%"></i><i class="is-key" style="height:95%"></i></div></div></div></div>`;
+  $('c8').innerHTML=`<div style="display:grid;grid-template-columns:1fr 1fr;min-height:260px"><div style="padding:24px;display:flex;flex-direction:column;justify-content:space-between">${div('Real Estate',{},false,40)}<div class="y-proof"><div class="y-proof__n" style="font-size:36px">12,400 m²</div><div class="y-proof__u">delivered, on the date in the contract</div></div></div><div class="ph cool y-crop--tr">photo · a site, a slab being poured</div></div>`;
+  $('c9').innerHTML=`<div style="padding:24px 24px 0">${div('Agriculture',{fill:'#fff'},false,40,'#fff')}</div><div class="y-cut" style="height:200px;margin-top:20px"><div class="ph green">photo · a maize store, counted</div><div class="y-field" style="padding:20px;font-size:18px;font-weight:600;letter-spacing:-.02em;line-height:1.2">Every bag counted. Every buyer paid on the day.</div></div>`;
+  $('c10').innerHTML=`<div>${div('Financial Services',{},false,30)}</div><div class="y-stem" style="font-size:15px;line-height:1.3;font-weight:600;letter-spacing:-.01em;max-width:30ch">Your money is where we said it would be, when we said it would be there.</div><div class="y-proof"><div class="y-proof__n" style="font-size:36px">100%</div><div class="y-proof__u">of settlements on the agreed date</div></div><div class="y-label" style="margin:0;font-size:8px">YBMA Financial Services · a division of YBMA LTD · Kaduna</div>`;
+})();
+</script>

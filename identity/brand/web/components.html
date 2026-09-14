@@ -1,0 +1,74 @@
+<title>YBMA Components</title>
+<link rel="stylesheet" href="../colour/tokens.css">
+<link rel="stylesheet" href="ybma.css">
+<style>
+  body { margin:0; background:#F5F4F0; }
+  .doc { font: 400 15px/1.5 "Söhne","Soehne","Helvetica Neue",Helvetica,Arial,sans-serif; color:#151412; }
+  .doc header { padding:56px 0 24px; border-bottom:2px solid #151412; }
+  .doc h1 { font-size:44px; font-weight:600; letter-spacing:-.03em; line-height:1; margin:10px 0 10px; }
+  .doc .eyebrow { font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:#7A7873; font-weight:500; }
+  .doc section { padding:44px 0 20px; border-bottom:1px solid #DAD8D2; }
+  .doc section > h2 { font-size:12px; letter-spacing:.14em; text-transform:uppercase; font-weight:600; color:#1F2C6B; margin:0 0 6px; }
+  .doc section > p.rule { color:#4B4A46; margin:0 0 22px; max-width:70ch; }
+  .doc code { font-family:"Söhne Mono","Soehne Mono",ui-monospace,Menlo,monospace; font-size:12.5px; background:#ECEAE5; padding:1px 5px; }
+  .demo { background:#fff; border:1px solid #DAD8D2; padding:28px; display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; }
+  .demo.dark { background:#1F2C6B; border-color:#1F2C6B; }
+  .ph { background:linear-gradient(160deg,#b0865c,#3b2c1c); color:rgba(255,255,255,.85); font-size:11px; letter-spacing:.08em; text-transform:uppercase; display:flex; align-items:flex-end; padding:12px; font-weight:500; }
+  .row2 { display:grid; grid-template-columns:1fr 1fr; gap:18px; } @media (max-width:800px) { .row2 { grid-template-columns:1fr; } }
+</style>
+<div class="doc y-root"><div class="y-wrap">
+  <header>
+    <div class="eyebrow">YBMA · Core component library · v1.0 · 14 September 2026 · identity/brand/web/ybma.css</div>
+    <h1>Components</h1>
+    <p class="rule">Every reusable piece of the identity, rendered from the library the website will consume. Rules: one curved end, one square end · one round thing per composition · emphasis by scale, field, curve, weight and photography. Set in Söhne where installed.</p>
+  </header>
+
+  <section><h2>Wordmark · symbol · lockups</h2><p class="rule"><code>.y-logo</code> sized by font-size; rendered from <code>identity/logo/master/ybma-logo.js</code> or the SVG files. Minimums 20 / 16 / 24 px. Clear space <code>.y-logo-clear</code>.</p>
+    <div class="demo" id="d-logo"></div></section>
+
+  <section><h2>Section label · headline · body</h2><p class="rule"><code>.y-label</code> Kräftig caps, ink or grey — never indigo. <code>.y-display</code> / <code>.y-h</code> Halbfett, sentence case, tight. <code>.y-body</code> Buch, ≤ 68ch.</p>
+    <div class="demo" style="flex-direction:column"><div class="y-label">What we build</div><h3 class="y-display" style="font-size:56px">Systems that show you what is actually happening.</h3><h4 class="y-h">Built for Nigerian conditions.</h4><p class="y-body">Light, fast, tolerant of poor bandwidth and cheap devices, resilient to power and network interruption. <strong>Owned by you from day one.</strong></p></div></section>
+
+  <section><h2>Proof / data block</h2><p class="rule"><code>.y-proof</code> — the identity's main emphasis device. The number is the largest thing on the surface; the unit is a label.</p>
+    <div class="demo"><div class="y-proof"><div class="y-proof__n">2,400</div><div class="y-proof__u">concurrent users, tested</div></div><div class="y-proof"><div class="y-proof__n">14 days</div><div class="y-proof__u">to handover</div></div></div></section>
+
+  <section><h2>Inverted field</h2><p class="rule"><code>.y-field</code> (indigo) or <code>.y-field--ink</code>. One per surface. Square-cornered unless it is the composition's single round element.</p>
+    <div class="row2"><div class="y-field"><div class="y-label">Still in use</div><div class="y-proof"><div class="y-proof__n">31 / 31</div></div></div><div class="y-field y-field--ink"><div class="y-label">Handover</div><p class="y-body" style="color:rgba(255,255,255,.85);font-size:20px;font-weight:600;letter-spacing:-.02em;line-height:1.2">The client owns the code. From day one. In the contract.</p></div></div></section>
+
+  <section><h2>One-curved-end panels</h2><p class="rule"><code>.y-panel</code> with exactly one of <code>.y-curve--top / right / bottom / left</code>. Full semicircles only — never a small radius, never two round ends.</p>
+    <div class="demo"><div class="y-panel y-curve--top" style="width:160px;height:120px;background:#1F2C6B;border:0"></div><div class="y-panel y-curve--right" style="width:160px;height:120px;background:#1F2C6B;border:0"></div><div class="y-panel y-curve--bottom" style="width:160px;height:120px;background:#1F2C6B;border:0"></div><div class="y-panel y-curve--left" style="width:160px;height:120px;background:#1F2C6B;border:0"></div><div class="y-panel y-curve--top" style="width:220px;padding-top:40px"><div class="y-label">Support window</div><div class="y-proof"><div class="y-proof__n" style="font-size:40px">180</div><div class="y-proof__u">days</div></div></div></div></section>
+
+  <section><h2>Stems and rules</h2><p class="rule"><code>.y-stem</code> — a 2 px vertical rule beside a statement, the Y's construction as a device. <code>.y-rule</code> horizontal, square-ended. Vertical is used more than horizontal.</p>
+    <div class="demo"><div class="y-stem" style="max-width:36ch;font-size:20px;line-height:1.3;font-weight:600;letter-spacing:-.02em">Built for the hardest conditions, therefore good enough for the easiest.</div><div style="flex:1 1 200px"><hr class="y-rule"><hr class="y-rule y-rule--hair"></div></div></section>
+
+  <section><h2>Buttons and links</h2><p class="rule"><code>.y-btn</code> ink on light, chalk on dark, square; hover indigo. <code>.y-btn--ghost</code> outlined. <code>.y-link</code> underlined ink, hover indigo. Focus rings use Indigo 60. No coloured buttons.</p>
+    <div class="demo"><a class="y-btn" href="#">Talk to us</a><a class="y-btn y-btn--ghost" href="#">How we work</a><a class="y-link" href="#">Read the handover standard</a></div>
+    <div class="demo dark y-on-indigo" style="margin-top:12px"><a class="y-btn" href="#">Talk to us</a><a class="y-btn y-btn--ghost" href="#">How we work</a><a class="y-link" href="#">Read the handover standard</a></div></section>
+
+  <section><h2>Image crops · the cut</h2><p class="rule"><code>.y-crop--tl/tr/br/bl</code> one full-height quarter curve on one corner, or square. <code>.y-cut</code> — a square photograph beside a field. The photograph is the accent; type never sits on it.</p>
+    <div class="row2"><div class="ph y-crop--bl" style="height:200px">photo · a technician at a switchboard</div><div class="y-cut" style="height:200px"><div class="ph">photo · a stock count</div><div class="y-field" style="padding:20px;font-size:20px;font-weight:600;letter-spacing:-.02em;line-height:1.15">Counted, owned, handed over.</div></div></div></section>
+
+  <section><h2>Charts / data bars</h2><p class="rule"><code>.y-bars</code> — context bars grey and square-ended; <code>.is-key</code> indigo with the round end, the only one; <code>.is-second</code> ink for a second series. Never more than three fills.</p>
+    <div class="row2"><div class="demo"><div class="y-bars" style="width:100%"><i style="height:35%"></i><i style="height:50%"></i><i class="is-context" style="height:42%"></i><i style="height:70%"></i><i style="height:62%"></i><i style="height:80%"></i><i class="is-key" style="height:100%"></i></div></div><div class="demo dark y-on-indigo"><div class="y-bars y-bars--h" style="width:100%"><i style="width:40%"></i><i style="width:60%"></i><i style="width:55%"></i><i class="is-key" style="width:95%"></i></div></div></div></section>
+
+  <section><h2>Division descriptor · endorsement</h2><p class="rule"><code>.y-division</code> descriptor 22% of the cap, 24% below, left-aligned to the Y; <code>--inline</code> for headers. <code>.y-endorse</code> symbol at 1.9× the text cap. Same colour as the mark, always.</p>
+    <div class="demo" id="d-arch"></div></section>
+
+  <section><h2>Navigation</h2><p class="rule"><code>.y-nav</code> — the wordmark at 22 px, plain links, one ink button. No colour, no icons, no dropdown chrome.</p>
+    <div class="demo" style="display:block"><nav class="y-nav" id="d-nav"></nav></div></section>
+
+  <section><h2>Product status (YBMA Technology only)</h2><p class="rule"><code>.y-status--ok/warn/error/info</code> — desaturated indicators, never fills, never in marketing. Product controls take <code>.y-ui</code> (4 px), never the brand curve.</p>
+    <div class="demo"><span class="y-status y-status--ok">Synced</span><span class="y-status y-status--warn">3 below minimum</span><span class="y-status y-status--error">Failed</span><span class="y-status y-status--info">Pending</span><button class="y-btn y-ui" style="padding:8px 12px;font-size:12px">Save</button></div></section>
+</div></div>
+<script src="../../logo/master/ybma-logo.js"></script>
+<script>
+(function(){
+  const W=YBMA.wordmark();
+  const svg=(p,o={})=>YBMA.svgWrap(p,o);
+  const wm=o=>svg({inner:YBMA.wordmarkSVG(o),width:W.width,height:100},{});
+  const sym=o=>svg({inner:YBMA.symbolSVG(o),width:120,height:120},{});
+  document.getElementById('d-logo').innerHTML=`<span class="y-logo" style="font-size:56px">${wm()}</span><span class="y-logo y-logo--symbol" style="font-size:56px">${sym()}</span><span class="y-logo" style="font-size:56px">${svg(YBMA.lockupHorizontal(),{})}</span><span class="y-logo" style="font-size:120px">${svg(YBMA.lockupStacked(),{})}</span>`;
+  document.getElementById('d-arch').innerHTML=['Technology','Real Estate','Agriculture','Financial Services'].map(n=>`<span class="y-division" style="font-size:48px"><span class="y-logo">${wm()}</span><span class="y-division__name">${n}</span></span>`).join('')+`<span class="y-endorse" style="font-size:14px;margin-left:24px"><span class="y-logo">${sym()}</span><span class="y-endorse__text">A YBMA Company</span></span>`;
+  document.getElementById('d-nav').innerHTML=`<span class="y-logo">${wm()}</span><div class="y-nav__links"><a href="#" aria-current="page">What we build</a><a href="#">How we work</a><a href="#">Companies</a></div><a class="y-btn" href="#">Talk to us</a>`;
+})();
+</script>

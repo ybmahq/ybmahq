@@ -1,0 +1,935 @@
+<title>YBMA Brand Guideline</title>
+
+<style>
+  :root {
+    --ink:#151412; --chalk:#F5F4F0; --white:#FFFFFF; --indigo:#1F2C6B; --indigo-b:#3446A8; --clay:#E9DCCF; --mist:#E3E6F3;
+    --s700:#4B4A46; --s500:#7A7873; --s300:#B8B6AF; --s200:#DAD8D2; --s100:#ECEAE5;
+    --sans:"Söhne","Soehne","Helvetica Neue",Helvetica,Arial,sans-serif; --mono:"Söhne Mono","Soehne Mono",ui-monospace,Menlo,monospace;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--chalk); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.5; }
+  a { color:inherit; }
+  .wrap { max-width:1240px; margin:0 auto; padding:0 32px 140px; }
+  /* masthead */
+  .mast { padding:64px 0 36px; border-bottom:2px solid var(--ink); display:grid; grid-template-columns:1fr auto; gap:32px; align-items:end; }
+  .eyebrow { font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--s500); font-weight:500; }
+  .mast h1 { font-size:56px; line-height:.98; letter-spacing:-.03em; font-weight:600; margin:14px 0 14px; text-wrap:balance; max-width:14ch; }
+  .mast p { margin:0; color:var(--s700); max-width:62ch; font-size:17px; }
+  .status { font-size:12px; letter-spacing:.12em; text-transform:uppercase; font-weight:600; background:var(--indigo); color:var(--white); padding:12px 16px; white-space:nowrap; }
+  .fontnote { font-size:12px; color:var(--s500); border:1px solid var(--s200); padding:8px 12px; margin-top:14px; max-width:78ch; }
+  nav.toc { position:sticky; top:0; z-index:5; background:var(--chalk); border-bottom:1px solid var(--s200); padding:12px 0; display:flex; flex-wrap:wrap; gap:4px 18px; font-size:12.5px; }
+  nav.toc a { text-decoration:none; color:var(--s700); font-weight:500; } nav.toc a:hover { color:var(--indigo-b); } nav.toc a b { color:var(--s300); font-weight:500; margin-right:5px; }
+  /* sections */
+  section { padding:64px 0 28px; border-bottom:1px solid var(--s200); }
+  section > h2 { font-size:12px; letter-spacing:.14em; text-transform:uppercase; font-weight:600; margin:0 0 6px; color:var(--indigo); display:flex; gap:14px; }
+  section > h2 b { color:var(--s300); font-weight:500; }
+  section > .lead { font-size:28px; line-height:1.15; letter-spacing:-.02em; font-weight:600; margin:0 0 28px; max-width:26ch; text-wrap:balance; }
+  h3 { font-size:15px; font-weight:600; margin:32px 0 10px; letter-spacing:-.005em; }
+  h3:first-child { margin-top:0; }
+  h4 { font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--s500); font-weight:500; margin:18px 0 8px; }
+  p { margin:0 0 12px; color:var(--s700); max-width:68ch; } p strong { color:var(--ink); font-weight:600; }
+  ul { margin:0 0 12px; padding-left:18px; color:var(--s700); max-width:68ch; } li { margin-bottom:6px; } li strong { color:var(--ink); }
+  .two { display:grid; grid-template-columns:minmax(0,1.35fr) minmax(0,1fr); gap:40px; align-items:start; }
+  .two.eq { grid-template-columns:1fr 1fr; }
+  .grid { display:grid; gap:18px; } .g2 { grid-template-columns:1fr 1fr; } .g3 { grid-template-columns:repeat(3,1fr); } .g4 { grid-template-columns:repeat(4,1fr); } .g5 { grid-template-columns:repeat(5,1fr); }
+  @media (max-width:900px) { .two, .two.eq { grid-template-columns:1fr; } .g3, .g4, .g5 { grid-template-columns:1fr 1fr; } .mast { grid-template-columns:1fr; } .mast h1 { font-size:42px; } }
+  @media (max-width:560px) { .g2, .g3, .g4, .g5 { grid-template-columns:1fr; } .wrap { padding:0 18px 80px; } }
+  .plate { background:var(--white); border:1px solid var(--s200); padding:40px; display:flex; align-items:center; justify-content:center; overflow-x:auto; min-height:120px; }
+  .plate.ink { background:var(--ink); border-color:var(--ink); } .plate.indigo { background:var(--indigo); border-color:var(--indigo); } .plate.chalk { background:var(--chalk); } .plate.tight { padding:20px; }
+  .plate svg { display:block; max-width:100%; height:auto; }
+  .cap { font-size:12.5px; color:var(--s500); margin:8px 0 0; line-height:1.45; max-width:none; } .cap b { color:var(--ink); font-weight:600; }
+  .note { border-left:3px solid var(--indigo); padding:8px 16px; background:var(--white); font-size:14px; color:var(--s700); margin:18px 0; max-width:78ch; } .note b { color:var(--ink); }
+  .rule { display:grid; grid-template-columns:auto 1fr; gap:14px; align-items:baseline; margin:8px 0; font-size:15px; color:var(--s700); } .rule b { color:var(--ink); font-weight:600; }
+  table { border-collapse:collapse; width:100%; font-size:13.5px; font-variant-numeric:tabular-nums; }
+  th, td { text-align:left; padding:9px 12px 9px 0; border-bottom:1px solid var(--s200); vertical-align:top; color:var(--s700); }
+  th { font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--s500); font-weight:500; }
+  td.k { color:var(--ink); font-weight:600; white-space:nowrap; }
+  .dimsvg text { font-family:var(--sans); font-size:6.5px; fill:var(--indigo-b); font-weight:500; }
+  .dimsvg .d { stroke:var(--indigo-b); stroke-width:.5; fill:none; } .dimsvg .h { stroke:var(--indigo-b); stroke-width:.35; stroke-dasharray:1.5 1.5; fill:none; }
+  .ladder { display:flex; align-items:flex-end; gap:28px; flex-wrap:wrap; } .ladder div { display:flex; flex-direction:column; align-items:center; gap:8px; } .ladder span { font-size:11px; color:var(--s500); } .ladder svg { display:block; }
+  /* swatches */
+  .sw { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:14px; }
+  .swatch { border:1px solid var(--s200); background:var(--white); }
+  .swatch .c { height:110px; } .swatch .t { padding:12px 14px; font-size:12.5px; color:var(--s700); line-height:1.5; }
+  .swatch .t b { display:block; color:var(--ink); font-size:14px; margin-bottom:2px; } .swatch .t code { font-family:var(--mono); font-size:11.5px; color:var(--s700); }
+  .cm { font-family:var(--mono); font-size:12px; } .cm td, .cm th { padding:6px 10px 6px 0; }
+  .ok { color:#1f6b3a; font-weight:600; } .no { color:#b3261e; font-weight:600; } .lg { color:#8a6d00; font-weight:600; }
+  /* type specimens */
+  .spec { background:var(--white); border:1px solid var(--s200); padding:28px 32px; }
+  .spec .display { font-size:64px; line-height:.98; letter-spacing:-.03em; font-weight:600; margin:0 0 18px; max-width:16ch; text-wrap:balance; }
+  .spec .h2s { font-size:32px; line-height:1.1; letter-spacing:-.02em; font-weight:600; margin:0 0 14px; }
+  .spec .lbl { font-size:12px; letter-spacing:.14em; text-transform:uppercase; font-weight:500; color:var(--s500); margin:0 0 10px; }
+  .emph { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; } .emph > div { background:var(--white); border:1px solid var(--s200); padding:16px; min-height:150px; display:flex; flex-direction:column; justify-content:flex-end; } .emph > div.inv { background:var(--indigo); color:var(--white); border-color:var(--indigo); } .emph .k { font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--s500); font-weight:500; margin-bottom:6px; } .emph .inv .k { color:rgba(255,255,255,.65); } .emph .big { font-size:40px; font-weight:500; letter-spacing:-.02em; line-height:1; font-variant-numeric:tabular-nums; } .emph .btn { display:inline-block; background:var(--ink); color:var(--chalk); padding:10px 14px; font-size:13px; font-weight:500; align-self:flex-start; } .emph .link { font-size:15px; text-decoration:underline; text-underline-offset:4px; text-decoration-thickness:2px; } @media (max-width:900px) { .emph { grid-template-columns:1fr 1fr; } }
+  .split { display:grid; grid-template-columns:1fr 1fr; min-height:200px; } .split .f { background:var(--indigo); color:var(--white); padding:22px; display:flex; flex-direction:column; justify-content:flex-end; font-size:20px; line-height:1.15; font-weight:600; letter-spacing:-.02em; }
+  .spec .body { font-size:17px; line-height:1.55; color:var(--s700); max-width:60ch; margin:0 0 14px; }
+  .spec .num { font-size:56px; line-height:1; font-weight:500; letter-spacing:-.02em; font-variant-numeric:tabular-nums; margin:0; } .spec .num small { font-size:14px; letter-spacing:.06em; text-transform:uppercase; color:var(--s500); margin-left:10px; font-weight:500; }
+  .spec .mono { font-family:var(--mono); font-size:13px; color:var(--s700); background:var(--s100); padding:12px 14px; margin:0; white-space:pre; }
+  .scale td:first-child { font-family:var(--mono); font-size:12px; }
+  /* shapes */
+  .shape { background:var(--indigo); } .shape.top { border-radius:999px 999px 0 0; } .shape.right { border-radius:0 999px 999px 0; } .shape.bottom { border-radius:0 0 999px 999px; } .shape.left { border-radius:999px 0 0 999px; }
+  .ph { background:linear-gradient(160deg,#6b6660,#2c2a27); color:rgba(255,255,255,.85); font-size:11px; letter-spacing:.08em; text-transform:uppercase; display:flex; align-items:flex-end; padding:12px; font-weight:500; }
+  .ph.duo { background:linear-gradient(160deg,#4b57a8,#1a2258); }
+  .ph.warm { background:linear-gradient(160deg,#b0865c,#3b2c1c); }
+  .ph.cool { background:linear-gradient(160deg,#8e9aa8,#2b3340); }
+  .icons { display:grid; grid-template-columns:repeat(8,1fr); gap:12px; } .icons div { background:var(--white); border:1px solid var(--s200); aspect-ratio:1; display:grid; place-items:center; } .icons svg { width:36px; height:36px; }
+  @media (max-width:900px) { .icons { grid-template-columns:repeat(4,1fr); } }
+  /* mockups */
+  .mock { background:var(--white); border:1px solid var(--s200); overflow:hidden; position:relative; }
+  .card { width:100%; aspect-ratio:85/55; padding:8%; display:flex; flex-direction:column; justify-content:space-between; }
+  .card.back { background:var(--indigo); }
+  .card .who { font-size:13px; line-height:1.4; } .card .who b { display:block; font-size:15px; }
+  .card .who small { display:block; color:var(--s500); font-size:11.5px; margin-top:6px; }
+  .a4 { aspect-ratio:210/297; padding:9% 10%; display:flex; flex-direction:column; justify-content:space-between; font-size:9px; line-height:1.5; color:var(--s700); }
+  .a4 .lines i { display:block; height:4px; background:var(--s200); margin-bottom:5px; } .a4 .lines i.s { width:55%; } .a4 .lines i.t { height:8px; width:60%; background:var(--s300); margin-bottom:10px; }
+  .cover { aspect-ratio:210/297; background:var(--indigo); color:var(--white); padding:9% 10%; display:flex; flex-direction:column; justify-content:space-between; }
+  .cover .title { font-size:26px; line-height:1.05; letter-spacing:-.02em; font-weight:600; max-width:12ch; text-wrap:balance; }
+  .cover .meta { font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:rgba(255,255,255,.7); font-weight:500; }
+  .sig { padding:22px; font-size:13px; line-height:1.5; color:var(--s700); display:flex; gap:18px; align-items:flex-start; } .sig b { color:var(--ink); display:block; font-size:14px; } .sig .l { border-left:2px solid var(--ink); padding-left:14px; }
+  .site { display:flex; flex-direction:column; }
+  .site .bar { display:flex; align-items:center; justify-content:space-between; padding:14px 22px; border-bottom:1px solid var(--s200); font-size:12.5px; font-weight:500; } .site .bar nav { display:flex; gap:18px; color:var(--s700); } .site .bar .cta { background:var(--ink); color:var(--white); padding:8px 14px; }
+  .site .hero { display:grid; grid-template-columns:1.1fr 1fr; gap:0; min-height:300px; } .site .hero .t { padding:40px 22px; } .site .hero h5 { font-size:34px; line-height:1.02; letter-spacing:-.025em; font-weight:600; margin:0 0 14px; max-width:14ch; text-wrap:balance; } .site .hero p { font-size:14px; max-width:36ch; }
+  .site .hero .img { border-radius:0 0 0 999px; }
+  .tab { background:var(--s100); padding:10px 12px; display:flex; align-items:center; gap:10px; font-size:12px; color:var(--s700); } .tab .t { background:var(--white); padding:6px 12px; display:flex; gap:8px; align-items:center; border-radius:6px 6px 0 0; }
+  .avatar { border-radius:50%; width:80px; height:80px; display:grid; place-items:center; }
+  .post { aspect-ratio:1; display:flex; flex-direction:column; justify-content:space-between; padding:9%; }
+  .post h5 { font-size:30px; line-height:1.02; letter-spacing:-.025em; font-weight:600; margin:0; max-width:12ch; text-wrap:balance; }
+  .deck { aspect-ratio:16/9; display:flex; flex-direction:column; justify-content:space-between; padding:6% 7%; }
+  .deck h5 { font-size:34px; line-height:1.02; letter-spacing:-.025em; font-weight:600; margin:0; max-width:16ch; text-wrap:balance; }
+  .ui { background:var(--s100); padding:0; font-size:11px; }
+  .ui .top { background:var(--white); border-bottom:1px solid var(--s200); padding:10px 14px; display:flex; align-items:center; gap:16px; font-weight:500; } .ui .top span { color:var(--s500); }
+  .ui .body { display:grid; grid-template-columns:150px 1fr; min-height:240px; } .ui .nav { background:var(--white); border-right:1px solid var(--s200); padding:12px; display:flex; flex-direction:column; gap:8px; color:var(--s700); } .ui .nav i { display:block; height:8px; width:70%; background:var(--s200); } .ui .nav i.on { background:var(--indigo); width:85%; }
+  .ui .main { padding:14px; display:grid; grid-template-columns:repeat(3,1fr); gap:10px; align-content:start; } .ui .tile { background:var(--white); border:1px solid var(--s200); padding:12px; } .ui .tile b { display:block; font-size:22px; letter-spacing:-.02em; font-variant-numeric:tabular-nums; font-weight:500; } .ui .tile span { color:var(--s500); font-size:10px; letter-spacing:.08em; text-transform:uppercase; }
+  .ui .chart { grid-column:1/-1; background:var(--white); border:1px solid var(--s200); padding:12px; display:flex; gap:8px; align-items:flex-end; height:110px; } .ui .chart i { display:block; flex:1; background:var(--s200); } .ui .chart i.on { background:var(--indigo); border-radius:999px 999px 0 0; }
+  .ui .tile.inv { background:var(--indigo); border-color:var(--indigo); color:var(--white); } .ui .tile.inv span { color:rgba(255,255,255,.7); }
+  .sign { background:var(--indigo); min-height:220px; display:flex; align-items:center; padding:40px; gap:40px; }
+  .folder { aspect-ratio:1/1.3; background:var(--indigo); padding:10%; display:flex; flex-direction:column; justify-content:space-between; }
+  .tee { aspect-ratio:1; display:grid; place-items:center; background:var(--s100); } .tee svg { width:80%; }
+  .van { aspect-ratio:2/1; display:grid; place-items:center; background:var(--s100); } .van svg { width:92%; }
+  .dont { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; } .dont > div { background:var(--white); border:1px solid var(--s200); padding:18px; } .dont .x { display:flex; align-items:center; justify-content:center; height:70px; overflow:hidden; } .dont p { font-size:12px; margin:10px 0 0; color:var(--s700); } .dont p b { color:#b3261e; }
+  @media (max-width:900px) { .dont { grid-template-columns:1fr 1fr; } }
+  .dec { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; } @media (max-width:900px) { .dec { grid-template-columns:1fr; } }
+  .dec h3 { border-bottom:2px solid var(--ink); padding-bottom:8px; margin-top:0; } .dec ul { padding-left:16px; } .dec li { font-size:14px; }
+  .final { border:2px solid var(--ink); padding:28px 32px; margin-top:36px; display:grid; grid-template-columns:1fr auto; gap:24px; align-items:center; } .final .big { font-size:24px; font-weight:600; letter-spacing:-.02em; line-height:1.15; max-width:30ch; text-wrap:balance; } .final .small { color:var(--s700); margin-top:8px; max-width:64ch; }
+  ol.next { padding-left:20px; color:var(--s700); columns:2; column-gap:40px; font-size:14px; } ol.next li { break-inside:avoid; margin-bottom:6px; } @media (max-width:640px) { ol.next { columns:1; } .final { grid-template-columns:1fr; } }
+  footer { padding-top:28px; font-size:12px; color:var(--s500); }
+</style>
+
+<div class="wrap">
+  <header class="mast">
+    <div>
+      <div class="eyebrow">YBMA LTD · Brand guideline · Version 1.0 · 14 September 2026</div>
+      <h1>The YBMA identity system</h1>
+      <p>The identity is confirmed and prepared for use. This guideline is written for the designers, developers, printers and vendors who will work with it — practical enough to use without asking the founders how the brand works. It is restrained on purpose: three colours, one typeface, one shape rule. The strength of the system is discipline.</p>
+      <div class="fontnote">Specimens are set in Söhne where it is installed. Where it is not, Helvetica Neue stands in and the proportions are approximate; the design decision is not affected.</div>
+    </div>
+    <div class="status">Logo · Symbol · Söhne · Colour<br>all confirmed</div>
+  </header>
+  <nav class="toc">
+    <a href="#s1"><b>1</b>Essence</a><a href="#s2"><b>2</b>Strategic foundations</a><a href="#s3"><b>3</b>Logo</a><a href="#s4"><b>4</b>Symbol</a><a href="#s5"><b>5</b>Construction</a><a href="#s6"><b>6</b>Variations</a><a href="#s7"><b>7</b>Clear space</a><a href="#s8"><b>8</b>Minimum sizes</a><a href="#s9"><b>9</b>Incorrect usage</a><a href="#s10"><b>10</b>Colour</a><a href="#s11"><b>11</b>Typography</a><a href="#s12"><b>12</b>Visual language</a><a href="#s13"><b>13</b>Photography</a><a href="#s14"><b>14</b>Iconography</a><a href="#s15"><b>15</b>Architecture</a><a href="#s16"><b>16</b>Endorsement</a><a href="#s17"><b>17</b>Applications</a><a href="#s18"><b>18</b>Digital</a><a href="#s19"><b>19</b>Production</a><a href="#s20"><b>20</b>Do &amp; don't</a><a href="#dec"><b>→</b>Locked · files · next</a>
+  </nav>
+
+  <!-- 1 ESSENCE -->
+  <section id="s1">
+    <h2><b>1</b> Brand essence</h2>
+    <p class="lead">YBMA builds and runs businesses properly — and builds them to do more than they had to.</p>
+    <div class="two">
+      <div>
+        <p><strong>The Operator.</strong> YBMA is not an investor that owns things from a distance, and not an agency that hands over and leaves. It is a hands-on company that builds systems, businesses and eventually a group — and stays responsible for how they run. That is the strategic direction settled in the earlier sessions and it is the idea every visual decision here serves.</p>
+        <p><strong>The long-term idea, as recorded:</strong> <em>in ten years, YBMA should mean it was built to do more than it had to.</em> Capacity, not decoration. A purpose that survives diversification into technology, real estate, agriculture and financial services, because it describes how things are made, not what is sold.</p>
+        <p><strong>Origin without ornament.</strong> Nigerian by authorship, global by standard. The recorded principle: <em>built for the hardest conditions, therefore good enough for the easiest.</em> Origin is stated once and never explained; it appears in the work as standards and resilience, never as motif.</p>
+      </div>
+      <div>
+        <h4>Fixed facts the identity must respect</h4>
+        <ul>
+          <li><strong>The name is spelled, never spoken.</strong> Y-B-M-A. No pronunciation, no sound for a symbol to attach to.</li>
+          <li><strong>The four founders are not the brand's argument.</strong> Four is never counted, keyed or illustrated.</li>
+          <li><strong>The parent is independent of the technology business.</strong> YBMA Technology is the first division, not the company.</li>
+          <li><strong>Plain speech.</strong> The brand says what it does. No slogans doing the work of proof.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 STRATEGY -->
+  <section id="s2">
+    <h2><b>2</b> Strategic foundations</h2>
+    <p class="lead">Locked, and not reinterpreted here: the Operator · Nigerian by authorship, global by standard · the parent independent of YBMA Technology · plain speech · young + serious · professional + human · one identity across future businesses.</p>
+    <h3>Strategy</h3>
+    <div class="two eq">
+      <div>
+        <p><strong>What the brand has to do now.</strong> Win business for a digital-services firm in Nigeria — websites, custom software, internal business systems, automation — against buyers who have often been burned by technology they paid for and could not keep using.</p>
+        <p><strong>What it has to do in ten to fifteen years.</strong> Carry a diversified group without a rebrand, and endorse businesses YBMA builds or acquires without making every one of them look like a sub-brand.</p>
+        <p><strong>How the identity answers both.</strong> A compact, sector-neutral wordmark that never argues for a category; a symbol that works where the wordmark cannot go; a palette that is neither "tech" nor "property" nor "finance"; and a visual language built on one geometric rule, so it can be applied by people who never read this document.</p>
+      </div>
+      <div>
+        <h4>Recorded commercial direction for the first division</h4>
+        <p><strong>YBMA Technology — operational clarity.</strong> <em>"We build the systems that show you what's actually happening in your business."</em> Proof points, not claims: the client owns domain, code and accounts from day one; a named handover artefact; a fixed support window with a date; built for Nigerian conditions — light, fast, tolerant of poor bandwidth, cheap devices, power and network interruption.</p>
+        <p>These are recorded findings from two rounds of customer interviews. Nothing in this document adds to them.</p>
+      </div>
+    </div>
+  <h3 style="margin-top:36px">Positioning — Nigerian → African → global. Professional, not boring. Young, not childish.</h3>
+    <div class="two eq">
+      <div>
+        <p><strong>Against the category defaults.</strong> Not a bank from 1985 (heavy caps in a box). Not a software startup (gradients, purple, rounded everything). Not a property company (navy and gold). Not a consultancy (grey, restrained, forgettable). Not "African premium" (kente, gold, terracotta). Not generic-African (green because Nigeria, maps, flags).</p>
+        <p><strong>For the buyer.</strong> The company that builds it properly and hands it over — and is still there afterwards. Institutional enough to be trusted with a group's finances one day; human enough to be trusted by a five-person business today.</p>
+      </div>
+      <div>
+        <h4>Where the identity places YBMA</h4>
+        <table>
+          <tr><th>Axis</th><th>YBMA sits</th><th>Not</th></tr>
+          <tr><td class="k">Weight</td><td>Confident, medium-heavy</td><td>Ultra-bold conglomerate · hairline luxury</td></tr>
+          <tr><td class="k">Warmth</td><td>Round mark, hard system</td><td>All-round friendly · all-square cold</td></tr>
+          <tr><td class="k">Colour</td><td>Deep indigo, ink and chalk — nothing else</td><td>Corporate blue · Nigerian green · startup gradient · a bright accent</td></tr>
+          <tr><td class="k">Voice</td><td>Plain, first person plural</td><td>Slogans · jargon · "empowering"</td></tr>
+          <tr><td class="k">Image</td><td>Documentary, people working</td><td>Stock boardrooms · lifestyle Africa</td></tr>
+        </table>
+      </div>
+    </div>
+  <h3 style="margin-top:36px">Personality — young and serious, professional and human. The rules that keep the tensions from collapsing.</h3>
+    <div class="two eq">
+      <div>
+        <h3>Young + serious — not young + playful</h3>
+        <div class="rule"><b>Energy from scale, not from colour.</b><span>Big type, tight leading, hard crops, high contrast. There is no accent colour to lean on; if a surface feels flat, the fix is a bigger number, a harder crop or an inverted field — never a hue.</span></div>
+        <div class="rule"><b>One round thing per surface.</b><span>The wordmark is the soft object. Everything around it is square-cornered. If the mark and the UI are both rounded, the brand becomes a consumer app.</span></div>
+        <div class="rule"><b>Emphasis is a field, not a colour.</b><span>The one thing that matters sits in an inverted panel — indigo or ink — or is simply the largest thing on the page. One field per surface.</span></div>
+        <div class="rule"><b>Sentence case.</b><span>Headlines are written the way people speak. Caps are reserved for labels and the endorsement line.</span></div>
+        <div class="rule"><b>Cuts, not fades.</b><span>Motion is a cut or a quarter-turn. No bounce, no elastic, no easing that settles.</span></div>
+      </div>
+      <div>
+        <h3>Professional + human — not professional + boring</h3>
+        <div class="rule"><b>People doing things.</b><span>Every hero image has a person and a task in it. No empty offices, no abstract renders, no "technology" imagery.</span></div>
+        <div class="rule"><b>First person plural, plain speech.</b><span>"We build the system and you keep it." Not "YBMA empowers businesses to unlock…"</span></div>
+        <div class="rule"><b>Show the number.</b><span>Where there is a real figure — a load tested, a date committed, a handover delivered — set it large in tabular figures. Proof is the brand's warmth.</span></div>
+        <div class="rule"><b>Ink, not grey.</b><span>Text is ink on chalk or white on indigo. Mid-grey text is the colour of consultancies.</span></div>
+        <div class="rule"><b>Asymmetry.</b><span>Left-aligned, off-centre, one heavy element per composition. Centred symmetry is how brands look safe.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 LOGO -->
+  <section id="s3">
+    <h2><b>3</b> The logo</h2>
+    <p class="lead">One arch, four letters. The wordmark is the identity; the symbol goes where the wordmark cannot.</p>
+    <div class="plate" id="p-logo"></div>
+    <div class="two" style="margin-top:28px">
+      <div>
+        <h3>What makes it recognisably YBMA</h3>
+        <ul>
+          <li><strong>One curve, used four ways.</strong> A single semicircle of radius 21 on a stroke of 16: it lies twice to make the B, stands twice to make the M, opens upward on a stem to make the Y and closes over a bar to make the A. Nobody else's YBMA is built like this, and it can be described in one sentence.</li>
+          <li><strong>The silhouette.</strong> Cup, two bowls, two arches, one arch. The word has a skyline — narrow at the ends, wide in the middle — that reads at distance before the letters do.</li>
+          <li><strong>Every terminal is square.</strong> The curves are semicircles, never corner radii; the ends are cut flat. That is the difference between a drawn mark and a "rounded font".</li>
+          <li><strong>Compact.</strong> 315 × 100 — the shortest wordmark the project produced, which is why it fits headers, fascias and product bars without a small-size variant.</li>
+        </ul>
+        <h3>How it expresses the Operator</h3>
+        <p>The mark is made the way YBMA says it makes things: <strong>one module, understood completely, used consistently, with nothing added for effect.</strong> A reader does not need the story; the discipline is visible. The roundness is warmth (the human side of "professional + human"); the square terminals and the single radius are the seriousness. The symbol beside it — two solid pieces made one by a joint — is the group in miniature.</p>
+      </div>
+      <div>
+        <h3>What must never change</h3>
+        <ul>
+          <li>The stroke (16 on a 100 cap) and the radius (21). No bolder, no lighter, no "rounder".</li>
+          <li>The A's bar at 58–74. The A is an A because of it.</li>
+          <li>The Y's stem and cup depth (sides to 24).</li>
+          <li>Square terminals. Never round caps.</li>
+          <li>The tracking (12) and the letter order and case. Never set in a typeface.</li>
+          <li>The symbol's angle (dx/dy 0.5625), joint (11) and sheared corner, cut across the full band and never deeper.</li>
+          <li>Single colour. The logo is never two colours, never outlined, never gradient.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 SYMBOL -->
+  <section id="s4">
+    <h2><b>4</b> The symbol</h2>
+    <p class="lead">U3 — two stones, one joint. Confirmed, carried forward unchanged.</p>
+    <div class="two">
+      <div><div class="plate" id="p-sym-big"></div><p class="cap">120 square · entry 18 · descent dx/dy 0.5625 · turn 86 · joint 11 · corner sheared across the band. Two solid masses made one by a joint: the group in miniature.</p></div>
+      <div><h3>The symbol and the wordmark</h3>
+        <p><strong>Two expressions of one identity, related by construction rather than by shape.</strong> The wordmark is one module used four times; the symbol is two masses made one. Both are built from a small number of decisions and nothing else. They are not geometrically derived from each other, and the guideline does not claim they are.</p>
+        <p><strong>Division of labour.</strong> The wordmark is the default everywhere it fits. The symbol carries the identity where the wordmark cannot go — favicon, app icon, avatar, stamp, signet, the endorsement mark on other companies' work — and introduces itself beside the wordmark in the lockup until it is recognised alone.</p>
+        <h3>What must never change</h3><ul><li>The angle (dx/dy 0.5625), the joint (11) and the sheared corner, cut across the full band and never deeper.</li><li>The entry at 18 — the balance of the two stones.</li><li>Single colour; never outlined; never used as decoration or pattern; never beside the wordmark except in the two lockups.</li></ul></div>
+    </div>
+  </section>
+
+  <!-- 6 CONSTRUCTION -->
+  <section id="s5">
+    <h2><b>5</b> Logo construction</h2>
+    <p class="lead">Production geometry, dimensioned. Every curve is a true semicircle tangent to a straight line, so the outlines are exact.</p>
+    <div class="grid g2">
+      <div><div class="plate" id="p-dim-wm"></div><p class="cap">Wordmark on the 100-unit cap. Stroke 16 · radius 21 on the centreline (29 outer, 13 inner) · tracking 12 · Y 58 · B 63 · M 100 · A 58 · total 315.</p></div>
+      <div><div class="plate" id="p-dim-sym"></div><p class="cap">Symbol on the 120 square. Entry 18 · descent dx/dy 0.5625 · turn 86 · joint 11 · band 23 · shear 12.9 across the band.</p></div>
+    </div>
+    <div class="two" style="margin-top:28px">
+      <div>
+        <h3>From the approved drawing to production</h3>
+        <p>The approved artifact draws each letter as an SVG stroke with round joins. Production artwork is outlined: each stroke becomes a filled contour whose outer curve has radius 29 and inner curve radius 13. Because every curve in the mark is tangent to the straight it meets, the outlines resolve without approximation; the production file overlays the approved drawing exactly.</p>
+        <p><strong>One optical correction, and only one:</strong> the crowns of the M and A overshoot the cap line by 1.2 units (1.2%) so that the round tops read level with the flat tops of the Y and B. This is standard practice for round letters against flat ones; it changes nothing a viewer can name.</p>
+        <p><strong>Not corrected, on purpose:</strong> monoline weight (horizontals equal verticals) — the mark is a display object at fixed sizes and the evenness is part of its character.</p>
+      </div>
+      <div>
+        <h3>Letter by letter</h3>
+        <table>
+          <tr><th>Letter</th><th>Construction</th><th>Width</th></tr>
+          <tr><td class="k">Y</td><td>Two straight sides from the cap to 24, one semicircle below (bottom of the stroke at 53), stem from the cup to the baseline</td><td>58</td></tr>
+          <tr><td class="k">B</td><td>Stem; two equal bowls — straight bars at 8 and 92, arcs on the right; the shared waist bar at 50</td><td>63</td></tr>
+          <tr><td class="k">M</td><td>Two arches, crowns at 8 (overshot 1.2), legs to the baseline; the centre leg is shared</td><td>100</td></tr>
+          <tr><td class="k">A</td><td>One arch, crown at 8 (overshot 1.2), legs to the baseline, bar 58–74</td><td>58</td></tr>
+        </table>
+        <p class="cap" style="margin-top:12px">Files: <b>identity/ybma-logo.js</b> (the geometry, the source of truth) · <b>identity/logo/*.svg</b> (exports: wordmark, symbol, lockups, division, endorsement — black and white).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 VARIATIONS -->
+  <section id="s6">
+    <h2><b>6</b> Logo variations</h2>
+    <p class="lead">Five versions. Each exists because a real usage problem exists; nothing else was made.</p>
+    <div class="grid g2">
+      <div><div class="plate" id="v-wordmark"></div><p class="cap"><b>1 · Wordmark — primary.</b> The default everywhere it fits: documents, website, presentations, signage, clothing.</p></div>
+      <div><div class="plate" id="v-lockup"></div><p class="cap"><b>2 · Horizontal lockup.</b> Symbol at cap height, 0.4 cap from the wordmark. For where the symbol needs introducing beside the name: signage, document headers, launch material, the first year of each channel.</p></div>
+      <div><div class="plate" id="v-symbol"></div><p class="cap"><b>3 · Symbol.</b> Favicon, app icon, avatar, stamp, signet, endorsement mark. Never as decoration beside the wordmark on the same surface as the lockup.</p></div>
+      <div><div class="plate" id="v-stacked"></div><p class="cap"><b>4 · Stacked lockup.</b> Symbol centred above, 0.4 cap between. Square formats and splash screens only.</p></div>
+      <div><div class="plate ink" id="v-rev"></div><p class="cap"><b>5 · Reversed.</b> White on ink or indigo. The same artwork; nothing is redrawn.</p></div>
+      <div><div class="plate indigo" id="v-indigo"></div><p class="cap">Reversed on YBMA Indigo — the brand's ground colour. The only colours the logo ever appears in: ink, white, and indigo on chalk or white.</p></div>
+    </div>
+    <div class="note"><b>No small-size variant.</b> The wordmark holds to 20 px because it is compact and monoline; below that the symbol takes over. A simplified mark would be a second identity and was not made.</div>
+    <div class="grid g3" style="margin-top:18px">
+      <div><div class="plate chalk" id="v-onchalk"></div><p class="cap">Ink on chalk — the default combination, print and screen.</p></div>
+      <div><div class="plate" id="v-indigo-on-white"></div><p class="cap">Indigo on white or chalk — the logo as the one indigo element on a light surface.</p></div>
+      <div><div class="plate ink" id="v-onink"></div><p class="cap">White on ink — the night ground: signage, avatars, workwear. Indigo never sits on ink.</p></div>
+    </div>
+  </section>
+
+  <!-- 8 CLEAR SPACE -->
+  <section id="s7">
+    <h2><b>7</b> Clear space</h2>
+    <p class="lead">Two strokes around the wordmark. One fifth of the side around the symbol.</p>
+    <div class="grid g2">
+      <div><div class="plate" id="cs-wm"></div><p class="cap">Wordmark and lockups: <b>X = 32 units = two strokes (⅓ of the cap)</b> on all sides. Measured from the outer edges of the letters, including the M's crowns.</p></div>
+      <div><div class="plate" id="cs-sym"></div><p class="cap">Symbol: <b>X = 24 units = one fifth of the side</b> on all sides. The sheared corner counts as the edge.</p></div>
+    </div>
+    <p style="margin-top:16px">Clear space is the minimum, not the target. Give the mark more room than this whenever the layout allows; the wordmark is compact and reads best with air. Nothing enters the clear space — no type, no rules, no photography edges, no other marks.</p>
+  </section>
+
+  <!-- 9 MINIMUM SIZES -->
+  <section id="s8">
+    <h2><b>8</b> Minimum sizes</h2>
+    <p class="lead">Wordmark 20 px · symbol 16 px · lockup 24 px. In print, 6 mm · 5 mm · 7 mm, by height.</p>
+    <div class="grid g2">
+      <div><div class="plate"><div class="ladder" id="ml-wm"></div></div><p class="cap">Wordmark at 60 · 40 · 28 · 20 · 14 px. Holds to 20; at 14 the A's bar fills and the cup closes.</p></div>
+      <div><div class="plate"><div class="ladder" id="ml-sym"></div></div><p class="cap">Symbol at 64 · 32 · 24 · 16 px. At 16 the sheared corner is the mark; the joint arrives as soon as there are pixels for it.</p></div>
+    </div>
+  </section>
+
+  <!-- 9 INCORRECT USAGE -->
+  <section id="s9">
+    <h2><b>9</b> Incorrect usage</h2>
+    <p class="lead">Any of these changes the identity. Shown so they can be recognised, not judged case by case.</p>
+    <div class="dont" id="dont"></div>
+  </section>
+
+  <!-- 10 COLOUR -->
+  <section id="s10">
+    <h2><b>10</b> Colour <em style="font-style:normal;font-weight:400;color:var(--s500);letter-spacing:0;text-transform:none;font-size:13px;margin-left:8px">confirmed</em></h2>
+    <p class="lead">Three colours. Ink does the work, chalk is the ground, indigo is the field. Colour comes from the world, not from the palette.</p>
+    <div class="two">
+      <div>
+        <p><strong>Why indigo.</strong> The brief excluded green-because-Nigeria, corporate technology blue, excessive red, startup gradients and "African premium" gold. Indigo is the colour Nigeria has dyed cloth with for centuries — the Kano pits, Abeokuta adire — and the colour the world knows as denim. Nigerian in origin and global in use without a motif in sight. Kept deep and slightly violet, it reads as dye rather than as a bank or a SaaS product, and it is heavy enough to hold financial services and property one day.</p>
+        <p><strong>Why no accent.</strong> An accent colour is the easiest way to make a surface look energetic and the fastest way to make a brand look like every other young company. The founders' decision to withhold one forces the energy into the things that are actually YBMA's — the mark, the shape rule, the scale of the type, the honesty of the photographs. Restraint is the distinctive move: in a category where everyone has a bright, three colours used with discipline stand out.</p>
+        <p><strong>Where the colour comes from, then.</strong> Photography. A market, a workshop, a warehouse floor in Kaduna are full of colour that no palette could specify. The identity withholds colour so that real life supplies it; the hero photograph is the accent, every time.</p>
+      </div>
+      <div>
+        <h4>How the three divide the work</h4>
+        <table>
+          <tr><th>Colour</th><th>Role</th><th>Never</th></tr>
+          <tr><td class="k">Ink</td><td>All text. The logo on light grounds. Rules, icons, buttons, UI chrome. <b>Also a ground:</b> the night surface for signage, avatars, workwear, dark product mode — chalk type, white logo.</td><td>Under indigo, or beside it without chalk between</td></tr>
+          <tr><td class="k">Chalk</td><td>The default ground, 60% or more of any light surface. Type on indigo and on ink. The colour of paper.</td><td>As a tint on indigo (use white for type there)</td></tr>
+          <tr><td class="k">Indigo</td><td><b>Two uses only.</b> (1) A full field — a cover, a hero panel, a fascia, a slide, a card back. (2) The one emphasised element on a chalk surface — a number, a word, a panel, the key bar. The logo on light grounds where ink is too plain.</td><td>A page tint · small decorative pieces · more than one element per surface · body text</td></tr>
+        </table>
+        <h4>Proportion on a typical chalk surface</h4>
+        <div style="display:flex;height:34px;border:1px solid var(--s200)"><div style="flex:64;background:var(--chalk)"></div><div style="flex:20;background:var(--ink)"></div><div style="flex:10;background:var(--indigo)"></div><div style="flex:6;background:var(--s300)"></div></div>
+        <p class="cap">Chalk 64 · ink 20 · indigo 10 · greys 6. An indigo surface inverts to indigo 80 · white 20. Indigo does not dominate because it is the primary; it dominates a surface or is absent from it.</p>
+      </div>
+    </div>
+    <h3>Emphasis without an accent</h3>
+    <div class="emph">
+      <div><div class="k">Scale</div><div class="big">14 days</div><p class="cap" style="margin:8px 0 0">The proof number is the largest thing on the surface.</p></div>
+      <div class="inv"><div class="k">The field</div><div class="big">31 / 31</div><p class="cap" style="margin:8px 0 0;color:rgba(255,255,255,.75)">One inverted panel per surface.</p></div>
+      <div><div class="k">The curve</div><div style="display:flex;gap:6px;align-items:flex-end;height:60px"><i style="flex:1;height:40%;background:var(--s200)"></i><i style="flex:1;height:60%;background:var(--s200)"></i><i style="flex:1;height:100%;background:var(--indigo);border-radius:999px 999px 0 0"></i></div><p class="cap" style="margin:8px 0 0">The one round element is the one that matters.</p></div>
+      <div><div class="k">Weight &amp; the stem</div><div style="border-left:2px solid var(--ink);padding-left:12px;font-size:15px;line-height:1.3"><b>Owned by you</b> from day one.</div><p class="cap" style="margin:8px 0 0">Halbfett against Buch; a rule beside the line.</p></div>
+      <div><div class="k">Action</div><span class="btn">Talk to us</span><div class="link" style="margin-top:10px">How we hand over</div><p class="cap" style="margin:8px 0 0">Buttons are ink; links are underlined ink.</p></div>
+    </div>
+    <p style="margin-top:14px">These five replace the accent. Not one of them is a hue, which is why they cannot be copied by another company adding an orange.</p>
+<h3>The palette — three groups</h3>
+    <p><strong>Brand colours:</strong> Indigo, Ink, Chalk. <strong>Supporting / UI colours:</strong> White, Mist, Clay, the greys, Indigo 60 — functional, never promoted to brand. <strong>Semantic product status</strong> (OK, warning, error, info): YBMA Technology UI kit only, indicators only, never in marketing. Tokens: <code>identity/brand/colour/tokens.css</code>.</p>
+    <div class="sw" id="swatches"></div>
+    <h3>Contrast — text on ground</h3>
+    <p>WCAG ratios. <span class="ok">AAA ≥ 7</span> · <span class="ok">AA ≥ 4.5</span> · <span class="lg">large text only ≥ 3</span> · <span class="no">not for text</span>. Indigo on ink and ink on indigo fail — which is the rule that they never meet.</p>
+    <div style="overflow-x:auto"><table class="cm" id="contrast"></table></div>
+    <div class="note"><b>Print.</b> CMYK values are conversions for reference. Indigo must be proofed on press before the first print run and a Pantone equivalent fixed then (near 2758 C — to be confirmed on a physical swatch). Most YBMA print is now two colours — indigo and black — which is cheaper and more consistent than a three-colour job.</div>
+    <div class="note"><b>Product semantic colours.</b> A product interface needs states — error, warning, success. Those are defined in the YBMA Technology UI kit as desaturated functional colours, used only in status indicators and never in marketing. They are not brand colours and this guideline does not specify them.</div>
+  </section>
+
+  <!-- 11 TYPOGRAPHY -->
+  <section id="s11">
+    <h2><b>11</b> Typography <em style="font-style:normal;font-weight:400;color:var(--s500);letter-spacing:0;text-transform:none;font-size:13px;margin-left:8px">confirmed</em></h2>
+    <p class="lead">YBMA uses Söhne. One family, six roles. The wordmark is the round object; the type is the hard system around it.</p>
+    <div class="two">
+      <div class="spec">
+        <p class="lbl">Display · Söhne Halbfett · −3% tracking · 0.98 leading</p>
+        <p class="display">We build the system and you keep it.</p>
+        <p class="lbl">Heading · Söhne Halbfett · −2%</p>
+        <p class="h2s">Built for the hardest conditions, therefore good enough for the easiest.</p>
+        <p class="lbl">Body · Söhne Buch · 17/26</p>
+        <p class="body">From day one the client owns the domain, the code and every account. The handover is a named artefact that physically exists, and the support window has a date on it. That is not a promise; it is in the contract.</p>
+        <p class="lbl">Data · Söhne Kräftig · tabular lining figures</p>
+        <p class="num">2,400<small>tested concurrent users</small></p>
+        <p class="lbl" style="margin-top:22px">Technical · Söhne Mono Buch · product interfaces only</p>
+        <p class="mono">handover/  ybma-tech-2026-09-14.pdf   signed
+support/   window ends 2027-03-14     active</p>
+      </div>
+      <div>
+        <h3>The typeface</h3>
+        <p><strong>YBMA uses Söhne</strong> (Klim Type Foundry). Confirmed by the founders. Precise, contemporary, quietly confident: a grotesque with enough character to hold its own beside a round wordmark without competing with it. Söhne carries the seriousness the mark leaves to the system.</p>
+        <p><strong>Cuts in use.</strong> Söhne <b>Buch</b> (body) · <b>Kräftig</b> (labels, data, UI) · <b>Halbfett</b> (display and headings). <b>Söhne Mono Buch</b> for product interfaces. <b>Söhne Breit Kräftig</b> is permitted for a single word on a cover or fascia and nowhere else. No other weights, no other families, no second display face.</p>
+        <p class="cap"><b>Licensing — a practical note, separate from the design decision.</b> Söhne is licensed from klim.co.nz per environment: desktop (by number of users), web (by domain, in pageview tiers) and app. The working assumption is one desktop licence per founder plus a web licence for ybma.ng and division sites; add an app licence when YBMA Technology ships a product. Fonts are installed on every machine that produces brand material; documents that leave the company go as PDF. Until the licence is bought, specimens fall back to Helvetica Neue and are not to be treated as final.</p>
+        <h3>Roles</h3>
+        <table class="scale">
+          <tr><th>Role</th><th>Setting</th><th>Rule</th></tr>
+          <tr><td>display</td><td>Halbfett · 48–96 · −3% · 0.98</td><td>Sentence case. One line idea. Never all caps.</td></tr>
+          <tr><td>heading</td><td>Halbfett · 24–40 · −2% · 1.1</td><td>Left-aligned. Balanced wrap.</td></tr>
+          <tr><td>label</td><td>Kräftig · 11–13 · +14% · caps</td><td>Eyebrows, section marks, the endorsement line, division descriptors. Ink or grey 500 — never indigo.</td></tr>
+          <tr><td>body</td><td>Buch · 16–18 · 0 · 1.5</td><td>≤ 68 characters per line. Ink on chalk.</td></tr>
+          <tr><td>data</td><td>Kräftig · any size · tabular lining</td><td>Numbers that matter are set large; units in the label style. The data style is the identity's main emphasis device.</td></tr>
+          <tr><td>mono</td><td>Söhne Mono Buch</td><td>Product UI, code, logs, identifiers. Never in marketing.</td></tr>
+        </table>
+        <h3>Rules that keep it YBMA</h3>
+        <ul>
+          <li><strong>Headlines in sentence case, tight.</strong> The energy is in scale and leading, not in caps or colour.</li>
+          <li><strong>Labels in caps, tracked.</strong> The only caps in the system, and always small.</li>
+          <li><strong>No italics for emphasis in marketing;</strong> weight does it. Italics are for titles of things.</li>
+          <li><strong>Never set YBMA in the typeface</strong> where it is the brand — use the wordmark. In running text, YBMA is set like any other word.</li>
+          <li><strong>Emphasis by weight and scale, never by colour.</strong> A word that matters is Halbfett or larger; it is not indigo.</li>
+          <li><strong>Söhne Breit is a cover tool.</strong> One word, huge; never in body or headings.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 VISUAL LANGUAGE -->
+  <section id="s12">
+    <h2><b>12</b> Visual language</h2>
+    <p class="lead">One curved end, one square end. The rule that built the letters builds everything else.</p>
+    <div class="two">
+      <div>
+        <p>Look at the letters: the Y is square at the top and round at the bottom; the B is square on the left and round on the right; the M and A are round on top and square below. <strong>Every YBMA letter has one curved end and one square end.</strong> That is the system. Photographs, cards, bars, tags and panels take the same shape — a rectangle with one full semicircular end — in any of the four orientations. The logo need not be present for a page to be recognisably YBMA.</p>
+        <div class="grid g4" style="margin:18px 0">
+          <div><div class="shape top" style="height:90px"></div><p class="cap">The M and A · round top</p></div>
+          <div><div class="shape right" style="height:90px"></div><p class="cap">The B · round right</p></div>
+          <div><div class="shape bottom" style="height:90px"></div><p class="cap">The Y · round bottom</p></div>
+          <div><div class="shape left" style="height:90px"></div><p class="cap">Turned · round left</p></div>
+        </div>
+        <h3>The rules</h3>
+        <div class="rule"><b>Full semicircles only.</b><span>The curve is always a true half-circle across the element's full width or height. Small corner radii are not YBMA — they are every app.</span></div>
+        <div class="rule"><b>One curve per element.</b><span>Never two round ends. A pill is not a YBMA shape.</span></div>
+        <div class="rule"><b>One round thing per composition.</b><span>The rest of the page is square-cornered. The round element is the one the eye should land on — a photograph, a number panel, a chart's key bar. <b>Without an accent colour this rule does the accent's job:</b> the curve is where the emphasis lives.</span></div>
+        <div class="rule"><b>The turn.</b><span>Elements may rotate a quarter turn between pages or states. That is the system's motion: a cut or a quarter-turn, never a slide.</span></div>
+        <div class="rule"><b>Lines are stems.</b><span>Rules are 2 px, square-ended, ink. Vertical rules are used more than horizontal — a stem beside a block of text, as in the Y. A stem is the system's underline, its pull-quote mark and its link style.</span></div>
+        <div class="rule"><b>The field.</b><span>One inverted panel — indigo or ink — per surface, carrying the one thing that matters. Fields are square-cornered unless they are the composition's single round element.</span></div>
+        <div class="rule"><b>Grid.</b><span>12 columns, 24 gutter, 8-unit baseline. Module proportion 3:4 (stroke : radius, 16 : 21) governs card and panel ratios.</span></div>
+      </div>
+      <div>
+        <h3>In practice</h3>
+        <div class="grid g2">
+          <div><div class="ph" style="height:150px;border-radius:0 0 0 999px">photo · workshop floor</div><p class="cap">Image crop: round on one corner only, at the full height of the image.</p></div>
+          <div><div style="background:var(--white);border:1px solid var(--s200);height:150px;padding:16px;display:flex;flex-direction:column;justify-content:flex-end"><div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--indigo-b);font-weight:500">Handover</div><div style="font-size:40px;font-weight:500;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1">14 days</div></div><p class="cap">Number panel: square, the figure large, the label small — the data style.</p></div>
+          <div><div style="background:var(--white);border:1px solid var(--s200);height:150px;padding:16px;display:flex;align-items:flex-end;gap:8px"><i style="flex:1;height:40%;background:var(--s200)"></i><i style="flex:1;height:60%;background:var(--s200)"></i><i style="flex:1;height:75%;background:var(--s300)"></i><i style="flex:1;height:95%;background:var(--indigo);border-radius:999px 999px 0 0"></i></div><p class="cap">Data: context bars grey and square-ended; the key bar indigo with the round end — the only one. Two series: indigo and ink. Never more than three fills.</p></div>
+          <div><div class="split" style="height:150px;min-height:0"><div class="ph" style="font-size:10px">photo · a stock count</div><div class="f" style="font-size:15px;padding:14px">Counted, owned, handed over.</div></div><p class="cap">The cut: a square photograph against an indigo field carrying the statement. The photograph's own colour is the accent.</p></div>
+        </div>
+        <h3>Information hierarchy</h3>
+        <p>Label → headline → body → proof. The label (caps, tracked, ink or grey) names the subject; the headline says the one thing; the body explains in plain speech; the proof is a number or a named artefact set in the data style. Every YBMA page, deck and post follows this order, which is why they look related without repeating the logo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13 PHOTOGRAPHY -->
+  <section id="s13">
+    <h2><b>13</b> Photography</h2>
+    <p class="lead">People doing things, photographed as they are. Documentary, close, in real light.</p>
+    <div class="two">
+      <div>
+        <div class="grid g3">
+          <div><div class="ph warm" style="height:170px;border-radius:999px 0 0 0">a technician at a switchboard, Kaduna</div></div>
+          <div><div class="ph cool" style="height:170px">a shop owner at her counter, mid-sale</div></div>
+          <div><div class="ph duo" style="height:170px;border-radius:0 0 999px 0">indigo monotone · a warehouse, tonal</div></div>
+        </div>
+        <p class="cap">Placeholders describing the shot, not stock imagery. Left: warm natural light, a hand in frame. Centre: a real environment, uncropped. Right: the indigo monotone treatment for background and texture images behind type.</p>
+        <h3>Direction</h3>
+        <ul>
+          <li><strong>Subject: work in progress.</strong> Founders, operators, technicians and staff doing the actual task — installing, counting, fixing, selling, building. A hand and a tool beat a face and a smile.</li>
+          <li><strong>Distance: close.</strong> Inside the room, not across the street. 35–50 mm feel; nothing shot on a long lens from a distance.</li>
+          <li><strong>Light: whatever was there.</strong> Daylight, fluorescent, the generator's bulb. High contrast is welcome; the sun is harsh and the shadows are black. No fill, no flattering, no HDR.</li>
+          <li><strong>Colour: true.</strong> Real skin, real concrete, real paint. Grade for contrast, not for warmth or "Africa".</li>
+          <li><strong>Environments: real and specific.</strong> The actual workshop, the actual market, the actual office. If a location has to be dressed, it is the wrong location.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Never</h3>
+        <ul>
+          <li>Stock boardrooms, handshakes, people pointing at laptops.</li>
+          <li>Flags, maps of Africa, kente or adire patterns, baobabs, sunsets over savannah.</li>
+          <li>"African lifestyle" polish — the glossy, warm-graded, aspirational look.</li>
+          <li>Abstract "technology" imagery: circuits, globes, blue light, renders.</li>
+          <li>Posed team photographs on a white background.</li>
+        </ul>
+        <h3>Treatments</h3>
+        <div class="rule"><b>Full colour, always for the primary image.</b><span>The hero photograph is never tinted.</span></div>
+        <div class="rule"><b>Indigo monotone for secondary images.</b><span>Behind type, as texture, in headers where the image must not compete. Single ink, never a duotone.</span></div>
+        <div class="rule"><b>The photograph is the accent.</b><span>With no accent colour in the palette, the hero image is where colour enters a composition. Choose images for their colour as well as their subject; a grey photograph on a chalk page is a dead page.</span></div>
+        <div class="rule"><b>Crop with one round corner</b><span>at the full height of the image — the visual-language shape — or square. Never both round corners.</span></div>
+        <div class="rule"><b>No overlays.</b><span>Type sits beside images, or on the indigo monotone, never on a dark gradient over a colour photograph.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14 ICONOGRAPHY -->
+  <section id="s14">
+    <h2><b>14</b> Iconography</h2>
+    <p class="lead">Monoline, square-ended, one radius — icons drawn the way the letters are.</p>
+    <div class="icons" id="icons"></div>
+    <div class="two eq" style="margin-top:18px">
+      <div>
+        <div class="rule"><b>24-unit grid, 2-unit stroke.</b><span>The wordmark's 16 : 100 weight scaled to icon size.</span></div>
+        <div class="rule"><b>Round joins, square ends.</b><span>Corners are true arcs of radius 3 (the 16 : 21 module at 24 px). Terminals are cut flat.</span></div>
+        <div class="rule"><b>One curve per icon where possible.</b><span>Straight lines and a single arc. Icons that need many curves are probably illustrations.</span></div>
+        <div class="rule"><b>Ink or white only.</b><span>Indigo for a selected state in product UI, never for the icon itself.</span></div>
+      </div>
+      <div>
+        <p>The set shown is a starting family for the website and the product — arrow, check, document, handover, building, plant, chart, code. The full set is built as needed in the product phase, on these rules; do not source a third-party icon library.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15 ARCHITECTURE -->
+  <section id="s15">
+    <h2><b>15</b> Brand architecture</h2>
+    <p class="lead">One identity with descriptors. The parent is the strongest common denominator; divisions are named, not coloured.</p>
+    <div class="two">
+      <div>
+        <div class="grid g2">
+          <div><div class="plate" id="ar-parent"></div><p class="cap"><b>YBMA</b> — the parent. Wordmark alone.</p></div>
+          <div><div class="plate" id="ar-tech"></div><p class="cap"><b>YBMA Technology</b> — the first division. Descriptor below, caps, 22% of the cap, left-aligned to the Y.</p></div>
+          <div><div class="plate" id="ar-re"></div><p class="cap"><b>YBMA Real Estate</b> — future division, same rule.</p></div>
+          <div><div class="plate" id="ar-fs"></div><p class="cap"><b>YBMA Financial Services</b> — the longest descriptor the rule must carry; it does.</p></div>
+        </div>
+        <div class="plate indigo" style="margin-top:18px;gap:40px;flex-wrap:wrap" id="ar-rev"></div><p class="cap">All four divisions reversed on indigo: the same rule, the same colour, nothing to manage. Agriculture does not need green and Financial Services does not need navy — the parent identity is the common language.</p>
+      </div>
+      <div>
+        <h3>Rules</h3>
+        <div class="rule"><b>Descriptor only.</b><span>A division is the wordmark plus its name in the label style. Same colour as the wordmark, always. No division colours, no division symbols, no division typefaces.</span></div>
+        <div class="rule"><b>Position.</b><span>Below the wordmark, left-aligned to the Y, 24 units under the baseline, cap height 22. In a horizontal header it may sit to the right on the baseline, after a 40-unit space, at the same size.</span></div>
+        <div class="rule"><b>The parent is never a division.</b><span>"YBMA" alone always means the group. YBMA Technology never uses the bare wordmark as its own logo.</span></div>
+        <div class="rule"><b>Acquired companies keep their names.</b><span>A business YBMA buys keeps its identity and carries the endorsement (section 16). It does not become "YBMA Foods".</span></div>
+        <div class="rule"><b>Products.</b><span>Products of a division are named in text, not given marks: "Ledger, by YBMA Technology". If a product ever needs its own identity, that is a founders' decision, not a design one.</span></div>
+        <h3>Why no division colours</h3>
+        <p>A colour per division is the easiest system to draw and the hardest to manage: the fifth division has no colour left, the palette becomes a rainbow, and every sub-brand competes with the parent. Descriptors scale to any number of businesses, cost nothing, and keep the parent the strongest element on every surface — which is the recorded requirement.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 16 ENDORSEMENT -->
+  <section id="s16">
+    <h2><b>16</b> Endorsement</h2>
+    <p class="lead">A YBMA COMPANY — the symbol and four words, for businesses that keep their own name.</p>
+    <div class="two">
+      <div>
+        <div class="plate" id="en-line"></div>
+        <p class="cap">The endorsement line: symbol at 1.9× the text cap, text in the label style standing on the symbol's baseline. Single colour. The wordmark is never used in the endorsement — YBMA is typeset here, because the line is a sentence, not a logo.</p>
+        <div class="grid g2" style="margin-top:18px">
+          <div><div class="mock card" style="padding:7%;justify-content:space-between"><div style="font-size:20px;font-weight:600;letter-spacing:-.01em">Kobo Foods</div><div id="en-card"></div></div><p class="cap">On an acquired company's card: their name leads, the endorsement sits in the corner. Placeholder business.</p></div>
+          <div><div class="mock" style="background:var(--ink);color:#fff;padding:22px;aspect-ratio:85/55;display:flex;flex-direction:column;justify-content:space-between"><div style="font-size:18px;font-weight:600;line-height:1.1;max-width:14ch">Kobo Foods is now a YBMA company.</div><div id="en-annc"></div></div><p class="cap">Acquisition announcement, reversed.</p></div>
+        </div>
+      </div>
+      <div>
+        <h3>Hierarchy</h3>
+        <table>
+          <tr><th>Entity</th><th>Carries</th><th>Endorsement</th></tr>
+          <tr><td class="k">YBMA</td><td>Wordmark · symbol · lockups</td><td>Never — it is the endorser</td></tr>
+          <tr><td class="k">YBMA Technology<br>and future divisions</td><td>Wordmark + descriptor</td><td>Never — the name already says it</td></tr>
+          <tr><td class="k">Acquired company</td><td>Its own identity</td><td><b>Required</b> on the surfaces below</td></tr>
+          <tr><td class="k">Joint venture / partner</td><td>Its own identity</td><td>By agreement; the line reads "IN PARTNERSHIP WITH YBMA" — a decision for the founders when it arises</td></tr>
+        </table>
+        <h3>Where the endorsement is required</h3>
+        <ul>
+          <li>Website footer and "about" page of the acquired company.</li>
+          <li>Company documents: letterhead footer, proposals, contracts, company profile.</li>
+          <li>Acquisition and appointment announcements.</li>
+          <li>Physical: reception signage (secondary position), packaging where the product is sold under the acquired name.</li>
+        </ul>
+        <h3>Where it is omitted</h3>
+        <ul>
+          <li>On anything YBMA or a YBMA division produces — redundant.</li>
+          <li>On product interfaces of the acquired company — a footer link, not a mark.</li>
+          <li>On advertising for the acquired company unless the relationship is the message.</li>
+          <li>Anywhere it would have to be smaller than the symbol's minimum (16 px / 5 mm).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 17 APPLICATIONS -->
+  <section id="s17">
+    <h2><b>17</b> Applications</h2>
+    <p class="lead">The identity in use. A representative set; the full ten-situation stress test is a separate page.</p>
+
+    <h3>Corporate</h3>
+    <div class="grid g3">
+      <div><div class="mock cover" id="ap-cover"></div><p class="cap">Proposal cover, indigo field. Display headline in Söhne Halbfett; client and date as labels; wordmark at the foot.</p></div>
+      <div><div class="mock" id="ap-profile" style="aspect-ratio:210/297;display:grid;grid-template-rows:1fr 1fr"></div><p class="cap">Company profile spread. The photograph is the colour; the proof sits in one indigo field, large.</p></div>
+      <div><div class="grid" style="gap:12px"><div class="mock card" id="ap-card-f"></div><div class="mock sig" id="ap-sig"></div></div><p class="cap">Card and email signature: ink on white, a stem, nothing else.</p></div>
+    </div>
+    <h3>Digital</h3>
+    <div class="grid g2">
+      <div><div class="mock site" id="ap-site"></div><p class="cap">YBMA website hero. Chalk ground, headline as the largest element, the photograph with the one round corner, an underlined ink link. No colour in the palette is doing any work here — the photograph is.</p></div>
+      <div>
+        <div class="grid g2">
+          <div><div class="mock post" style="background:var(--indigo);color:#fff" id="ap-post"></div><p class="cap">Social post, indigo: one sentence.</p></div>
+          <div><div class="mock post" style="background:var(--chalk)" id="ap-post2"></div><p class="cap">Social post, chalk: one number. The feed alternates indigo, chalk, photograph — the turn, in colour.</p></div>
+          <div><div class="mock deck" style="background:var(--indigo);color:#fff" id="ap-deck"></div><p class="cap">Presentation cover.</p></div>
+          <div><div class="mock deck" style="background:var(--chalk)" id="ap-deck2"></div><p class="cap">Presentation proof slide: number, key bar, nothing decorative.</p></div>
+        </div>
+      </div>
+    </div>
+    <h3>YBMA Technology</h3>
+    <div class="grid g2">
+      <div><div class="mock site" id="ap-tech-site"></div><p class="cap">Division website header: descriptor beside the wordmark; the hero splits chalk and an indigo field carrying the proof.</p></div>
+      <div><div class="mock ui" id="ap-ui"></div><p class="cap">Product dashboard. Chalk UI, ink text, indigo for the selected item and the one inverted tile that needs attention; the key bar is the only round-ended one. Semantic status colours live in the UI kit, not here.</p></div>
+    </div>
+    <h3>Physical</h3>
+    <div class="grid g2">
+      <div><div class="mock sign" id="ap-sign"></div><p class="cap">Office fascia: indigo field, white lockup; the door symbol on an ink panel. Two colours, no lighting tricks.</p></div>
+      <div><div class="mock tee" style="aspect-ratio:2/1" id="ap-tee"></div><p class="cap">Workwear: indigo tee, symbol on the chest; ink jacket, wordmark on the back in chalk.</p></div>
+    </div>
+  </section>
+
+  <!-- 18 DIGITAL IMPLEMENTATION -->
+  <section id="s18">
+    <h2><b>18</b> Digital implementation</h2>
+    <p class="lead">The website is an implementation of the identity, not a place to invent more of it. It consumes tokens and components; it defines nothing of its own.</p>
+    <div class="two">
+      <div>
+        <h3>Files</h3>
+        <table>
+          <tr><th>File</th><th>What it is</th></tr>
+          <tr><td class="k">brand/colour/tokens.css · .json</td><td>Every colour, type, spacing, grid, shape, logo and motion value. Three colour groups; only the first is brand.</td></tr>
+          <tr><td class="k">brand/web/ybma.css</td><td>The component library: logo, label, display, heading, body, proof, field, curved panels, crops, the cut, stem, rule, buttons, links, bars, division, endorsement, nav, product status.</td></tr>
+          <tr><td class="k">brand/web/components.html</td><td>Living demo of every component.</td></tr>
+          <tr><td class="k">logo/master/ybma-logo.js</td><td>Renders the logo in code from the locked geometry.</td></tr>
+          <tr><td class="k">brand/web/WEB_FOUNDATION.md</td><td>Layout rules, responsive behaviour, navigation, accessibility.</td></tr>
+        </table>
+        <h3>Rules the site must keep</h3>
+        <div class="rule"><b>One round thing per view.</b><span>The hero photograph, a proof panel or the key bar — chosen, not accumulated.</span></div>
+        <div class="rule"><b>One field per view.</b><span>Sections alternate chalk and indigo; never two indigo sections adjacent; indigo and ink never meet.</span></div>
+        <div class="rule"><b>Hierarchy in order.</b><span>Label → headline → body → proof, left-aligned, ≤ 68ch.</span></div>
+        <div class="rule"><b>Buttons and links.</b><span>Ink buttons, one primary per view; underlined ink links; Indigo 60 focus rings. No coloured buttons.</span></div>
+        <div class="rule"><b>Motion.</b><span>A cut or a quarter-turn (320 ms, linear). No parallax, no scroll animation.</span></div>
+        <div class="rule"><b>Product controls</b><span>take the 4 px radius and the semantic status colours; brand surfaces never do.</span></div>
+      </div>
+      <div>
+        <h3>Grid and spacing</h3>
+        <p>12 columns · 24 px gutter · 32 px margin · 1240 px max; 6 columns below 900 px, 4 below 560 px. Spacing scale 4 · 8 · 12 · 16 · 24 · 32 · 48 · 64 · 96 · 128. Display type scales with <code>clamp(44px, 7vw, 96px)</code>; headline measure held by <code>max-width: 16ch</code>.</p>
+        <h3>Logo on the web</h3>
+        <p>Header: wordmark 22 px, ink on chalk. Footer: horizontal lockup 28 px or wordmark + descriptor. Favicon: symbol ink on transparent (16 / 32 / 48); app icon white on indigo (180 / 512). OpenGraph: symbol on indigo or a proof-style chalk card. The symbol replaces the wordmark in the bar only below 360 px.</p>
+        <h3>Typeface loading</h3>
+        <p>Söhne self-hosted as WOFF2 under the web licence, <code>font-display: swap</code>, the exact fallback stack from <code>tokens.css</code>. Nothing rendered in the fallback is final.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 19 PRODUCTION -->
+  <section id="s19">
+    <h2><b>19</b> Production specifications</h2>
+    <p class="lead">For the physical proof and for vendors. Derived from the locked geometry; a brief for the proof, not a substitute for it.</p>
+    <div class="two">
+      <div>
+        <h3>Colour on press</h3>
+        <table>
+          <tr><th>Colour</th><th>Specification</th></tr>
+          <tr><td class="k">YBMA Indigo</td><td>#1F2C6B · CMYK ref. C71 M59 Y0 K58 · <b>Pantone direction 2758 C — provisional until a physical swatch is signed.</b> Uncoated dulls and darkens: proof 2758 U and 2748 U side by side.</td></tr>
+          <tr><td class="k">Ink</td><td>Black (K100 / Pantone Black C) on single-colour jobs; rich black C60 M50 Y40 K100 in four-colour.</td></tr>
+          <tr><td class="k">Chalk</td><td>The stock — an uncoated warm white near #F5F4F0 — not a printed tint.</td></tr>
+          <tr><td class="k">Standard job</td><td><b>Two colours: Pantone 2758 + black.</b></td></tr>
+          <tr><td class="k">Reversed</td><td>Knocked out of the field; knockouts ≥ 0.35 mm; no white ink unless the substrate is dark.</td></tr>
+        </table>
+        <h3>Minimum physical sizes</h3>
+        <table>
+          <tr><th>Process</th><th>Wordmark (cap)</th><th>Symbol (side)</th><th>Sets the floor</th></tr>
+          <tr><td class="k">Print, positive</td><td>6 mm</td><td>5 mm</td><td>guideline floors; the tracking gap and the joint would print open well below</td></tr>
+          <tr><td class="k">Print, reversed</td><td>8 mm</td><td>6 mm</td><td>stroke as a knockout ≥ 0.35 mm</td></tr>
+          <tr><td class="k">Rubber stamp</td><td><b>8 mm</b></td><td><b>15 mm</b></td><td>the joint (9.2%) closes on a worn die below 12 mm</td></tr>
+          <tr><td class="k">Embroidery</td><td><b>15 mm</b></td><td><b>25 mm</b></td><td>the joint must hold ≥ 1 mm after fill pull; below 20 mm it fills in</td></tr>
+          <tr><td class="k">Cut vinyl / acrylic</td><td>20 mm</td><td>25 mm</td><td>stroke ≥ 3 mm as a cut piece; the joint ≥ 2 mm as a weed line</td></tr>
+          <tr><td class="k">Signage read</td><td>150 mm at 20 m · 40 mm at 3 m</td><td>200 mm door · 60 mm plate</td><td></td></tr>
+        </table>
+      </div>
+      <div>
+        <h3>Result of the desk test</h3>
+        <p><strong>No mark fails at its guideline minimum in print.</strong> The symbol's joint is the tightest feature in the identity and sets the physical floors for stamp (15 mm) and embroidery (25 mm); the wordmark is more forgiving in every process. Nothing here calls for a change to the geometry. The rule where a mark would fail is <em>size, or the other mark</em> — never a thinner joint or a wider gap.</p>
+        <h3>Process notes</h3>
+        <ul>
+          <li><strong>Embroidery.</strong> Satin for the wordmark up to ~8 mm stroke, fill above. Symbol: fill both stones with the stitch direction along the joint; 0.2 mm pull compensation; sample on the actual fabric. Thread matched to the signed swatch.</li>
+          <li><strong>Stamp.</strong> Deep-etch photopolymer from the vector PDF. Wordmark 8–12 mm; symbol 15–20 mm; black or indigo, never both.</li>
+          <li><strong>Signage.</strong> Flat-cut, no bevel; indigo fascia with white wordmark, ink door panel with white symbol; face-lit only if illuminated — no halo, no backlit indigo.</li>
+          <li><strong>Stationery.</strong> Uncoated warm white 120–135 gsm; cards 350 gsm with a solid indigo back; folders 300 gsm indigo flood with a white wordmark.</li>
+        </ul>
+        <h3>Bring to the proof</h3>
+        <p>Indigo swatches 2758 C / 2758 U / 2748 U · wordmark at 6, 8, 12, 20 mm · symbol at 5, 10, 15, 25 mm · one stamp each · an embroidered wordmark at 15 mm and symbol at 25 mm on the chosen fabric · a reversed wordmark at 8 mm on an indigo flood. Sign the swatch; record the Pantone in <code>brand/colour/COLOUR.md</code>. Vendors receive <strong>PDF masters</strong> from <code>identity/logo/</code>, never PNGs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 20 DOS AND DONTS -->
+  <section id="s20">
+    <h2><b>20</b> Do and don't</h2>
+    <p class="lead">The short version, for people who will never read the rest.</p>
+    <div class="two eq">
+      <div>
+        <h3>Do</h3>
+        <ul>
+          <li>Use the wordmark alone by default; the lockup where the symbol is being introduced; the symbol where the wordmark cannot go.</li>
+          <li>Keep the logo in one colour: ink, white, or indigo on light grounds.</li>
+          <li>Give it two strokes of clear space, and more when you can.</li>
+          <li>Set headlines in sentence case, tight; labels in caps, small.</li>
+          <li>Use one round element per composition — a photo, a panel, a bar — and keep the rest square.</li>
+          <li>Put the one thing that matters in a field, or make it the largest thing on the page.</li>
+          <li>Photograph people at work, close, in real light.</li>
+          <li>Name divisions with the descriptor; endorse acquired companies with the line.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Don't</h3>
+        <ul>
+          <li>Redraw, stretch, outline, shadow, gradient, rotate or recolour the logo.</li>
+          <li>Set YBMA in a typeface where it is the brand.</li>
+          <li>Use the Y alone, or any single letter, as a mark.</li>
+          <li>Add a gradient, a pattern, a division colour, or a second indigo element on one surface.</li>
+          <li>Use small corner radii or pills as "brand shapes"; round every corner of the UI.</li>
+          <li>Add an accent colour, or put indigo on ink.</li>
+          <li>Use flags, maps, kente, baobabs, sunsets, boardrooms, or people pointing at laptops.</li>
+          <li>Put the endorsement on YBMA's own materials, or a division's.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECORD -->
+  <section id="rec">
+    <h2><b>·</b> Record — why there is no accent colour</h2>
+    <p class="lead">Kept from v0.2 so the reasoning survives the decision.</p>
+    <div class="two eq">
+      <div><p>An accent is the easiest way to make a surface look energetic and the fastest way to look like every other young company. Withholding one forces the energy into what is YBMA's — the mark, the shape rule, the scale of the type, the photographs. In a category where everyone has a bright, three colours used with discipline is the rarer look. The only genuine job an accent did that nothing else could was <em>product state</em>, and that is solved by semantic UI colours outside the brand palette.</p></div>
+      <div><p><strong>The costs, on record:</strong> the instant read of "attention" is slower without a bright; feeds risk sameness unless the indigo–chalk–photograph cadence is kept; and a lazy three-colour application looks like a consultancy. The system depends on people using scale, fields and crops. That is a training cost, and this guideline is the training.</p></div>
+    </div>
+  </section>
+
+  
+<!-- DECISIONS -->
+  <section id="dec">
+    <h2><b>→</b> Locked · production files · what remains</h2>
+    <p class="lead">The identity is no longer being explored. It is prepared for use.</p>
+    <div class="dec">
+      <div>
+        <h3>A · Locked</h3>
+        <ul>
+          <li><strong>Wordmark</strong> — one arch, four letters; cap 100 · stroke 16 · radius 21 · tracking 12 · 315 × 100 · 1.2 crown overshoot · square terminals.</li>
+          <li><strong>Symbol</strong> — U3; 120 · entry 18 · 0.5625 · turn 86 · joint 11 · sheared band.</li>
+          <li><strong>Typeface</strong> — Söhne: Buch, Kräftig, Halbfett, Mono Buch; Breit Kräftig for one cover word.</li>
+          <li><strong>Colour</strong> — Indigo #1F2C6B · Ink #151412 · Chalk #F5F4F0. No accent.</li>
+          <li><strong>Logo family</strong> of five · clear space 32 / 24 · minimums 20 / 16 / 24 px · the lockup gap 0.4 cap · the descriptor rule · the endorsement rule.</li>
+          <li><strong>Visual language</strong> — one curved end, one square end; one round thing per composition; the field; the turn; stems.</li>
+          <li><strong>Strategic foundations</strong> — the Operator; Nigerian by authorship, global by standard; parent independent of YBMA Technology; plain speech; young + serious; professional + human; one identity across future businesses.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>B · Production files (in <code>identity/</code>)</h3>
+        <ul>
+          <li><strong>logo/master/</strong> ybma-logo.js (source of truth) · export.js</li>
+          <li><strong>logo/wordmark · symbol · lockups · reversed/</strong> — 60 files: SVG + PDF + PNG (3 sizes) × ink, indigo, white for wordmark, symbol, horizontal and stacked lockups. MANIFEST.txt.</li>
+          <li><strong>brand/colour/</strong> tokens.css · tokens.json · COLOUR.md</li>
+          <li><strong>brand/typography/</strong> TYPOGRAPHY.md</li>
+          <li><strong>brand/icons/</strong> 12 icons + sprite · ICONS.md</li>
+          <li><strong>brand/web/</strong> ybma.css · components.html · WEB_FOUNDATION.md</li>
+          <li><strong>guidelines/</strong> this guideline (HTML + Markdown) · PRODUCTION.md · stress-test.html</li>
+          <li><strong>templates/</strong> README — the template set, to be built</li>
+        </ul>
+      </div>
+      <div>
+        <h3>C · Remaining operational tasks</h3>
+        <ul>
+          <li>Buy and install the Söhne licences (desktop seats, web, later app); self-host WOFF2.</li>
+          <li>Physical proof: indigo swatch and Pantone sign-off; stamp; embroidery; reversed print — per §19. Record the Pantone in COLOUR.md.</li>
+          <li>Build the templates in the founders' tools (templates/README).</li>
+          <li>First documentary photo shoot — real clients at work.</li>
+          <li>Verbal identity: tone rules and boilerplate.</li>
+          <li>Fascia, door symbol, folders, workwear from the PDF masters.</li>
+        </ul>
+      </div>
+    </div>
+    
+<div class="final">
+      <div>
+        <div class="big">Next: the YBMA parent website — an implementation of this system, not an extension of it.</div>
+        <div class="small">Everything the website needs is in <code>identity/brand/</code>: tokens, components, layout rules, logo rendering. The website phase designs pages and writes copy; it does not design identity.</div>
+      </div>
+      <div class="status">Next: YBMA parent website</div>
+    </div>
+    <h3>F · Next phase</h3>
+    <ol class="next">
+      <li><strong>YBMA parent website</strong> — built on brand/web; pages, copy and photography, no new visual language.</li>
+      <li>YBMA Technology website and product UI kit (4 px controls, status colours, icon set) on the same foundation.</li>
+      <li>Launch sequence: site → social → documents → signage; the acquisition-endorsement template ready before the first acquisition.</li>
+    </ol>
+  </section>
+  <footer>YBMA LTD · Brand guideline v1.0 · Session 27 · 14 September 2026 · Set in Söhne (Helvetica Neue where Söhne is not installed). Logo geometry: identity/ybma-logo.js. Nothing in this document adds to the recorded research.</footer>
+</div>
+
+<script src="../logo/master/ybma-logo.js"></script>
+<script>
+(function () {
+  const $ = id => document.getElementById(id);
+  const f = n => (Math.round(n * 100) / 100).toString();
+  const C = { ink:'#151412', chalk:'#F5F4F0', white:'#FFFFFF', indigo:'#1F2C6B', indigoB:'#3446A8', clay:'#E9DCCF', mist:'#E3E6F3', s700:'#4B4A46', s500:'#7A7873', s300:'#B8B6AF', s200:'#DAD8D2', s100:'#ECEAE5' };
+  const W = YBMA.wordmark();
+  const svg = (part, o) => YBMA.svgWrap(part, o);
+  const wm = (o = {}) => svg({ inner: YBMA.wordmarkSVG(o), width: W.width, height: 100 }, o);
+  const sym = (o = {}) => svg({ inner: YBMA.symbolSVG(o), width: 120, height: 120 }, o);
+  const lock = (o = {}) => svg(YBMA.lockupHorizontal(o), o);
+  const stack = (o = {}) => svg(YBMA.lockupStacked(o), o);
+  const div = (n, o = {}) => svg(YBMA.lockupDivision(n, o), o);
+  const endorse = (o = {}) => svg(YBMA.endorsement(o), o);
+
+  // 5 logo
+  $('p-logo').innerHTML = lock({ w: 980, pad: 10 });
+  $('p-sym-big').innerHTML = sym({ w: 220 });
+  // 6 construction
+  (function () {
+    const dim = (x1, y1, x2, y2, label, lx, ly, a = 'middle') => `<line class="d" x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}"/><text x="${lx}" y="${ly}" text-anchor="${a}">${label}</text>`;
+    const tick = (x, y, dx, dy) => `<line class="d" x1="${x - dx}" y1="${y - dy}" x2="${x + dx}" y2="${y + dy}"/>`;
+    let g = YBMA.wordmarkSVG({ fill: C.ink });
+    g += `<line class="h" x1="-20" y1="0" x2="335" y2="0"/><line class="h" x1="-20" y1="100" x2="335" y2="100"/>`;
+    g += dim(-14, 0, -14, 100, 'cap 100', -18, 54, 'end') + tick(-14, 0, 3, 0) + tick(-14, 100, 3, 0);
+    g += dim(21, 112, 37, 112, 'stroke 16', 29, 121) + tick(21, 112, 0, 3) + tick(37, 112, 0, 3);
+    g += dim(58, 112, 70, 112, 'tr 12', 64, 121) + tick(58, 112, 0, 3) + tick(70, 112, 0, 3);
+    g += `<circle class="d" cx="174" cy="29" r="21"/><line class="h" x1="174" y1="29" x2="195" y2="29"/><text x="176" y="27" text-anchor="start">r 21</text>`;
+    g += `<circle class="d" cx="174" cy="29" r="29"/><text x="204" y="6" text-anchor="start">29 outer · 13 inner</text>`;
+    g += dim(145, -14, 245, -14, 'M 100', 195, -18) + tick(145, -14, 0, 3) + tick(245, -14, 0, 3);
+    g += dim(0, -14, 58, -14, 'Y 58', 29, -18) + tick(0, -14, 0, 3) + tick(58, -14, 0, 3);
+    g += dim(70, -14, 133, -14, 'B 63', 101, -18) + tick(70, -14, 0, 3) + tick(133, -14, 0, 3);
+    g += dim(257, -14, 315, -14, 'A 58', 286, -18) + tick(257, -14, 0, 3) + tick(315, -14, 0, 3);
+    g += dim(329, 58, 329, 74, 'bar', 333, 69, 'start') + tick(329, 58, 3, 0) + tick(329, 74, 3, 0);
+    g += dim(329, 0, 329, 24, 'cup 24', 333, 15, 'start');
+    g += `<text x="0" y="132" text-anchor="start">crowns of M and A overshoot the cap by 1.2 · every terminal square · total 315 × 100</text>`;
+    $('p-dim-wm').innerHTML = `<svg class="dimsvg" viewBox="-40 -30 400 175" width="560" height="${f(560 * 175 / 400)}">${g}</svg>`;
+    const s = YBMA.symbol(), S = 120, p = YBMA.SYM, jh = p.joint / (1 / Math.sqrt(1 + p.tan * p.tan));
+    let h = YBMA.symbolSVG({ fill: C.ink });
+    h += dim(0, -14, p.entry, -14, 'entry 18', p.entry / 2, -18) + tick(0, -14, 0, 3) + tick(p.entry, -14, 0, 3);
+    h += dim(S + 14, 0, S + 14, p.turn, 'turn 86', S + 18, p.turn / 2 + 3, 'start') + tick(S + 14, 0, 3, 0) + tick(S + 14, p.turn, 3, 0);
+    h += dim(S + 14, p.turn, S + 14, s.bandTop, 'joint 11', S + 18, s.bandTop - 1, 'start') + tick(S + 14, s.bandTop, 3, 0);
+    h += dim(S + 14, s.bandTop, S + 14, S, 'band 23', S + 18, S - 6, 'start') + tick(S + 14, S, 3, 0);
+    h += dim(S - s.shearX, S + 14, S, S + 14, 'shear 12.9', S - s.shearX / 2, S + 24) + tick(S - s.shearX, S + 14, 0, 3) + tick(S, S + 14, 0, 3);
+    h += dim(-14, 0, -14, S, 'side 120', -18, S / 2 + 3, 'end') + tick(-14, 0, 3, 0) + tick(-14, S, 3, 0);
+    h += `<line class="h" x1="${p.entry}" y1="-26" x2="${p.entry}" y2="0"/><line class="h" x1="${p.entry}" y1="0" x2="${f(p.entry - 0.5625 * 26)}" y2="-26"/><text x="${p.entry + 4}" y="-27" text-anchor="start">descent dx/dy 0.5625</text>`;
+    $('p-dim-sym').innerHTML = `<svg class="dimsvg" viewBox="-44 -44 210 200" width="300" height="${f(300 * 200 / 210)}">${h}</svg>`;
+  })();
+  // 7 variations
+  $('v-wordmark').innerHTML = wm({ w: 420 }); $('v-lockup').innerHTML = lock({ w: 480 }); $('v-symbol').innerHTML = sym({ w: 150 });
+  $('v-stacked').innerHTML = stack({ w: 260 }); $('v-rev').innerHTML = lock({ w: 480, fill: '#fff' }); $('v-indigo').innerHTML = lock({ w: 480, fill: '#fff' });
+  $('v-onchalk').innerHTML = wm({ w: 260 }); $('v-indigo-on-white').innerHTML = wm({ w: 260, fill: C.indigo }); $('v-onink').innerHTML = wm({ w: 260, fill: '#fff' });
+  // 8 clear space
+  (function () {
+    const X = YBMA.CLEAR.wordmark, L = YBMA.lockupHorizontal();
+    const box = `<rect x="${-X}" y="${-X}" width="${L.width + 2 * X}" height="${100 + 2 * X}" fill="none" stroke="${C.indigoB}" stroke-width="1" stroke-dasharray="4 3"/>` +
+      `<rect x="${-X}" y="${-X}" width="${X}" height="${X}" fill="${C.mist}"/><rect x="${L.width}" y="100" width="${X}" height="${X}" fill="${C.mist}"/>` +
+      `<text x="${-X / 2}" y="${-X / 2 + 4}" text-anchor="middle" font-family="Söhne, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11" fill="${C.indigoB}" font-weight="500">X</text><text x="${L.width + X / 2}" y="${100 + X / 2 + 4}" text-anchor="middle" font-family="Söhne, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11" fill="${C.indigoB}" font-weight="500">X</text>`;
+    $('cs-wm').innerHTML = `<svg viewBox="${-X - 6} ${-X - 6} ${L.width + 2 * X + 12} ${100 + 2 * X + 12}" width="520"><g fill="${C.ink}">${L.inner}</g>${box}</svg>`;
+    const Y = YBMA.CLEAR.symbol;
+    const b2 = `<rect x="${-Y}" y="${-Y}" width="${120 + 2 * Y}" height="${120 + 2 * Y}" fill="none" stroke="${C.indigoB}" stroke-width="1" stroke-dasharray="4 3"/><rect x="${-Y}" y="${-Y}" width="${Y}" height="${Y}" fill="${C.mist}"/><text x="${-Y / 2}" y="${-Y / 2 + 4}" text-anchor="middle" font-family="Söhne, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="10" fill="${C.indigoB}" font-weight="500">X</text>`;
+    $('cs-sym').innerHTML = `<svg viewBox="${-Y - 6} ${-Y - 6} ${120 + 2 * Y + 12} ${120 + 2 * Y + 12}" width="200">${YBMA.symbolSVG({ fill: C.ink })}${b2}</svg>`;
+  })();
+  // 9 sizes
+  $('ml-wm').innerHTML = [60, 40, 28, 20, 14].map(h => `<div>${wm({ h })}<span>${h} px</span></div>`).join('');
+  $('ml-sym').innerHTML = [64, 32, 24, 16].map(h => `<div>${sym({ h })}<span>${h} px</span></div>`).join('');
+  // don'ts
+  (function () {
+    const base = YBMA.wordmarkSVG({ fill: C.ink });
+    const items = [
+      [`<svg viewBox="-10 -10 335 120" width="160" height="60" preserveAspectRatio="none"><g fill="${C.ink}">${YBMA.wordmarkSVG()}</g></svg>`, 'Stretched or squashed.'],
+      [`<svg viewBox="-10 -10 335 120" width="180"><g stroke="${C.ink}" stroke-width="4" fill="none">${YBMA.wordmarkSVG({ fill: 'none' })}</g></svg>`, 'Outlined.'],
+      [`<svg viewBox="-10 -10 335 120" width="180"><defs><linearGradient id="gr"><stop offset="0" stop-color="${C.indigoB}"/><stop offset="1" stop-color="#8FA0E8"/></linearGradient></defs><g fill="url(#gr)">${YBMA.wordmarkSVG({ fill: 'url(#gr)' })}</g></svg>`, 'Gradient, or two colours.'],
+      [`<svg viewBox="-10 -10 335 120" width="180" style="filter:drop-shadow(3px 4px 3px rgba(0,0,0,.45))">${base}</svg>`, 'Drop shadow or effects.'],
+      [`<svg viewBox="-10 -10 335 120" width="180"><g transform="rotate(-8 157 50)">${base}</g></svg>`, 'Rotated.'],
+      [`<div style="font-family:var(--sans);font-weight:700;font-size:40px;letter-spacing:-.02em">YBMA</div>`, 'Set in a typeface.'],
+      [`<svg viewBox="-10 -10 335 120" width="180"><g fill="${C.ink}"><path transform="translate(0,0)" d="${YBMA.LETTERS.Y.d}"/></g></svg>`, 'The Y, or any letter, alone.'],
+      [`<svg viewBox="-10 -10 335 120" width="180"><g fill="${C.ink}">${YBMA.wordmarkSVG()}</g><text x="5" y="122" font-family="Söhne, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" font-weight="500" letter-spacing="3" fill="${C.indigoB}">TECHNOLOGY</text></svg>`, 'Descriptor in another colour, or inside the clear space.'],
+    ];
+    $('dont').innerHTML = items.map(([x, t]) => `<div><div class="x">${x}</div><p><b>Don't.</b> ${t}</p></div>`).join('');
+  })();
+  // 10 colour
+  (function () {
+    const hex2rgb = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16));
+    const lum = h => { const [r, g, b] = hex2rgb(h).map(v => { v /= 255; return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); }); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
+    const ratio = (a, b) => { const l1 = lum(a), l2 = lum(b); return (Math.max(l1, l2) + 0.05) / (Math.min(l1, l2) + 0.05); };
+    const cmyk = h => { const [r, g, b] = hex2rgb(h).map(v => v / 255); const k = 1 - Math.max(r, g, b); if (k === 1) return 'C0 M0 Y0 K100'; const c = (1 - r - k) / (1 - k), m = (1 - g - k) / (1 - k), y = (1 - b - k) / (1 - k); return `C${Math.round(c * 100)} M${Math.round(m * 100)} Y${Math.round(y * 100)} K${Math.round(k * 100)}`; };
+    const P = [
+      ['YBMA Indigo', C.indigo, 'Primary. A full field, or the one emphasised element on chalk. The colour YBMA owns.'],
+      ['Ink', C.ink, 'Text and logo on light grounds. Warm near-black, never pure #000 in print (use rich black C60 M50 Y40 K100).'],
+      ['Chalk', C.chalk, 'Paper and page ground. The default light surface for print and marketing.'],
+      ['White', C.white, 'Digital surfaces, product UI, photography plates.'],
+      ['Indigo 60', C.indigoB, 'Product UI only: focus rings, selected states, hover on links. Not a marketing colour.'],
+      ['Mist', C.mist, 'Quiet indigo tint for background panels and table stripes.'],
+      ['Clay', C.clay, 'Quiet warm tint, print only, for a secondary page ground. Never darker than this — it must not become terracotta.'],
+      ['Grey 700', C.s700, 'Secondary text on light grounds.'], ['Grey 500', C.s500, 'Captions, metadata.'], ['Grey 300', C.s300, 'Disabled states, tertiary rules.'], ['Grey 200', C.s200, 'Borders and rules.'], ['Grey 100', C.s100, 'UI surfaces, code blocks.'],
+    ];
+    $('swatches').innerHTML = P.map(([n, h, use]) => { const [r, g, b] = hex2rgb(h); return `<div class="swatch"><div class="c" style="background:${h};${lum(h) > .8 ? 'border-bottom:1px solid var(--s200)' : ''}"></div><div class="t"><b>${n}</b><code>${h} · RGB ${r} ${g} ${b}<br>${cmyk(h)}</code><br>${use}</div></div>`; }).join('');
+    const grounds = [['White', C.white], ['Chalk', C.chalk], ['Mist', C.mist], ['Clay', C.clay], ['Indigo', C.indigo], ['Ink', C.ink]];
+    const texts = [['Ink', C.ink], ['Grey 700', C.s700], ['Grey 500', C.s500], ['Indigo', C.indigo], ['Indigo 60', C.indigoB], ['Chalk', C.chalk], ['White', C.white]];
+    let t = '<tr><th>text ↓ · ground →</th>' + grounds.map(g => `<th>${g[0]}</th>`).join('') + '</tr>';
+    for (const [tn, th] of texts) { t += `<tr><td class="k" style="font-family:var(--sans)">${tn}</td>` + grounds.map(([gn, gh]) => { if (gh === th) return '<td>—</td>'; const r = ratio(th, gh); const cls = r >= 7 ? 'ok' : r >= 4.5 ? 'ok' : r >= 3 ? 'lg' : 'no'; const lab = r >= 7 ? 'AAA' : r >= 4.5 ? 'AA' : r >= 3 ? 'large' : 'no'; return `<td><span class="${cls}">${r.toFixed(1)}</span> <span style="color:var(--s500)">${lab}</span></td>`; }).join('') + '</tr>'; }
+    $('contrast').innerHTML = t;
+  })();
+  // 14 icons
+  (function () {
+    const st = `fill="none" stroke="${C.ink}" stroke-width="2" stroke-linejoin="round" stroke-linecap="butt"`;
+    const I = [
+      `<path d="M4 12h15M14 7l5 5-5 5"/>`,
+      `<path d="M5 12.5l4.5 4.5L19 7"/>`,
+      `<path d="M6 3h8l5 5v13H6zM14 3v5h5M9 13h7M9 17h7"/>`,
+      `<path d="M3 14V8a3 3 0 0 1 3-3h4M21 10v6a3 3 0 0 1-3 3h-4M10 5l3 3-3 3M14 19l-3-3 3-3"/>`,
+      `<path d="M4 21V9a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v12M4 21h16M9 21v-5h6v5M8 10h2M14 10h2M8 14h2M14 14h2"/>`,
+      `<path d="M12 21V11M12 11a5 5 0 0 1 5-5h3v1a5 5 0 0 1-5 5h-3M12 15a5 5 0 0 0-5-5H4v1a5 5 0 0 0 5 5h3"/>`,
+      `<path d="M4 20h16M6 20V11M11 20V6a2 2 0 0 1 4 0v14M18 20v-8"/>`,
+      `<path d="M8 7l-5 5 5 5M16 7l5 5-5 5M13 5l-2 14"/>`,
+    ];
+    $('icons').innerHTML = I.map(p => `<div><svg viewBox="0 0 24 24" ${st}>${p}</svg></div>`).join('');
+  })();
+  // 15 architecture
+  $('ar-parent').innerHTML = wm({ w: 240 }); $('ar-tech').innerHTML = div('Technology', { w: 240 }); $('ar-re').innerHTML = div('Real Estate', { w: 240 }); $('ar-fs').innerHTML = div('Financial Services', { w: 240 });
+  $('ar-rev').innerHTML = ['Technology', 'Real Estate', 'Agriculture', 'Financial Services'].map(n => div(n, { w: 190, fill: '#fff' })).join('');
+  // 16 endorsement
+  $('en-line').innerHTML = endorse({ w: 360 }); $('en-card').innerHTML = endorse({ h: 26 }); $('en-annc').innerHTML = endorse({ h: 24, fill: '#fff' });
+  // 17 applications
+  $('ap-card-f').innerHTML = `<div>${wm({ h: 26 })}</div><div class="who"><b>Assad Isah</b>Director<small>assad@ybma.ng · +234 800 000 0000<br>Kaduna · Lagos</small></div>`;
+  $('ap-sig').innerHTML = `<div>${sym({ h: 34 })}</div><div class="l"><b>Assad Isah</b>Director, YBMA Technology<br>+234 800 000 0000 · ybma.ng</div>`;
+  $('ap-cover').innerHTML = `<div class="meta">Proposal · Kobo Foods · September 2026</div><div class="title">A stock system you will still be using in 2031.</div><div>${wm({ h: 22, fill: '#fff' })}</div>`;
+  $('ap-profile').innerHTML = `<div class="ph warm" style="border-radius:0 0 999px 0">photo · founders on site, full bleed</div><div style="display:grid;grid-template-columns:1fr 1fr"><div style="padding:12% 10%;background:var(--indigo);color:#fff"><div style="font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.7);font-weight:500">Systems delivered · still in use</div><div style="font-size:44px;font-weight:500;letter-spacing:-.02em;line-height:1;font-variant-numeric:tabular-nums">31<span style="opacity:.5">/</span>31</div></div><div style="padding:12% 10%;font-size:9px;color:var(--s700);display:flex;align-items:center">Every system handed over with its code, its accounts and a support window with a date.</div></div>`;
+  $('ap-site').innerHTML = `<div class="bar">${wm({ h: 18 })}<nav><span>What we build</span><span>How we work</span><span>Companies</span></nav><span class="cta">Talk to us</span></div><div class="hero"><div class="t"><div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--s500);font-weight:500;margin-bottom:12px">YBMA</div><h5>Built to do more than it had to.</h5><p>We build systems and businesses properly, and stay responsible for how they run. <span style="text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:2px;color:var(--ink)">How we work</span></p></div><div class="ph warm img">photo · a warehouse count, mid-morning</div></div>`;
+  $('ap-post').innerHTML = `<div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.7);font-weight:500">Handover</div><div><h5>The client owns the code. From day one. In the contract.</h5></div><div>${wm({ h: 18, fill: '#fff' })}</div>`;
+  $('ap-post2').innerHTML = `<div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--s500);font-weight:500">Support window</div><div style="font-size:72px;font-weight:500;letter-spacing:-.03em;line-height:.95;font-variant-numeric:tabular-nums">180<div style="font-size:16px;letter-spacing:.1em;text-transform:uppercase;color:var(--s500);font-weight:500;margin-top:8px">days, with a date on it</div></div><div>${wm({ h: 18 })}</div>`;
+  $('ap-deck').innerHTML = `<div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.7);font-weight:500">Company overview · 2026</div><h5>Built to do more than it had to.</h5><div style="display:flex;justify-content:space-between;align-items:flex-end">${wm({ h: 20, fill: '#fff' })}<span style="font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.6);font-weight:500">01 / 24</span></div>`;
+  $('ap-deck2').innerHTML = `<div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--s500);font-weight:500">Proof</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:end"><div style="font-size:64px;font-weight:500;letter-spacing:-.03em;line-height:.95;font-variant-numeric:tabular-nums">2,400<div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--s500);font-weight:500;margin-top:8px">concurrent users, tested</div></div><div style="display:flex;gap:6px;align-items:flex-end;height:90px"><i style="flex:1;height:30%;background:var(--s200)"></i><i style="flex:1;height:45%;background:var(--s200)"></i><i style="flex:1;height:55%;background:var(--s300)"></i><i style="flex:1;height:100%;background:var(--indigo);border-radius:999px 999px 0 0"></i></div></div><div style="display:flex;justify-content:space-between;align-items:flex-end">${wm({ h: 18 })}<span style="font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--s500);font-weight:500">07 / 24</span></div>`;
+  $('ap-tech-site').innerHTML = `<div class="bar"><div style="display:flex;align-items:baseline;gap:12px">${wm({ h: 18 })}<span style="font-size:9px;letter-spacing:.14em;text-transform:uppercase;font-weight:500">Technology</span></div><span class="cta">Start a project</span></div><div class="hero" style="min-height:0"><div class="t" style="padding:24px 22px"><h5 style="font-size:24px">Systems that show you what is actually happening.</h5><p style="font-size:12.5px">Built for Nigerian conditions. Owned by you from day one.</p></div><div style="background:var(--indigo);color:#fff;padding:22px;display:flex;flex-direction:column;justify-content:flex-end"><div style="font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.7);font-weight:500">Handover</div><div style="font-size:34px;font-weight:500;letter-spacing:-.02em;line-height:1;font-variant-numeric:tabular-nums">14 days</div></div></div>`;
+  $('ap-ui').innerHTML = `<div class="top">${sym({ h: 16 })}<span>Kobo Foods · Operations</span><span style="margin-left:auto">Today</span></div><div class="body"><div class="nav"><i class="on"></i><i></i><i></i><i></i><i></i></div><div class="main"><div class="tile"><span>Sales today</span><b>₦412,300</b></div><div class="tile inv"><span>Stock below minimum</span><b>3 <em style="font-size:11px;font-style:normal;opacity:.7">items</em></b></div><div class="tile"><span>Cash in hand</span><b>₦88,150</b></div><div class="chart"><i style="height:35%"></i><i style="height:50%"></i><i style="height:42%"></i><i style="height:70%"></i><i style="height:62%"></i><i style="height:80%"></i><i class="on" style="height:95%"></i></div></div></div>`;
+  $('ap-sign').innerHTML = `${lock({ h: 70, fill: '#fff' })}<div style="margin-left:auto;padding:16px 20px;background:var(--ink)">${sym({ h: 44, fill: '#fff' })}</div>`;
+  $('ap-tee').innerHTML = `<svg viewBox="0 0 400 200"><path d="M60 30l25-10a15 15 0 0 0 30 0l25 10 20 30-22 12v100H62V72L40 60z" fill="${C.indigo}"/><g transform="translate(118,70) scale(.12)">${YBMA.symbolSVG({ fill: '#fff' })}</g><path d="M260 30l25-10a15 15 0 0 0 30 0l25 10 20 30-22 12v100H262V72l-22-12z" fill="${C.ink}"/><g transform="translate(255,110) scale(.28)">${YBMA.wordmarkSVG({ fill: C.chalk })}</g></svg>`;
+})();
+</script>

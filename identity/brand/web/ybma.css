@@ -1,0 +1,129 @@
+/* YBMA core component library · v1.0 · Session 27 (14 September 2026)
+   Consumes identity/brand/colour/tokens.css (import it first). The website is an implementation of
+   these components; it does not invent visual language.
+   Every component obeys: one curved end, one square end · one round thing per composition ·
+   emphasis by scale, field, curve, weight and photography — never by a hue. */
+
+@import url("../colour/tokens.css");
+
+/* ── base ─────────────────────────────────────────────────────────────── */
+.y-root, .y-root * { box-sizing: border-box; }
+.y-root { font: var(--ybma-body); color: var(--ybma-ink); background: var(--ybma-chalk); -webkit-font-smoothing: antialiased; }
+.y-root.y-root--white { background: var(--ybma-white); }
+.y-wrap { max-width: var(--ybma-max); margin: 0 auto; padding: 0 var(--ybma-margin); }
+.y-grid { display: grid; grid-template-columns: repeat(var(--ybma-columns), minmax(0, 1fr)); gap: var(--ybma-gutter); }
+@media (max-width: 900px) { .y-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .y-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--ybma-s4); } .y-wrap { padding: 0 var(--ybma-s4); } }
+/* span helpers: .y-c-1 … .y-c-12 */
+.y-c-1{grid-column:span 1}.y-c-2{grid-column:span 2}.y-c-3{grid-column:span 3}.y-c-4{grid-column:span 4}.y-c-5{grid-column:span 5}.y-c-6{grid-column:span 6}.y-c-7{grid-column:span 7}.y-c-8{grid-column:span 8}.y-c-9{grid-column:span 9}.y-c-10{grid-column:span 10}.y-c-11{grid-column:span 11}.y-c-12{grid-column:span 12}
+@media (max-width: 900px) { [class*="y-c-"] { grid-column: span 6; } }
+@media (max-width: 560px) { [class*="y-c-"] { grid-column: span 4; } }
+
+/* ── surfaces · chalk by default; indigo and ink are fields ───────────── */
+.y-on-indigo { background: var(--ybma-indigo); color: var(--ybma-white); }
+.y-on-ink { background: var(--ybma-ink); color: var(--ybma-chalk); }
+.y-on-indigo .y-label, .y-on-ink .y-label { color: rgba(255,255,255,.7); }
+.y-on-indigo .y-body, .y-on-ink .y-body { color: rgba(255,255,255,.85); }
+
+/* ── typography roles ─────────────────────────────────────────────────── */
+.y-label { font: var(--ybma-label); letter-spacing: var(--ybma-label-tracking); text-transform: uppercase; color: var(--ybma-grey-500); margin: 0 0 var(--ybma-s3); }
+.y-display { font: var(--ybma-display); letter-spacing: var(--ybma-display-tracking); margin: 0 0 var(--ybma-s5); max-width: 16ch; text-wrap: balance; }
+.y-h { font: var(--ybma-heading); letter-spacing: var(--ybma-heading-tracking); margin: 0 0 var(--ybma-s4); max-width: 24ch; text-wrap: balance; }
+.y-body { font: var(--ybma-body); color: var(--ybma-grey-700); max-width: var(--ybma-measure); margin: 0 0 var(--ybma-s4); }
+.y-body strong { color: var(--ybma-ink); font-weight: var(--ybma-w-halbfett); }
+.y-mono { font: var(--ybma-mono); background: var(--ybma-grey-100); padding: var(--ybma-s3) var(--ybma-s4); white-space: pre; }
+.y-cover-word { font-family: var(--ybma-font-wide); font-weight: var(--ybma-w-kraftig); font-size: clamp(64px, 14vw, 220px); line-height: .9; letter-spacing: -.02em; } /* one word, covers and fascias only */
+
+/* ── proof / data block · the identity's main emphasis device ─────────── */
+.y-proof { display: flex; flex-direction: column; gap: var(--ybma-s2); }
+.y-proof .y-proof__n { font: var(--ybma-data); font-size: clamp(40px, 6vw, 96px); letter-spacing: -.03em; font-variant-numeric: tabular-nums; line-height: .95; }
+.y-proof .y-proof__u { font: var(--ybma-label); letter-spacing: var(--ybma-label-tracking); text-transform: uppercase; color: var(--ybma-grey-500); }
+.y-on-indigo .y-proof__u, .y-on-ink .y-proof__u { color: rgba(255,255,255,.7); }
+
+/* ── the field · one inverted panel per surface ───────────────────────── */
+.y-field { background: var(--ybma-indigo); color: var(--ybma-white); padding: var(--ybma-s6); display: flex; flex-direction: column; justify-content: flex-end; min-height: 200px; }
+.y-field--ink { background: var(--ybma-ink); color: var(--ybma-chalk); }
+
+/* ── one-curved-end panels · a rectangle with one full semicircular end ─ */
+.y-panel { background: var(--ybma-white); border: 1px solid var(--ybma-grey-200); padding: var(--ybma-s5); }
+.y-curve--top    { border-radius: var(--ybma-radius-brand) var(--ybma-radius-brand) 0 0; }   /* the M, the A */
+.y-curve--right  { border-radius: 0 var(--ybma-radius-brand) var(--ybma-radius-brand) 0; }   /* the B */
+.y-curve--bottom { border-radius: 0 0 var(--ybma-radius-brand) var(--ybma-radius-brand); }   /* the Y */
+.y-curve--left   { border-radius: var(--ybma-radius-brand) 0 0 var(--ybma-radius-brand); }   /* turned */
+/* single-corner crops for photographs (a full-height quarter curve on one corner) */
+.y-crop--tl { border-radius: var(--ybma-radius-brand) 0 0 0; } .y-crop--tr { border-radius: 0 var(--ybma-radius-brand) 0 0; }
+.y-crop--br { border-radius: 0 0 var(--ybma-radius-brand) 0; } .y-crop--bl { border-radius: 0 0 0 var(--ybma-radius-brand); }
+/* never two round ends: .y-curve-- and .y-crop-- are mutually exclusive on one element */
+
+/* ── stems and rules · 2px, square-ended, ink ─────────────────────────── */
+.y-stem { border-left: var(--ybma-rule) solid currentColor; padding-left: var(--ybma-s4); }
+.y-rule { border: 0; border-top: var(--ybma-rule) solid var(--ybma-ink); margin: var(--ybma-s6) 0; }
+.y-rule--hair { border-top-width: 1px; border-color: var(--ybma-grey-200); }
+
+/* ── images ───────────────────────────────────────────────────────────── */
+.y-img { display: block; width: 100%; height: auto; object-fit: cover; }
+.y-img--mono { filter: grayscale(1) contrast(1.05); background: var(--ybma-indigo); mix-blend-mode: luminosity; } /* wrap in .y-on-indigo for the indigo monotone */
+.y-cut { display: grid; grid-template-columns: 3fr 2fr; }  /* the cut: square photo beside a field */
+.y-cut > .y-field { min-height: 0; }
+@media (max-width: 560px) { .y-cut { grid-template-columns: 1fr; } }
+
+/* ── buttons · ink on light, chalk on dark; square; no colour ─────────── */
+.y-btn { display: inline-flex; align-items: center; gap: var(--ybma-s2); font: var(--ybma-label); font-size: 13px; letter-spacing: .04em; text-transform: none; background: var(--ybma-ink); color: var(--ybma-chalk); padding: 12px 18px; border: 2px solid var(--ybma-ink); text-decoration: none; cursor: pointer; border-radius: 0; }
+.y-btn:hover { background: var(--ybma-indigo); border-color: var(--ybma-indigo); color: var(--ybma-white); }
+.y-btn:focus-visible { outline: 2px solid var(--ybma-indigo-60); outline-offset: 2px; }
+.y-btn--ghost { background: transparent; color: var(--ybma-ink); }
+.y-btn--ghost:hover { background: var(--ybma-ink); color: var(--ybma-chalk); border-color: var(--ybma-ink); }
+.y-on-indigo .y-btn, .y-on-ink .y-btn { background: var(--ybma-chalk); color: var(--ybma-ink); border-color: var(--ybma-chalk); }
+.y-on-indigo .y-btn:hover, .y-on-ink .y-btn:hover { background: var(--ybma-white); border-color: var(--ybma-white); }
+.y-on-indigo .y-btn--ghost, .y-on-ink .y-btn--ghost { background: transparent; color: var(--ybma-white); border-color: rgba(255,255,255,.6); }
+
+/* ── links · underlined ink; hover indigo ─────────────────────────────── */
+.y-link { color: var(--ybma-ink); text-decoration: underline; text-decoration-thickness: var(--ybma-rule); text-underline-offset: 4px; font-weight: var(--ybma-w-kraftig); }
+.y-link:hover { color: var(--ybma-indigo); }
+.y-on-indigo .y-link, .y-on-ink .y-link { color: var(--ybma-white); }
+.y-link:focus-visible { outline: 2px solid var(--ybma-indigo-60); outline-offset: 2px; }
+
+/* ── charts · context bars grey and square; the key bar indigo with the round end ── */
+.y-bars { display: flex; align-items: flex-end; gap: var(--ybma-s2); height: 160px; }
+.y-bars > i { display: block; flex: 1; background: var(--ybma-grey-200); }
+.y-bars > i.is-context { background: var(--ybma-grey-300); }
+.y-bars > i.is-key { background: var(--ybma-indigo); border-radius: var(--ybma-radius-brand) var(--ybma-radius-brand) 0 0; }
+.y-bars > i.is-second { background: var(--ybma-ink); }   /* a second series, if there must be one */
+.y-on-indigo .y-bars > i { background: rgba(255,255,255,.28); } .y-on-indigo .y-bars > i.is-key { background: var(--ybma-white); }
+.y-bars--h { flex-direction: column; align-items: stretch; height: auto; }
+.y-bars--h > i { height: 14px; flex: none; } .y-bars--h > i.is-key { border-radius: 0 var(--ybma-radius-brand) var(--ybma-radius-brand) 0; }
+
+/* ── logo · rendered from identity/logo/master/ybma-logo.js, or the SVG files ── */
+.y-logo { display: inline-block; line-height: 0; }
+.y-logo svg { display: block; height: 1em; width: auto; }           /* size with font-size; min 20px wordmark, 16px symbol */
+.y-logo--symbol svg { height: 1em; }
+.y-logo-clear { padding: .32em; }                                     /* wordmark clear space (× cap) */
+.y-logo-clear--symbol { padding: .2em; }
+
+/* ── division descriptor · label below, left-aligned to the Y ─────────── */
+.y-division { display: inline-flex; flex-direction: column; align-items: flex-start; gap: .24em; font-size: 100px; } /* font-size = cap height */
+.y-division .y-logo svg { height: 1em; }
+.y-division__name { font-family: var(--ybma-font); font-weight: var(--ybma-w-kraftig); font-size: .22em; line-height: 1; letter-spacing: .14em; text-transform: uppercase; }
+.y-division--inline { flex-direction: row; align-items: baseline; gap: .4em; }
+
+/* ── endorsement · A YBMA COMPANY ─────────────────────────────────────── */
+.y-endorse { display: inline-flex; align-items: flex-end; gap: .9em; font-size: 12px; line-height: 1; }
+.y-endorse .y-logo svg { height: 1.9em; }
+.y-endorse__text { font-family: var(--ybma-font); font-weight: var(--ybma-w-kraftig); letter-spacing: .16em; text-transform: uppercase; padding-bottom: .1em; }
+
+/* ── navigation · a bar, the wordmark, plain links, one ink button ─────── */
+.y-nav { display: flex; align-items: center; justify-content: space-between; gap: var(--ybma-s5); padding: var(--ybma-s4) 0; border-bottom: 1px solid var(--ybma-grey-200); }
+.y-nav__links { display: flex; gap: var(--ybma-s5); font-weight: var(--ybma-w-kraftig); font-size: 15px; }
+.y-nav__links a { color: var(--ybma-grey-700); text-decoration: none; } .y-nav__links a:hover, .y-nav__links a[aria-current] { color: var(--ybma-ink); text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 2px; }
+.y-nav .y-logo svg { height: 22px; }
+@media (max-width: 900px) { .y-nav__links { display: none; } }
+
+/* ── status (product only) ────────────────────────────────────────────── */
+.y-status { display: inline-flex; align-items: center; gap: 6px; font: var(--ybma-label); letter-spacing: .06em; text-transform: uppercase; }
+.y-status::before { content: ""; width: 8px; height: 8px; background: currentColor; }
+.y-status--ok { color: var(--ybma-status-ok); } .y-status--warn { color: var(--ybma-status-warn); } .y-status--error { color: var(--ybma-status-error); } .y-status--info { color: var(--ybma-status-info); }
+.y-ui { border-radius: var(--ybma-radius-ui); }   /* product controls take the 4px radius, never the brand curve */
+
+/* ── motion · a cut or a quarter-turn ─────────────────────────────────── */
+.y-turn { transition: transform var(--ybma-turn) var(--ybma-ease); } .y-turn.is-turned { transform: rotate(90deg); }
+@media (prefers-reduced-motion: reduce) { .y-turn { transition: none; } }
