@@ -54,9 +54,10 @@ function copyAssets() {
 }
 
 // ── pages ─────────────────────────────────────────────────────────────────
-const pages = ['home', 'company', 'technology', 'contact', 'privacy', 'terms'].map(name => require(`./src/pages/${name}`)(ctx));
+const pages = ['home', 'company', 'technology', 'contact', 'privacy', 'terms', 'notfound'].map(name => require(`./src/pages/${name}`)(ctx));
 
 function outPath(route) {
+  if (route === '/404.html') return path.join(OUT, '404.html');
   return route === '/' ? path.join(OUT, 'index.html') : path.join(OUT, route.replace(/^\/|\/$/g, ''), 'index.html');
 }
 
