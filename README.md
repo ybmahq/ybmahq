@@ -1,4 +1,4 @@
-# YBMA — Brand Development
+# YBMA — Brand Development.
 
 Working repository for the YBMA LTD brand development project.
 
