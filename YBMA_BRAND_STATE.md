@@ -4,7 +4,7 @@
 > Read this file completely before doing any branding work in a new session.
 > Nothing in this file is CONFIRMED unless the founders explicitly agreed to it.
 
-Last updated: 2026-09-13 (Session 18)
+Last updated: 2026-09-14 (Session 24)
 
 **Standing rule:** every deliverable ships as a Markdown file in this workspace (decision D3).
 Status tags are written inline so they survive copy-paste into other tools.
@@ -28,6 +28,283 @@ presented; the founders decide. Recommendations are never recorded as decisions.
 ---
 
 ## Current Stage
+
+**WORDMARK REPLACED AT FOUNDER DECISION · TURNED + U3 · READY WITH TWO CONDITIONS**
+
+Status: **Iteration 24 complete. Immediately after the Session 23 lock recommendation the founders
+replaced the CUT wordmark with TURNED (Session 20 D3), no tail, and pointed at the Session 20
+artifact: "it should match exactly." The artifact is public; its drawing engine and TURN config were
+recovered and ported verbatim. U3 unchanged. Built to the same finish as Session 23 and assessed on the same
+terms. Verdict on record: ready to move into identity-system development, on two conditions.**
+
+**Visual:** https://claude.ai/code/artifact/0e934184-f4f1-45e5-b805-dc9df7594739
+**Written:** `YBMA_STRATEGY_ITERATION_24.md`
+**Geometry:** `identity/ybma-geometry.js` (`wordmarkTurned`) · `identity/YBMA_wordmark_turned.svg` ·
+`identity/YBMA_lockup_primary_turned.svg` · U3 files unchanged
+
+> ### THE WORDMARK: **Session 20's TURN drawing, unaltered** — monoline, cap 100 · stem 17 · Y 74/fork
+> 56 · B 65 elliptical · M 88/vertex 90 · A 74 with a **flat apex of exactly one stem width (17)** and
+> bar 66 · tracking 10 · **331 × 100.** The "turn" is a rhyme of silhouettes (the Y's stem ↔ the A's
+> apex), **not a rotated letter.**
+> ### U3: **drawing unchanged.** Its joint now shares the Y/A angle and the shear with the wordmark —
+> no longer "the tail's path."
+
+**ON RECORD — this reopens a Session 20 exclusion** (rotational/ambigram constructions). The
+founders' decision; their eye has overturned recommendations before. The objection was **tested by
+drawing: a literal rotation produces a lambda — YBMΛ.** Session 20 never rotated the letter; it cut
+the A's apex to the stem width. **Condition 1 of the lock: the A stays Session 20's A.**
+
+**WHAT THE TAIL TOOK WITH IT:** the layout axis, the intrinsic motion (the line writing the name),
+and the division grammar (names sitting on the line). **Structure now comes from U3 and typography.
+Condition 2 of the lock:** the tail's devices are retired and must not be reintroduced piecemeal.
+
+**LOCKUP:** symbol at cap height, 0.4 cap from the wordmark — symbol and wordmark share top and bottom
+edges exactly. Secondary: symbol above, centred. **MOTION: none in the mark** — a rotation animation
+would show a form that is not the A; refused. Reveal by four cuts only. **ENDORSEMENT:** U3 · A YBMA COMPANY unchanged; divisions set
+typographically (sufficient, not distinctive).
+
+**ASSESSMENT:** *excellent* — the drawing is settled and recovered exactly; the closed silhouette; the
+331 × 100 footprint; U3. *Merely good* — distinctiveness ("looks normal, then doesn't"; most readers
+stop at normal, so **distinctiveness now rests on U3 more than the wordmark**); wordmark↔U3 is a
+resemblance (U3's 0.5625 ≈ the Y's 0.66), not a derivation. The optical pass must not touch apex,
+stem or tracking. *Merely good* — the idea's visibility
+(a reader sees an unusual A before a turned Y), the wordmark–symbol relationship (angle + shear
+only), the division grammar. *Unresolved* — nothing structural beyond the two conditions; physical
+proof outstanding; colour untested. **Session 23's assessment of Cut is not withdrawn; it is the
+record of the alternative.**
+
+**Minimum sizes:** wordmark 20 px / 6 mm · symbol 16 px / 5 mm.
+
+**Geometry:** `identity/ybma-geometry.js` (`S20` block + `wordmarkTurned`) · `identity/YBMA_wordmark_turned.svg`
+· `identity/YBMA_lockup_primary_turned.svg`.
+
+**DECISION NEEDED (founders):** confirm the lock on Turned + U3 with its two conditions. **No further
+logo rounds.**
+
+*(Session 23 status retained below.)*
+
+**CUT + U3 REFINED · RECOMMENDED FOR LOCK · NEXT: IDENTITY-SYSTEM DEVELOPMENT** `[SUPERSEDED S24 — founder decision]`
+
+Status: **Iteration 23 complete. Founders approved U3 as the avatar direction and closed exploration.
+Final creative-director refinement of CUT + U3. Three measurements moved, nothing else touched.
+Verdict on record: the logo direction is ready to move into identity-system development.**
+
+**Visual:** https://claude.ai/code/artifact/35dab470-4f1c-426a-abc3-0ccbeac8fb24
+**Written:** `YBMA_STRATEGY_ITERATION_23.md`
+**Geometry:** `identity/ybma-geometry.js` + three reference SVGs *(construction geometry, not
+production artwork)*
+
+> ### CHANGED: tail overrun **75 (¾ cap)** · M–A fitting **12 → 15** · U3 joint entry **12 → 18**.
+> ### LOCKED WITHOUT CHANGE: letterforms · stem 15 · flare · fork at half cap · gap 15 (one stroke) ·
+> drop 30 (two strokes) · square corner · sheared terminal · tail on the Y · U3 joint 11 · turn 86 ·
+> full-band shear · black and white.
+
+**Geometry note:** the S20–22 drawings could not be reopened, so both marks were rebuilt as parametric
+geometry from the recorded spec (cap 100 · stem 15 · dx/dy 0.5625 · U3 on 120). Every variant this
+round is the same file with one number changed — **decisions are measurements, not impressions.**
+
+**WHY ENTRY 18 (the one U3 change that matters):** at 12 the lower stone starts as a sliver that
+vanishes below 32 px, the joint appears to start at the corner, and **the mark reads as a black
+square with a white L cut into it** — the reading the two-mass construction existed to escape. At 18
+the two-stone reading holds to 24 px; at 24+ it drifts back to the generic split square.
+
+**LOCKUP SETTLED — by one finding: the two share the line, so they must not share the line's axis.**
+Primary lockup = symbol at cap height standing on the baseline, 0.4 cap from the wordmark. Secondary
+= symbol above, left edge on the Y's stem. Rejected: full-height (band lands 10 units off the line —
+a near miss) · symbol on the tail's axis (the line gets two origins). **Rule of use revised from S22:**
+wordmark alone is the default; the lockup is for where the symbol must be introduced beside the name.
+
+**MOTION — drawn and working:** the Y stands, the stem drops, turns, travels right at constant speed,
+B/M/A arrive as the leading edge passes, the line stops on the shear. 1.1 s, no return. The symbol
+does not animate. **Complete; needs no further exploration.**
+
+**ENDORSEMENT — structural check passed:** *the line carries what YBMA builds* (division name sits
+on the tail; line still ends ¾ cap past the last thing it carries) · *the symbol endorses what YBMA
+acquires* (U3 · A YBMA COMPANY; the wordmark is never used in the endorsement line). Subsidiary
+architecture not designed (stage 8).
+
+**HONEST ASSESSMENT:** *excellent* — the tail as an idea, the module, U3's outline, the relationship.
+*Merely good* — the letterforms as drawn (construction geometry; a type designer's optical pass is
+the first job of the next phase), the lockup (correct, adds nothing), U3 at poster scale in flat
+vector. *Unresolved* — nothing structural; one printed/stitched/stamped proof still outstanding
+(S18 instruction); colour untested by design.
+
+**Minimum sizes on record:** wordmark 24 px / 8 mm · symbol 16 px / 5 mm.
+
+**DECISION NEEDED (founders):** confirm the lock. If confirmed, the next work is the 15-step
+identity-system list in the founders' Session 23 brief, starting with final vector geometry and a
+type designer's brief. **No further logo rounds.**
+
+*(Session 22 status retained below.)*
+
+**SYMBOL FOUND · THE Y AVATAR RETIRED · "TWO STONES, ONE JOINT" RECOMMENDED**
+
+Status: **Iteration 22 complete. Founders rejected the Y avatar outright: no single letter, and
+nothing that looks like one. The symbol must be either a subtle union or letter-agnostic. About
+forty-five constructions drawn across four rounds. Three families closed. One symbol recommended.**
+
+**Visual:** https://claude.ai/code/artifact/4f2ac2bf-702f-41c9-b0b0-a146e1919ae5
+**Written:** `YBMA_STRATEGY_ITERATION_22.md`
+
+> ### RECOMMENDED SYMBOL — U3 "SHEARED": **two solid stones fitted into one square**, joined along the
+> tail's own path — **descending on the Y's arm angle, turning square, exiting the edge** — with the
+> lower stone's corner **sheared exactly like the wordmark's tail terminal.** No letter anywhere.
+
+**WHY IT IS A UNION:** two separate masses made one, joined by the line YBMA draws under everything
+it owns — the literal structure of an operator bringing businesses under one roof. **It is the first
+small asset in the project drawn *from* the system rather than cropped *out of* it.**
+
+**THREE FAMILIES CLOSED, each for a reusable reason:**
+1. **Letter unions collapse back into a letter** — the notched stone read **M**, the apex block **A**,
+   the keystone **Y**, stacked envelopes **X**. The eye finds a letter faster than a union.
+2. **A block sitting on the line reads as a LAPTOP — the key finding.** "Things sit on YBMA's line"
+   works in the wordmark *only because letters are what sit on it.* Replace them with a block and it
+   is a screen on a keyboard every time — the Session 1 tech cliché. **Closed as a symbol.**
+3. **The line cut as a white stroke reads as a letter again** — an L, a hockey stick, a tick. **The
+   fix: build two solid masses, so the gap reads as a joint rather than a figure.**
+
+**WHY U3 OVER U1/U2:** the sheared corner moves a brand detail to the **outline**, so it survives
+16px; in the plain-square versions all distinctiveness was inside the square and vanished first.
+
+**Tests:** holds at 16px · **fits a circular crop with room to spare** (the Y never did) · works in
+reverse · **joint narrows but stays open under ink gain.**
+
+**Division of labour:** **the wordmark is the identity; the symbol is where the wordmark cannot go**
+— favicon, app icon, social avatar, endorsement (*symbol · A YBMA COMPANY*), emboss, signet. **Never
+as a lockup beside the full wordmark** (the same gesture twice).
+
+**On record, not glossed:** the split-square genre is real — the margin is the bent joint on YBMA's
+angle plus the sheared corner, *real but not wide* · a faint L survives in the joint · meaning is
+available, not obvious, so recognition is earned through use.
+
+**Still open:** where the joint enters the top edge, and the depth of the turn *(small moves)* ·
+overrun length and Y-or-A carried from Session 21 — **if the tail moves to the A, the symbol must be
+mirrored.**
+
+*(Session 21 status retained below.)*
+
+**CUT REFINED · ONE MATERIAL CHANGE ADOPTED · DIRECTION UNCHANGED**
+
+Status: **Iteration 21 complete. Two targeted studies — the avatar and the tail's endpoint. The
+direction was not reopened. One material change adopted, one study returned "keep."**
+
+**Visual:** https://claude.ai/code/artifact/1be835db-e61f-4fdc-a891-1641d77dd1b4
+**Written:** `YBMA_STRATEGY_ITERATION_21.md`
+
+> ### ADOPTED: the tail now terminates on a **shear cut at the angle of the Y's own arms.**
+> Nothing is added — **one edge is rotated.** ~9 units on a 100-unit cap.
+
+**STUDY 2 — THE ENDPOINT — the one real improvement.** The observation that made it a real question:
+**in the Cut alphabet every stroke terminal flares; the tail was the only stroke in the mark ending
+unshaped.** Cutting it on the Y's angle means **the tail ends on the geometry of the letter it came
+out of** — a relationship, not a decoration — and it **gives the line direction, which is what makes
+an overrun read as *continuing* rather than *stopping late*.** Rejected: a flared terminal *(becomes
+a measurement/dimension line)* and a tapered terminal *(a flourish; breaks monoline)*.
+
+**STUDY 1 — THE AVATAR — returned "keep", with a composition fix only.** Diagnosis on record:
+**the tail is a relational form — it needs something to run under.** Cropped to the Y alone the
+gesture loses its object. Best option **B1 BLEED**: let the line run off the frame so the overrun
+survives the crop. **A composition fix, not a new idea.**
+
+> **ON RECORD, NOT GLOSSED: the avatar remains the weakest part of the system. It reads as a
+> stylised Y with a line. No symbol was found and none was manufactured.**
+
+**Two symbol routes drawn and abandoned with reasons:** the **Y–A pair** *(creates a pronounceable
+fragment — and the name is **spelled, never spoken**; a speakable mark undermines the one fixed fact
+about it)* · **an abstraction of the wordmark's diagram** *(becomes a text placeholder; layout
+diagrams have failed twice already)*.
+
+**MOTION — intrinsic, not invented.** *The line writes the name* — it leaves the Y, travels right,
+and each letter arrives as the line passes beneath it. **Nothing was added to make this work:** the
+recorded idea is already *"YBMA lays a line and things sit on it."* It also **independently confirms
+the sheared terminal** — a travelling line needs a leading edge. **Principle recorded, not a system:
+one pass, left to right, no return.**
+
+**DRAWING DECISIONS NOW CLOSED:** the **endpoint** *(sheared)* and the **corner** *(stays square — a
+square corner and a cut terminal read as one deliberate pair)*.
+**STILL OPEN:** the **overrun length**, and **whether the tail belongs to the Y or the A.**
+
+*(Session 20 status retained below.)*
+
+**EXPERT RESET · FORM FIRST · A DRAWN MARK RECOMMENDED FOR THE FIRST TIME**
+
+Status: **Iteration 20 complete. Founders stopped the Session 19 process — the work had become a
+geometry-engineering exercise and lacked the "it factor." Role changed to creative director, form
+judged before logic, production testing moved to the end. Seven directions, three finalists, and a
+recommendation that is none of the three.**
+
+**Visual:** https://claude.ai/code/artifact/5a0c2469-0a55-4b3f-bcfa-96965c07f033
+**Written:** `YBMA_STRATEGY_ITERATION_20.md`
+
+> ### RECOMMENDED: **carved, flared letterforms carrying a single gesture** — a stroke that leaves
+> the Y, drops below the baseline, turns square, and **runs out past the end of the name.**
+
+**THE DIAGNOSIS OF SESSION 19, ACCEPTED IN FULL:** the One V idea was **verbal, not visual** — a
+sentence you must be told before you can see it. **Constraints were doing the designing:** nineteen
+sessions of exclusions had narrowed the space until what survived was whatever offended nothing, and
+**filtering cannot produce character.** Production came before form. And everything was **cold** — an
+engineer's register mirroring the founders' profession rather than their ambition.
+
+> **The brief asked for young, ambitious, energetic, building something huge. Everything produced
+> until now has been *careful*.**
+
+**THE RECOMMENDATION IS A SYNTHESIS, and this is the finding of the session:** laid side by side,
+**CUT was the best-drawn object and TAIL was the only real idea.** Neither works alone — Cut is a
+beautiful setting with no event in it; Tail is a good gesture attached to letters nobody chose.
+**Combined, they are the first thing in the project with both a quality and an event.**
+
+**The avatar problem — open since Session 2 — solves itself here:** drop the wordmark, keep **the Y
+with its tail.** A genuinely distinctive glyph, and better than any small asset the previous
+nineteen sessions produced.
+
+**Honest position on record: this is a DIRECTION, not a finished identity.** Four drawing decisions
+stand between it and something that belongs on a building — **overrun length · corner treatment ·
+Y or A · flare amount.** All four are drawing decisions, none is strategy.
+
+**BINDING PROCESS CORRECTION (founder instruction, Session 20):**
+> `IDEA → FORM → TASTE → DISTINCTIVENESS → SHORTLIST → PRODUCTION TEST`
+> **Not** `grid → geometry → validation → search for something interesting`. The Session 19
+> mechanical testing is **kept, and kept at the end.** A mediocre logo that survives embroidery is
+> still a mediocre logo.
+
+*(Session 19 status retained below, unaltered.)*
+
+**CLEAN RESTART · ONE V RECOMMENDED · UNCLOSED DISQUALIFIED ON PRODUCTION**
+
+Status: **Iteration 19 complete. Founders ordered a first-principles restart with nothing sacred,
+including Unclosed. Nine territories, ten candidates, four finalists put through an identical
+mechanical test. RECOMMENDED: C1 ONE V. Fallback named: C2 THE TRAP.**
+
+**Visual:** https://claude.ai/code/artifact/6533c635-d6eb-4117-8916-b0c85a537ba0
+**Written:** `YBMA_STRATEGY_ITERATION_19.md`
+
+> ### THE RECOMMENDATION: **Three of the four letters in YBMA contain the same V** — upright in the
+> Y, bracketed by posts in the M, inverted in the A. Drawn once, used three times. **The B is the
+> only letter without it, so it carries the weight.** No curves anywhere in the wordmark.
+
+**THE METHOD CHANGE THAT MATTERS — and it should persist:** every candidate in eighteen prior
+sessions was judged *by eye, after the drawing existed.* Those reads were correct, and they have
+now rejected eighteen rounds. **This round built every finalist as drawn geometry on one grid
+(cap 100 · stem 15) and tested them mechanically** — size ladder to 16px, reverse, and two levels of
+simulated ink gain modelling embroidery, casting, stamping and cheap print.
+
+> **THE FINDING: UNCLOSED DOES NOT SURVIVE INK GAIN.** Under stamp-and-print conditions two-thirds
+> of its gaps close; under stitch-and-cast conditions **the identity is entirely gone.** Session 18
+> flagged this as a risk to be tested. It has now been tested and the result is structural, not
+> executional. **A logo that closes up when stitched contradicts YBMA's own recorded principle —
+> *built for the hardest conditions, therefore good enough for the easiest.***
+
+**OQ-U RESOLVED ON REASONING, not preference:** a name that is **spelled, never spoken** has no
+sound for a symbol to attach to and no meaning for one to stand in for. **For its first ten years
+YBMA is whatever its four letters look like**, and a symbol beside them competes for attention the
+letters still need. **Wordmark-led; any small asset must be derived from the same construction
+rule, not invented beside it.**
+
+**Honest limit recorded:** the 16px row **does not discriminate** — no four-letter wordmark survives
+it, including the plain control. **The avatar/small-asset question is UNRESOLVED** and must not be
+reported as solved.
+
+*(Session 18 status retained below.)*
 
 **UNCLOSED — DEVELOPED AS A RULE · most promising direction so far**
 
@@ -840,7 +1117,402 @@ the tested load, not an adjective; (6) built for Nigerian conditions; (7) the sc
 
 ---
 
-## UNCLOSED — developed (Session 18) `[MOST PROMISING · NOT APPROVED]`
+## TURNED + U3 (Session 24) `[WORDMARK REPLACED AT FOUNDER DECISION · READY WITH TWO CONDITIONS]`
+
+**Visual:** https://claude.ai/code/artifact/0e934184-f4f1-45e5-b805-dc9df7594739
+**Written:** `YBMA_STRATEGY_ITERATION_24.md`
+
+**Founder instruction:** "Replace CUT with TURNED, so it becomes TURNED and U3." Clarified: **no tail**;
+then the carved letterforms retired ("I don't like this font"); then **"the Session 20 artifact
+contains the Turned we want — match it exactly."** Engine and `TURN` config ported verbatim. **U3
+unchanged.**
+
+### The test that decided the construction
+
+| | Result |
+|---|---|
+| Literal rotation (A = Y turned) | **Illegible — a lambda, YBMΛ.** Session 20's objection confirmed by drawing |
+| **Session 20's A** | **Adopted, unaltered.** A normal A with its crossbar; flat apex cut to exactly one stem width — the Y's stem. The turn is a rhyme of silhouettes, not a rotation |
+
+**Spec (Session 20 `TURN`, unaltered):** stem 17 · Y 74, fork 56 · B 65, waist 48, elliptical · M 88,
+vertex 90 · A 74, **apex 17**, bar 66 · tracking 10 · **331 × 100** · minimum **20 px / 6 mm**. On
+record: Y arms 0.66, A legs 0.285, U3 descent 0.5625 — a family resemblance, not one number.
+
+### U3 · Lockup · Motion · Endorsement
+
+U3 geometry identical to S23, retested. Relationship to the wordmark: **angle + shear only.** Lockup:
+symbol = cap height, 0.4 cap space; edges align exactly (Turned's one gain); stacked = centred;
+left-aligned stack rejected (nothing to align to). Motion: **none in the mark** — a rotation would show a form that is not the A; four cuts only. Endorsement: U3 · A YBMA
+COMPANY unchanged; divisions typographic.
+
+### Conditions of the lock
+
+1. **The A stays Session 20's A** — flat apex of one stem width, with its crossbar. A literal rotation
+   is excluded as illegible.
+2. **Structure comes from U3 and typography, not a line.** Axis, pass and division-on-the-line are
+   retired with the tail and must not return piecemeal.
+
+### What changed against Session 23
+
+Letterforms: carved, flared (stem 15) → Session 20 monoline (stem 17), verbatim · event: outside the
+letters (tail) → inside (the A's flat apex = the Y's stem) · footprint 464 × 130 → 331 × 100 · wordmark↔U3: tail's path → shared angle and shear · motion: line writes the name → A
+arrives as the Y turned · divisions: on the line → typographic.
+
+> **Ready to move into identity-system development on the two conditions. Session 23's assessment
+> of Cut stands as the record of the alternative. No further logo rounds.**
+
+---
+
+## FINAL REFINEMENT — Cut + U3 (Session 23) `[RECOMMENDED FOR LOCK · NOT CONFIRMED]`
+
+**Visual:** https://claude.ai/code/artifact/35dab470-4f1c-426a-abc3-0ccbeac8fb24
+**Written:** `YBMA_STRATEGY_ITERATION_23.md`
+**Geometry:** `identity/ybma-geometry.js` · `identity/YBMA_wordmark_cut.svg` ·
+`identity/YBMA_symbol_U3.svg` · `identity/YBMA_lockup_primary.svg`
+
+**Founder instruction:** U3 approved as the avatar direction; exploration closed. Refine as a
+creative director finishing a selected identity; change only what makes a visible improvement; say
+honestly whether it is ready; if it is, stop.
+
+### Wordmark
+
+| Question | Result |
+|---|---|
+| Tail overrun | **75 = ¾ cap.** 30 underline · 50 interrupted · 100+ sports mark |
+| Gap baseline → line | **Keep 15 = one stroke.** 10 crowds the feet · 22 detaches |
+| Tail origin | **Keep.** The tail *is* the Y's stem continued; nothing should mark a departure |
+| Tail terminal | **Keep the shear.** Now confirmed a second time by the U3 corner |
+| Fork height | **Keep 50** |
+| Fitting | Y–B 13 · B–M 21 · **M–A 12 → 15** (foot flares were touching) |
+
+Spec: cap 100 · stem 15 · flare 15 → 21 over 18 units, concave · Y 80 · B 68 · M 96 · A 96 · width
+464 · height 130 · **minimum 24 px / 8 mm**. Wordmark alone is the default expression.
+
+### U3
+
+**Entry 12 → 18** *(see Current Stage for why)*. Kept: **joint 11** (9 closes at 16 px; 13 brings the
+L back) · **turn 86** (80 = block on a shelf; 92 = band too thin) · **shear across the full band**,
+12.9 across, never deeper. **Final spec (120 square): entry 18 · descent dx/dy 0.5625 · turn 86 ·
+joint 11 · band 23 · corner sheared on the same angle.** Guideline-ready as it stands.
+
+Tested alone: ladder to 16 px · circular crop · app icon both tiles · favicon · stamp with ink gain ·
+blind emboss · signage. **Minimum 16 px / 5 mm.** Still on record: a faint L in the joint (weaker at
+18); split-square genre proximity. Neither has grown.
+
+### Lockup
+
+Primary: **symbol at cap height on the baseline, 0.4 cap from the wordmark.** Secondary: **symbol
+above, left edge on the Y's stem.** Rejected with reasons: full-height *(near miss with the line)* ·
+on the tail's axis *(two origins for one line; symbol becomes a bullet)*. **S22's "never beside the
+wordmark" revised:** default = wordmark alone; lockup = wherever the symbol must be introduced beside
+the name.
+
+### Motion · Endorsement
+
+Motion: none in the mark (a rotation would animate a form that is not the A — refused); reveal by
+four cuts. Symbol never animates. Endorsement: divisions sit on the tail (line ends ¾ cap past the last
+thing carried); acquisitions get *U3 · A YBMA COMPANY* in the corner, wordmark never in the
+endorsement line. Structural flexibility confirmed; subsidiary system not designed.
+
+### Assessment and verdict
+
+Excellent: the tail as an idea · the module (15/15/15/30, one angle) · U3's outline · the
+relationship. Merely good: letterforms as drawn (need a type designer's optical pass) · the lockup ·
+U3 at poster scale. Unresolved: nothing structural; physical proof outstanding; colour untested.
+
+> **The logo direction is ready to move into identity-system development. Lock it.**
+
+---
+
+## SYMBOL STUDY — Two Stones, One Joint (Session 22) `[SYMBOL RECOMMENDED · NOT APPROVED]`
+
+**Visual:** https://claude.ai/code/artifact/4f2ac2bf-702f-41c9-b0b0-a146e1919ae5
+**Written:** `YBMA_STRATEGY_ITERATION_22.md`
+
+**Founder instruction:** no single letter, nor anything resembling one — **a subtle union, or
+agnostic.** The Session 21 Y avatar is **retired.**
+
+### Families closed
+
+| Family | Result | Reason |
+|---|---|---|
+| Letter unions | **Closed** | Collapse into the dominant letter — M, A, Y, X |
+| Block on the line | **Closed** | **Reads as a laptop** every time (a funnel in the keystone case). Works in the wordmark only because letters sit on the line |
+| Line carved as a white stroke | **Closed** | The stroke becomes the figure — an L, a hockey stick, a tick |
+
+### The surviving construction
+
+**Two solid stones in one square**, the joint between them following the tail's full path:
+**Y-arm angle descent → square turn → exit through the edge → sheared end.** Built as masses, the
+gap reads as a joint, not a letter.
+
+| | Proportion | Verdict |
+|---|---|---|
+| U1 | Balanced stones | Out — a split square |
+| U2 | Wordmark ratio (large upper mass over a band) | Close — outline still generic |
+| **U3** | **U2 + lower corner sheared on the tail's angle** | **RECOMMENDED — distinctiveness on the outline survives 16px** |
+
+**Spec (120-unit square):** joint enters top edge at x=12 · Y-angle descent (dx/dy 0.5625) · square
+turn at y=86 · exits right edge · cut width 11 · lower-right corner sheared on the same angle.
+
+### Role
+
+**Wordmark = the identity. Symbol = where the wordmark cannot go.** Favicon · app icon · avatar ·
+endorsement · emboss · signet. **Not** locked up beside the full wordmark.
+
+### Weaknesses on record
+
+Split-square genre proximity (margin is real, not wide) · a faint L in the joint · meaning available
+rather than obvious · the sheared corner reads as a tag if cut deeper than the wordmark's terminal.
+
+---
+
+## CUT REFINEMENT — Two Studies (Session 21) `[ONE CHANGE ADOPTED · avatar superseded S22]`
+
+> **Session 22 note:** the Study 1 avatar (the Y with its tail bleeding off the frame) was rejected
+> by the founders — no single letter. **The endpoint finding (the shear) stands** and now also shapes
+> the new symbol's corner. *(Original entry follows.)*
+
+**Visual:** https://claude.ai/code/artifact/1be835db-e61f-4fdc-a891-1641d77dd1b4
+**Written:** `YBMA_STRATEGY_ITERATION_21.md`
+
+**Brief: refine, do not restart.** Baseline defended, not assumed. Founders explicitly comfortable
+with *"the current form is already the best form"* as an outcome.
+
+### Study 1 — the avatar · VERDICT: KEEP, with a composition fix
+
+**Diagnosis:** *the tail is a relational form — in the wordmark its power comes from running under
+and past the whole name.* **Cropped to the Y alone the line has no object**, so the gesture loses its
+reason. **That, not size, is why the avatar felt thinner than the wordmark.**
+
+| | Option | Five-second read |
+|---|---|---|
+| A | **Crop** *(current)* — tail ends inside the frame | A stylised Y |
+| **B1** | **Bleed** — the line runs off the frame | **A fragment of something · ADOPTED** |
+| B2 | Plinth — line spans the frame, Y stands on it | A letter on a bar |
+| B3 | Letter — the carved Y alone, no tail | A stylised Y |
+
+**Abandoned with reasons:** the **Y–A pair** *(creates a pronounceable fragment; YBMA is **spelled,
+never spoken**, and a speakable mark undermines the one fixed fact about the name)* · an
+**abstraction of the wordmark's diagram** *(a text placeholder; layout diagrams have failed twice)*.
+
+> **The avatar is the weakest part of the system and this is recorded rather than argued away.**
+> Counter-argument also on record: **YBMA may not need a symbol** — a company that never says its
+> name aloud is carried by its letters, and forcing a symbol in to satisfy a category expectation is
+> the move that produced four dead rounds.
+
+### Study 2 — the endpoint · VERDICT: CHANGE
+
+> **In the Cut alphabet every stroke terminal flares. The tail was the only stroke ending
+> unshaped** — so square was not neutral, it was an unmade decision.
+
+| | Ending | Result |
+|---|---|---|
+| E1 | Square *(current)* | Honest, and slightly unfinished |
+| **E2** | **Sheared — the angle of the Y's own arms** | **ADOPTED** |
+| E3 | Flared, like a letter | **Rejected** — a measurement terminator; the mark becomes a technical drawing of itself |
+| E4 | Tapered | **Rejected** — a flourish; breaks monoline |
+
+**Why E2:** the tail ends on **the geometry of the letter it came out of** — a relationship, not a
+decoration, **nothing added, one edge rotated** — and it **gives the line direction**, which is what
+makes an overrun read as *continuing* rather than *stopping late*. **~9 units on a 100 cap:**
+visible where it can be seen, invisible where it could not have survived anyway.
+
+### Motion — intrinsic, not invented
+
+**The line writes the name.** It leaves the Y, travels right, each letter arriving as it passes
+beneath. **Nothing was added** — the recorded idea is already *"YBMA lays a line and things sit on
+it,"* so the motion is **the static mark performed**, not an effect applied to it. **It also confirms
+the sheared terminal independently:** a travelling line needs a leading edge.
+
+**Refused:** bouncing · returning · thickening · glowing · cursor behaviour · drawing twice.
+**Principle, not a system: one pass, left to right, no return.**
+
+### Net result
+
+**Roughly nine units of a three-hundred-unit mark changed.** **Closed:** the endpoint *(sheared)* and
+the corner *(stays square — a square corner and a cut terminal read as one deliberate pair)*.
+**Still open:** the **overrun length** and **Y-or-A**. Neither was in this brief.
+
+---
+
+## EXPERT RESET — Form First (Session 20) `[DIRECTION HOLDS · refined S21]`
+
+**Visual:** https://claude.ai/code/artifact/5a0c2469-0a55-4b3f-bcfa-96965c07f033
+**Written:** `YBMA_STRATEGY_ITERATION_20.md`
+
+### Why Session 19 did not land — founders' diagnosis, accepted
+
+1. **The idea was verbal, not visual.** *"Three of the four letters contain the same V"* is a
+   sentence. You must be told it before you can see it, and then there is nothing more to look at.
+   **A real identity works in the opposite order.**
+2. **Constraints were doing the designing.** Nineteen sessions of exclusions left only what offended
+   nothing. **Filtering cannot produce character; character must be added.**
+3. **Production came before form.** `grid → geometry → validation` never asks whether the thing is
+   any good.
+4. **Everything was cold.** An engineer's register — the founders' profession, not their ambition.
+
+### Seven directions
+
+| | Direction | Verdict |
+|---|---|---|
+| **D1** | **CUT** — carved letters, flared stroke ends, sharp apexes, narrow set | **Finalist** |
+| **D2** | **TAIL** — the Y drops a stroke below the line and runs it past the end of the name | **Finalist** |
+| D3 | TURNED — Y and A as one form rotated 180° | **Out** — repeats S19's error, and the A pays for it |
+| **D4** | **MASS** — the word as one dense object, fitted tight | **Finalist** |
+| D5 | AIR — light, wide, open | **Out** — a setting, not property |
+| D6 | KNOCKOUT — overlapping letters, overlaps punched out | **Out** — legibility collapses; dates precisely |
+| D7 | HAND — deliberately uneven, signwriter's letters | **Out** — cannot carry financial services (as Market Rate, S9) |
+
+### THE FINDING — the recommendation is none of the three
+
+> **CUT was the best-drawn object. TAIL was the only real idea.** Cut is a beautiful setting with no
+> event in it; Tail is a good gesture attached to letters nobody chose. **Combined, they are the
+> first thing in this project with both a quality and an event.**
+
+**The recommended mark:** carved, flared letterforms — slightly narrow, sharp apexes, terminals that
+widen at the ends — with a single stroke leaving the Y, dropping below the baseline, turning square,
+and **running out past the end of the name.** The flare is **removed from the Y's stem alone**, so
+the descender reads as one continuous move rather than a letter with a growth on it.
+
+**Why it works:** authority and warmth — **it looks drawn by someone, which nothing in nineteen
+sessions has** · it has an **event**, giving an asymmetric silhouette recognisable at distance and
+describable in five words · **the rule is a working part** — it carries division names, starts
+layouts, holds the endorsement line, becomes the edge of a document, so the identity is a
+**behaviour** rather than an object · origin without motif *(a rule under a name is Nigerian
+shopfront emphasis; flare is what a brush does)*.
+
+**AVATAR SOLVED — open since Session 2:** drop the wordmark, keep **the Y with its tail.**
+
+### Honest limits on record
+
+- **A direction, not a finished identity.** Four **drawing** decisions remain: **overrun length ·
+  corner (square or radius) · Y or A · flare amount.** None is strategy.
+- **Small size is the weak point** — below ~24px the rule closes onto the letters and the gesture is
+  lost. The Y-with-tail avatar is the answer.
+- **Tail's honest vulnerability:** the whole idea is one stroke, and a stroke is easy to add to a
+  name. Its defence is the overrun and the weight — **a fine margin.**
+- **The letterforms shown are construction geometry, not optically corrected drawings.**
+
+### Process correction — binding
+
+> `IDEA → FORM → TASTE → DISTINCTIVENESS → SHORTLIST → PRODUCTION TEST`
+
+**Session 19's mechanical testing is kept and moved to the end.** A mediocre logo that survives
+embroidery is still a mediocre logo. **This round put form first and produced more in one pass than
+the previous four rounds combined.**
+
+---
+
+## CLEAN RESTART — Nine Territories, Ten Candidates (Session 19) `[SUPERSEDED S20 · reasoning retained]`
+
+> **Session 20 note:** C1 One V is no longer the recommendation — not because it was wrong, but
+> because it was **clever rather than distinctive.** The Session 19 analysis, exclusions and
+> mechanical test method all stand and are not withdrawn. *(Original entry follows unaltered.)*
+
+**Visual:** https://claude.ai/code/artifact/6533c635-d6eb-4117-8916-b0c85a537ba0
+**Written:** `YBMA_STRATEGY_ITERATION_19.md`
+
+### The method change — adopt permanently
+
+**Every candidate for eighteen sessions was judged by eye, after the drawing existed.** The reads
+were right (key, battery, bar chart, circuit trace, maze, 1970s conglomerate) and they have rejected
+eighteen rounds. **This round built every finalist as drawn geometry on one grid — cap 100, stem 15 —
+so identical tests could be applied to all of them.** Size ladder to 16px · reverse · two levels of
+simulated ink gain (uniform dilation) modelling embroidery, casting, stamping and cheap print.
+
+### Nine territories
+
+| | Territory | Verdict |
+|---|---|---|
+| **T1** | **ONE ANGLE** — the same V appears in Y, M and A; B is the counterweight | **Survives → C1** |
+| **T2** | **HARD COPY** — the mark is engineered for the worst reproduction, visibly | **Survives → C2** |
+| **T3** | **THE HOLDING** — the parent is a container; endorsement is the primary form | **Survives → C4, C5** |
+| **T4** | **UNCLOSED** *(incumbent, unprotected)* | **Tested → C3** |
+| T5 | THE HALLMARK — design smallest-first, like a punch | **Killed** — converges on a plate = **Running Order, retired S17** |
+| T6 | TWO WEIGHTS — parent heavy, division light | **Not a territory.** A lockup grammar — **adopt regardless** |
+| T7 | THE LETTER SYSTEM — the identity is an alphabet | **Not a territory.** The delivery route for T1/T2 |
+| T8 | THE VERNACULAR — Nigerian signwriting, structure not ornament | **Killed before drawing** — cannot carry financial services; same disqualifier as **Market Rate**, S9 |
+| T9 | THE BIND — a true wordmark ligature | **Drawn, then killed** — the B is lost |
+
+### THE MECHANICAL FINDING — UNCLOSED IS DISQUALIFIED
+
+> **Under ink gain, C3 UNCLOSED's gaps close.** Stamp-and-print: two-thirds gone. Stitch-and-cast:
+> **the identity is entirely gone.** C1, C2 and C9 get heavier and stay themselves; **C2 improves**,
+> because its traps are designed to be filled.
+
+**This is a structural cost, not an executional one.** YBMA's recorded principle is *built for the
+hardest conditions, therefore good enough for the easiest.* **A logo destroyed by the most common
+failure mode in physical production contradicts the brand it belongs to.**
+
+**Stated fairly:** uniform dilation is a simplification; real gain is directional and
+material-dependent, and a skilled embroiderer can hold a gap. **Session 18's instruction to print
+and stitch still stands.** The *direction* of the result is not in doubt.
+
+### RECOMMENDED · C1 ONE V
+
+**Construction:** cap 100 · stem 15 · one angle, 29.7° from vertical · the V identical in Y, M and A
+· **zero curves, including the B** · the A's apex flattened to **exactly one stem width** · every
+corner of the B cut on the same slope.
+
+**Why it wins:** **found, not applied** — it reports a property the name already had, rather than
+imposing an idea on it, which is the difference between a concept to be persuaded of and a fact
+checkable in thirty seconds · **nothing counts anything** (no founders, no sectors) so nothing
+expires · the rule **cannot be lifted onto another name** · describable after one viewing —
+*"no curves, and the same V three times"* · an alphabet, so subsidiaries need no device and
+**endorsement is the name itself** · straight-line monolinear is **the most reproducible letterform
+there is**, which is the African-origin argument made structural rather than decorative.
+
+### Weaknesses on record — not glossed
+
+1. **Genre proximity is real** — constructed geometric alphabets (Futura, Avant Garde, descendants).
+   The splayed M and flat-apex A are where this tips into 1970s ITC pastiche. **Defence is weight
+   and fitting, not concept.**
+2. **No separate small mark, and the tests did not settle it.** Holds at 32px; fails at 16px exactly
+   as the plain control does. **The weakest link in the recommendation.**
+3. **Won or lost in the drawing** — what exists is construction geometry, not drawn letterforms.
+4. **The angular B could go wrong** — too faceted is a computer font, too soft and the rule stops
+   being visible. **The single riskiest decision in the direction.**
+
+### Fallback named in advance · C2 THE TRAP
+
+Weaker story, stronger nerve — a serious neutral wordmark until you get close. **The two are
+compatible:** C2's junction cuts can be specified *inside* C1 as a production detail. **An option,
+not a requirement** — adopting both risks a mark doing two things.
+
+### Real-world sanity check
+
+C1 → ITC-era geometric type *(moderate; the angular B has no equivalent there)* · C2 → 2016–21
+trappy display type *(moderate; size traps to a spec, not a look)* · C3 → open-counter display
+*(low)* · **C4 → crop marks and VC bracket marks (HIGH — honestly not enough separation).**
+
+**The category most successfully avoided is the one this project kept hitting** — *African
+conglomerate / generic holding company* — **because no finalist is a bounded geometric mass in a
+square.** Session 14 flagged that unexamined assumption and never tested it. It has now been tested
+by not doing it.
+
+### Next, in order
+
+1. **Decide C1 or C2** — or name the wrong element of C1 (B · M · A's apex · weight) so the next
+   round moves a lever instead of restarting.
+2. **Draw the four letters properly** — optical correction, not construction. **The step never taken
+   in nineteen sessions.**
+3. **Extend to ~20 glyphs** — enough for TECHNOLOGY, PROPERTIES, AGRICULTURE, FINANCIAL SERVICES,
+   A YBMA COMPANY.
+4. **Proof physically** — printed at three sizes, stitched once, stamped once.
+5. **Only then** colour and supporting typography.
+
+**Session 17's assessment is unchanged: the remaining risk is craft, not strategy.** What is new is
+a **checkable construction rule** to brief a designer with, and **a mechanical test any proposal can
+be held to.**
+
+---
+
+## UNCLOSED — developed (Session 18) `[SUPERSEDED S19 — FAILS INK GAIN · NOT APPROVED]`
+
+> **Session 19 update:** tested mechanically and **disqualified on production.** The Session 18
+> assessment of the *idea* is not withdrawn — it remains the best conceptual fit produced in the
+> project — but the carrier fails, for the second time. *(Original entry follows.)*
 
 **Visual:** https://claude.ai/code/artifact/2c39a87f-a40c-4ad0-80b5-be21e75fb66d
 **Written:** `YBMA_STRATEGY_ITERATION_18.md`
@@ -2207,6 +2879,28 @@ Added Session 3:
 | **T5 "The Second System" as a master-brand territory** | Tech-specific, fails the diversification test, and defines YBMA by a competitor's failure. **Retained as YBMA Technology go-to-market segmentation only** | 6 |
 | **T6 "Built to be left alone" as a territory** | Negative-space, unverifiable pre-purchase, and substantially overlaps T2. **Folded into T2 as a delivery principle** | 6 |
 | **Round 1's C1 contradiction (simplicity vs capability) as a segmentation line** | **RESOLVED — it was a false contradiction.** The mini-mart still chose "three things" while complaining reports are *limited*. It does not want more features; it wants **better answers from the same inputs**. Features ≠ answers | 6 |
+| **UNCLOSED as the visual direction** | **DISQUALIFIED ON PRODUCTION, not on taste.** Tested under simulated ink gain: stamp-and-print closes two-thirds of the gaps; stitch-and-cast destroys the identity entirely. The gap *is* the identity and the gap is the first thing production removes. **Directly contradicts YBMA's recorded principle — *built for the hardest conditions.*** The idea is not withdrawn; the carrier failed, for the second time | 19 |
+| **THE HALLMARK / punch route** | Every honest execution converges on a container with letters in it — **which is a plate, which is Running Order, retired Session 17.** The *method* survives (design smallest-first); the territory does not | 19 |
+| **THE VERNACULAR — Nigerian signwriting letterforms** | **Killed before drawing, deliberately.** Cannot credibly carry financial services, and reads downmarket on a Nigeria → Africa → Global path — **the same structural disqualifier that killed Market Rate in Session 9.** Warmth and velocity where the portfolio needs gravity | 19 |
+| **Proportion as identity (extreme-width wordmarks)** | A ratio is not defensible property — anyone can be 8% wider — and it **fails the endorsement constraint outright**: at stamp size an extended wordmark becomes a smear. Also the house style of fashion, media and property | 19 |
+| **Wordmark ligatures / shared-stem constructions** | Drawn and killed with the evidence in front of us: **the B disappears.** A name that must be spelled letter by letter cannot afford a letter the reader has to infer | 19 |
+| **Corner and bracket marks used alone (C5 The Angle)** | An L. **Third L-form failure** after Session 18's open corner and C4's paired corners. Reads as crop marks, registration marks or selection handles — *"content goes here,"* not a company. **High genericity, and no ratio work removes it** | 19 |
+| **C1 ONE V as the recommendation** | **Not wrong — inert.** The idea is *verbal*: "three of the four letters contain the same V" is a sentence you must be told before you can see it, and once told there is nothing further to look at. **Clever is not distinctive.** Retained as a sound construction observation; withdrawn as an identity | 20 |
+| **Rotational / ambigram letter constructions (D3 Turned)** — *REOPENED by founder decision, Session 24, as drawn in S20: the A's apex is one stem wide, the letter is not rotated* | Repeats the same fault in a better coat — a *fact about the letters* rather than a *quality in them* — and **the A pays for it**: a capital A with a tall vertical apex is a compromised letter. The trick is invisible until explained | 20 |
+| **Light-and-wide settings as an identity (D5 Air)** | **A setting, not property.** Anyone can space letters out. Closest thing on the board to the fashion-and-culture default, and it dies at small size and in one colour | 20 |
+| **Overlap / knockout letterform devices (D6 Knockout)** | Legibility collapses — and a name that must be **spelled** letter by letter cannot afford letters that have to be inferred. The device is also fashionable now and **will date precisely** | 20 |
+| **Irregular hand-drawn letterforms (D7 Hand)** | Warm, genuinely uncopyable, and **cannot carry financial services** — the same structural disqualifier that killed Market Rate (S9) and The Vernacular (S19). **Third time this fault has ended a direction** | 20 |
+| **Extreme-weight wordmarks as an identity (D4 Mass)** | Kept to the finalists for presence, then rejected: **weight alone is not property**, it re-enters the 1970s conglomerate fault diagnosed in Session 16, and heavy tight wordmarks are the most crowded corner of current branding | 20 |
+| **A Y–A pair as the avatar** | Real logic — the name's bookends, with the tail running from the first letter under the last — but it **creates a pronounceable fragment.** YBMA is **spelled, never spoken** (confirmed Session 2); a speakable mark undermines the one fixed fact about the name | 21 |
+| **Flared tail terminal (E3)** | A symmetrical flare at the end of a long horizontal is a **measurement terminator** — it turns the rule into a dimension annotation and the mark into a technical drawing of itself | 21 |
+| **Tapered tail terminal (E4)** | Everything in Cut is monolinear; modulation at the end of a line is **a flourish**, however subtle | 21 |
+| **"Plinth" avatar — full-width rule with the Y standing on it** | Reads as **a letter on a bar.** Loses the descender gesture, which is the only reason the line exists | 21 |
+| **All motion behaviour except a single left-to-right pass** | Bouncing, easing past and returning, thickening, glowing, cursor behaviour and drawing twice each turn the mark into **a sports brand or a software product** | 21 |
+| **Any single letter as the avatar — including the Y with its tail (Session 21)** | **Founder instruction, Session 22.** A letter reads as a stylised letter, however it is composed. The avatar must be a union or agnostic | 22 |
+| **Letter-union symbols (notched stone, apex block, keystone with fork, stacked envelopes)** | Each collapses into its dominant letter — **M, A, Y, X.** The eye finds a letter faster than a union | 22 |
+| **"Block on the line" symbols (seam, seat, overhang, lean, angle union, keystone)** | **Read as a laptop** — a screen on a keyboard — or, for the keystone, a funnel. The Session 1 tech cliché. The relationship works only in the wordmark, where letters are what sit on the line | 22 |
+| **The YBMA line carved as a white stroke through a solid** | The stroke becomes the figure: **an L, a hockey stick, a tick.** Superseded by building two solid masses so the gap reads as a joint | 22 |
+| **U1 balanced / U2 plain-square proportions of the two-stone symbol** | All distinctiveness sits inside a plain square and is the first thing lost at small size. **U3's sheared corner puts it on the outline** | 22 |
 
 ---
 
@@ -2224,9 +2918,64 @@ and the blueprint — the evidence base is now closed; the blueprint assumptions
 
 ### OPEN — Session 9
 
-- **OQ-W — NEW, Session 18, THE LIVE QUESTION: pursue UNCLOSED?** If yes, the first step is not
+- **OQ-AE — NEW, Session 22, THE LIVE QUESTION: adopt U3 "two stones, one joint" as the symbol?**
+  **(a)** Yes → settle the two small proportions (where the joint enters the top edge; depth of the
+  turn). **(b)** Close → name which part is wrong: the balance of the stones · the joint angle · the
+  sheared corner · the cut width. **(c)** No → say which *family* was closer, so the next round works
+  that family rather than restarting.
+- **OQ-AD — CLOSED (Session 22): no, a stylised Y is not acceptable.** Founders require a union or a
+  letter-agnostic symbol. Answered by U3. *(Original entry follows)*
+- **OQ-AC — NEW, Session 21, THE LIVE QUESTION: the two remaining drawing decisions.**
+  **The overrun length** *(too short = an underline; too long = a sports mark — the single
+  measurement that decides whether the gesture works)* and **whether the tail belongs to the Y or
+  the A** *(off the A would close the word rather than open it)*. Neither was in the Session 21
+  brief; both remain open from Session 20.
+- **OQ-AD — NEW, Session 21: is the avatar acceptable as a stylised Y?** The honest finding is that
+  it reads as a letter with a line, and **no symbol was found or manufactured.** The question for the
+  founders is whether YBMA **needs** a symbol at all — a company that never speaks its name aloud is
+  carried by its letters. **Answer "acceptable" and the identity is complete in kind; answer "not
+  acceptable" and a symbol becomes a separate commission.**
+- **OQ-AB — PARTLY CLOSED (Session 21): two of the four drawing decisions are settled.** The
+  **endpoint** is a shear cut on the Y's arm angle; the **corner stays square** (a square corner and
+  a cut terminal read as one deliberate pair). *(Original entry follows)*
+- **OQ-AA — NEW, Session 20, THE LIVE QUESTION: does the recommended mark do anything to you?**
+  **React on sight, not on reasoning.** **(a)** Yes → resolve the four drawing decisions below.
+  **(b)** No → **say so in one sentence and the direction dies.** That is a legitimate answer and it
+  is cheap. **(c)** Nearly → name which of the four decisions is wrong.
+- **OQ-AB — NEW, Session 20: the four drawing decisions.** **Overrun length** *(too short = an
+  underline; too long = a sports mark — this one measurement decides whether it works)* · **corner**
+  *(square is architectural; a radius is a flourish)* · **Y or A** *(off the A would close the word
+  rather than open it)* · **flare amount** *(more is Albertus; less is a plain grotesque)*.
+- **OQ-Z — ANSWERED (Session 20): yes, and it is the Y with its tail.** Dropping the wordmark and
+  keeping the descending Y gives a distinctive glyph that works at avatar size. **Still needs
+  checking on a real phone**, but the form exists and is not invented beside the mark — it is part
+  of it. *(Original entry follows)*
+- **OQ-Y — CLOSED (Session 20): neither.** C1 One V was withdrawn as clever rather than distinctive;
+  C2 The Trap was not revived. *(Original entry follows)*
+- **OQ-Y (closed) — C1 ONE V, or C2 THE TRAP?**
+  **(a)** C1 → next round draws the four letters properly with optical correction, then extends to
+  ~20 glyphs. **(b)** C2 → same, with traps sized against a stated reproduction spec.
+  **(c)** C1 but something is wrong → **name the element** — the B · the M's vertex · the A's apex ·
+  the weight — so the next round moves a lever instead of restarting. **That third answer is the
+  valuable one:** four resets have happened because "no" was never attached to a component.
+- **OQ-Z — NEW, Session 19: does YBMA need a separate small asset at all?** **The tests did not
+  answer this** — nothing survives 16px, including the plain control, so favicon size does not
+  discriminate. Must be checked on a real phone and a real WhatsApp avatar. **If the answer is yes,
+  the small asset must be derived from the same construction rule, not invented beside it.**
+- **OQ-W — CLOSED (Session 19): UNCLOSED is disqualified on production.** Simulated ink gain closes
+  two-thirds of its gaps under stamp-and-print and destroys the identity entirely under
+  stitch-and-cast. **The physical proof Session 18 asked for is still worth doing if the founders
+  want it confirmed in the hand, but the direction should not be developed further.**
+  *(Original entry follows)*
+- **OQ-W (closed) — pursue UNCLOSED?** If yes, the first step is not
   more drawing — it is **testing the wordmark at real size, printed, and ideally stitched.** The
   minimum-size and physical-reproduction cost decides whether the rule can carry a company.
+- **OQ-U — RESOLVED (Session 19), on reasoning rather than preference: WORDMARK-LED.** A name that
+  is **spelled, never spoken** gives a symbol no sound to attach to and no meaning to stand in for.
+  **For its first ten years YBMA is whatever its four letters look like**, and a symbol beside them
+  competes for the attention the letters still need. **That is the structural reason four rounds of
+  symbol work produced nothing worth keeping.** Any small asset is *derived from* the wordmark's
+  construction rule. *(Earlier partial answer and original entry follow)*
 - **OQ-U — PARTLY ANSWERED by Unclosed (Session 18).** The rule produces **both** a wordmark and a
   small mark from one idea, which is the two-asset system the symbol-vs-wordmark question was
   circling. **Still worth confirming explicitly.** *(Original entry follows)*
@@ -2958,9 +3707,133 @@ hypothesis · recruitment log.
 
 ## Next Steps
 
-### One question — Session 18
+### Session 22 — one question
 
-> **Pursue UNCLOSED?**
+> **Adopt U3, "two stones, one joint", as the YBMA symbol?**
+
+If close but wrong, name the part — **the balance of the stones · the joint angle · the sheared corner
+· the cut width** — so the next round moves a lever.
+
+### Then, in order
+
+| # | Step |
+|---|---|
+| 1 | **Symbol:** settle where the joint enters the top edge and the depth of the turn |
+| 2 | **Wordmark:** the two Session 21 decisions — overrun length · tail on the Y or the A *(if the A, mirror the symbol)* |
+| 3 | **Optical correction** of letterforms and symbol — construction geometry, not drawn artwork |
+| 4 | **Production tests** — at the end, per the Session 20 rule |
+| 5 | **Then** colour and supporting typography |
+
+### Settled in Session 22 — do not reopen without reason
+
+**The avatar is not a letter.** · **"Block on the line" symbols read as laptops.** · **The symbol is
+built from solid masses, not a carved stroke.** · **The symbol does not lock up beside the full
+wordmark.**
+
+---
+
+### Superseded — Session 21 next steps
+
+### Session 21 — two drawing decisions remain
+
+> **The overrun length, and whether the tail belongs to the Y or the A.**
+
+Both are drawings, not discussions. Everything else about the mark is now settled or explicitly held.
+
+### And one question for the founders
+
+> **Is the avatar acceptable as a stylised Y?**
+
+The honest finding is that it reads as a letter with a line. **No symbol was found and none was
+manufactured.** If that is acceptable, the identity is complete in kind. If not, a symbol becomes a
+separate piece of work — and should be commissioned rather than reverse-engineered from the wordmark.
+
+### Then
+
+| # | Step |
+|---|---|
+| 1 | **Draw the two open decisions** — overrun length, Y vs A — as one comparison sheet |
+| 2 | **Optical correction of the letterforms** — what exists is construction geometry, not drawn letters |
+| 3 | **Then** the production tests (kept from Session 19, at the end) |
+| 4 | **Then** colour and supporting typography — untouched, and not before the mark settles |
+
+### Settled in Session 21 — do not reopen without reason
+
+**Tail terminal:** shear cut on the angle of the Y's arms · **Corner:** square · **Avatar:** Y with
+the tail bleeding off the frame · **Motion principle:** one pass, left to right, no return.
+
+---
+
+### Superseded — the Session 20 question
+
+> **Does the recommended mark do anything to you?** *(Answered by the Session 21 brief — the
+> direction was kept and refined.)*
+
+**React on sight, not on reasoning.** If it does nothing, say so in one sentence and the direction
+dies — legitimate, and cheap. If it nearly works, name which of the four drawing decisions is wrong.
+
+### Then, in order
+
+| # | Step |
+|---|---|
+| 1 | **Draw the four open decisions as one comparison sheet** — overrun length · corner (square vs radius) · tail on the Y vs the A · flare amount |
+| 2 | **Settle the avatar** — the Y with its tail, checked at real size on a phone |
+| 3 | **Optical correction of the letterforms** — what exists is construction geometry, not drawn letters |
+| 4 | **Then** the production tests (kept from Session 19, now at the end) |
+| 5 | **Then** colour and supporting typography — untouched, and not to be started before the mark settles |
+
+### The sequence — binding, founder instruction Session 20
+
+> `IDEA → FORM → TASTE → DISTINCTIVENESS → SHORTLIST → PRODUCTION TEST`
+
+**Not** `grid → geometry → validation → look for something interesting`. Session 19's mechanical
+testing is good work and is **kept at the end of the process, not the start.** *A mediocre logo that
+survives embroidery is still a mediocre logo.*
+
+### Where the remaining risk sits — unchanged since Session 17
+
+**Craft, not strategy.** The difference now is that there is a **drawn gesture** to brief a type
+designer with, four named decisions, and twenty sessions of strategy behind it.
+
+---
+
+### Superseded — the Session 19 question
+
+> **C1 ONE V, or C2 THE TRAP?** *(CLOSED Session 20 — neither.)*
+
+**Three answers are useful.** **(a)** C1 — the recommendation. **(b)** C2 — the fallback, weaker
+story and stronger nerve. **(c)** C1 but something is wrong → **name the element**: the B · the M's
+vertex depth · the A's apex · the weight. **That third answer is the valuable one.** Four resets
+have happened because "no" was attached to a whole direction instead of to a component.
+
+### Then, in order
+
+| # | Step |
+|---|---|
+| 1 | **Draw the four letters properly** — optical correction, not construction geometry: overshoot, joint thinning, real sidebearings. **The step never taken in nineteen sessions** |
+| 2 | **Extend to ~20 glyphs** — enough for TECHNOLOGY, PROPERTIES, AGRICULTURE, FINANCIAL SERVICES, A YBMA COMPANY. Not a full alphabet |
+| 3 | **Settle the small-asset question** (OQ-Z) on a real phone and a real avatar — and if one is needed, derive it from the same rule |
+| 4 | **Proof it physically** — printed at three sizes, stitched once, stamped once |
+| 5 | **Only then** colour and supporting typography |
+
+### Adopt regardless of which mark wins
+
+**C7 THE PAIR as the lockup grammar:** parent heavy, division light, one line, fixed space, no
+divider and no symbol. Costs nothing, settles subsidiary naming permanently, and a tenth business
+joins by being typed.
+
+### The method to keep
+
+**Test mechanically before judging by eye.** Build candidates as geometry on one grid, then apply
+identical size, reverse and ink-gain conditions. **This round it disqualified the front-runner and
+confirmed two candidates without an opinion being expressed.** It is the cheapest quality control
+available and it should be applied to every future proposal.
+
+---
+
+### Superseded — the Session 18 question
+
+> **Pursue UNCLOSED?** *(CLOSED Session 19 — disqualified on production.)*
 
 **If yes, the first step is not more drawing.** It is a **physical test**: print the wordmark at
 real sizes and, if possible, have it stitched or cut. **The gaps are the identity — when they close,
@@ -2982,12 +3855,27 @@ rule can carry a company, and it should happen before any further design work.
 single idea — which is the two-asset system the symbol-versus-wordmark question was circling.
 **Worth confirming explicitly, but the structural problem is solved.**
 
-### Permanent exclusions — unchanged
+### Permanent exclusions — extended Session 19
 
 Bars *(3 failures)* · acute-angled flaps · the 2×2 block · Running Order · **T4 displacement in all
 forms** · institutional minimalism · Market Rate · The Benchmark · The Turn · The Grip ·
 stylised-initial symbols · tracked caps on a rule · **circuit/maze forms** · multi-part layout
 diagrams · African visual clichés · tech clichés · 1970s conglomerate weight.
+
+**Added Session 19:** the hallmark/punch route *(converges on the retired plate)* · signwriting and
+vernacular letterforms *(cannot carry financial services)* · proportion-as-identity and extreme-width
+wordmarks *(undefensible; fails endorsement)* · wordmark ligatures and shared-stem constructions
+*(the B is lost)* · **corner and bracket marks used alone — the third L-form failure** *(crop-mark
+read)*.
+
+**Added Session 20:** rotational/ambigram letter constructions · light-and-wide settings as an
+identity · overlap/knockout letterform devices · irregular hand-drawn letterforms · extreme-weight
+wordmarks as an identity.
+
+> **Standing caution on this list, founder instruction Session 20:** the exclusions are **lessons,
+> not a prison.** They record what has failed and why. They must not be allowed to narrow the space
+> until only what offends nothing survives — **that is a filtering process, and filtering cannot
+> produce character.**
 
 ### Unaffected — the strategy stands, and it is finished
 
@@ -3633,3 +4521,129 @@ the logo.**
 - **Next action recommended is a PHYSICAL TEST, not more drawing** — print at real sizes, stitch or
   cut if possible. **Everything else waits on that.**
 - **Decisions made:** none. **One question: pursue Unclosed?**
+
+### Session 19 — 2026-09-13 — Clean restart of the visual identity
+
+- **Founders ordered a first-principles restart with nothing sacred, explicitly including
+  Unclosed, T4/Displacement, the block and any monogram.** Complied with fully: Unclosed entered as
+  an unprotected incumbent and was tested on identical terms to new work.
+- **THE METHOD CHANGE — the most important output of the session.** Eighteen prior rounds judged
+  every mark **by eye, after it existed.** Those reads were right and they have rejected eighteen
+  rounds. This round **built every finalist as drawn geometry on one grid (cap 100, stem 15)** and
+  applied identical mechanical tests: size ladder to 16px · reverse · two levels of simulated ink
+  gain modelling embroidery, casting, stamping and cheap print.
+- **THE FINDING: UNCLOSED IS DISQUALIFIED ON PRODUCTION.** Stamp-and-print closes two-thirds of its
+  gaps; stitch-and-cast destroys the identity entirely. **Structural, not executional** — and it
+  contradicts YBMA's own recorded principle, *built for the hardest conditions.* **The Session 18
+  judgement of the idea is not withdrawn; the carrier failed, for the second time.**
+- **OQ-U RESOLVED on reasoning: wordmark-led.** A name that is **spelled, never spoken** gives a
+  symbol no sound to attach to and no meaning to stand in for. **For its first ten years YBMA is
+  whatever its four letters look like.** That is the structural reason four rounds of symbol work
+  produced nothing keepable.
+- **Nine territories built, ten candidates drawn.** Survivors: One Angle · Hard Copy · The Holding ·
+  Unclosed (to test). Killed: The Hallmark *(converges on the retired plate)* · The Vernacular
+  *(cannot carry financial services)* · The Bind *(the B is lost)*. Two entries — Two Weights and
+  The Letter System — were **reclassified as systems rather than territories**.
+- **RECOMMENDED: C1 ONE V.** *Three of the four letters contain the same V — upright in the Y,
+  bracketed by posts in the M, inverted in the A. Drawn once, used three times. The B is the only
+  letter without it, so it carries the weight.* No curves anywhere; the A's apex is exactly one stem
+  wide; every corner of the B is cut on the same slope.
+- **Why it is different from every prior recommendation: it is FOUND, not applied.** It reports a
+  property the name already had rather than imposing an idea on it — checkable in thirty seconds
+  instead of requiring persuasion. **And nothing counts anything, so nothing expires.**
+- **Fallback named in advance: C2 THE TRAP** — weaker story, stronger nerve. The two are compatible;
+  C2's junction cuts can be specified inside C1 as a production detail.
+- **Honest limits recorded, not glossed:** the 16px row **does not discriminate** *(nothing survives
+  it, including the plain control)*, so **the small-asset question is UNRESOLVED (OQ-Z)** · the
+  ink-gain simulation is uniform dilation, a simplification · C1 has **real genre proximity** to
+  ITC-era geometric type, and **the angular B is the single riskiest decision in the direction.**
+- **Rejected this round:** the hallmark/punch route · the vernacular · proportion-as-identity ·
+  wordmark ligatures · **corner and bracket marks used alone (third L-form failure).** All added to
+  permanent exclusions.
+- **Decisions made:** none. **One question: C1 or C2 — and if C1 is close but wrong, WHICH ELEMENT?**
+  *(the B · the M's vertex · the A's apex · the weight).* **That third answer is the valuable one:
+  four resets have happened because "no" was attached to a whole direction instead of a component.**
+
+### Session 20 — 2026-09-13 — Expert identity reset, form first
+
+- **Founders stopped the Session 19 process.** Assessment: the work was competent but had no "it
+  factor"; it had become a geometry-engineering problem. **Instruction: act as a creative director,
+  judge form before logic, move production testing to the end.** Accepted without argument.
+- **Four faults diagnosed and accepted:** the One V idea was **verbal, not visual** *(a sentence you
+  must be told before you can see it)* · **constraints were doing the designing** *(nineteen sessions
+  of exclusions left only what offended nothing — filtering cannot produce character)* · production
+  came before form · and everything was **cold**, an engineer's register rather than the founders'
+  ambition.
+- **Seven directions drawn**, each a different *kind* of answer. Finalists: **CUT** *(carved, flared
+  letterforms)* · **TAIL** *(one gesture — a stroke leaving the Y, dropping below the line, running
+  past the name)* · **MASS** *(the word as one dense object)*. Out: Turned · Air · Knockout · Hand.
+- **THE FINDING — the recommendation is none of the three.** Side by side, **Cut was the best-drawn
+  object and Tail was the only real idea.** Neither works alone. **Combined, they are the first thing
+  in the project with both a quality and an event.**
+- **RECOMMENDED: carved flared letterforms carrying the descending Y gesture.** One deliberate
+  detail — **the flare is removed from the Y's stem alone**, so the descender reads as one continuous
+  move rather than a letter with a growth on it.
+- **The identity is a behaviour, not an object:** the rule carries division names, starts layouts,
+  holds the endorsement, becomes the edge of a document. **Available as a reading afterwards — not
+  the reason the mark was drawn.**
+- **AVATAR SOLVED, open since Session 2:** drop the wordmark, keep **the Y with its tail.**
+- **Honest position: a DIRECTION, not a finished identity.** Four **drawing** decisions remain —
+  overrun length · corner · Y or A · flare amount. **Named as drawing decisions, not strategy.**
+- **Tail's vulnerability recorded:** the whole idea is one stroke, and a stroke is easy to add to a
+  name. Its defence is the overrun and the weight — **a fine margin.**
+- **BINDING PROCESS CORRECTION:** `IDEA → FORM → TASTE → DISTINCTIVENESS → SHORTLIST → PRODUCTION
+  TEST`. Session 19's mechanical testing **kept, and kept at the end.**
+- **Standing caution added to the exclusions list:** they are lessons, not a prison.
+- **Decisions made:** none. **One question: does the mark do anything to you? React on sight.**
+
+### Session 21 — 2026-09-13 — Cut refinement, two studies
+
+- **Founders kept the direction** and asked for two targeted studies — the avatar and the tail's
+  endpoint — with the explicit standing that **"the current form is already the best form" would be
+  a successful outcome.** The baseline was defended, not assumed.
+- **STUDY 1 — AVATAR — returned KEEP, with a composition fix only.** Diagnosis: **the tail is a
+  relational form; it needs something to run under.** Cropped to the Y alone the gesture loses its
+  object. Best option **B1 BLEED** — the line runs off the frame so the overrun survives the crop.
+- **Recorded without gloss: the avatar is the weakest part of the system.** It reads as a stylised Y
+  with a line. **No symbol was found and none was manufactured.** Two symbol routes were drawn and
+  abandoned — the **Y–A pair** *(creates a pronounceable fragment of a name that is spelled, never
+  spoken)* and an **abstraction of the wordmark's diagram** *(a text placeholder)*.
+- **STUDY 2 — ENDPOINT — returned CHANGE, and it is the one real improvement.** The observation that
+  made it a genuine question: **every stroke terminal in Cut flares; the tail was the only stroke
+  ending unshaped.** **ADOPTED: a shear cut on the angle of the Y's own arms** — the tail ends on the
+  geometry of the letter it came from. Nothing added; one edge rotated. **It gives the line
+  direction, which is what makes an overrun read as *continuing* rather than *stopping late*.**
+- **Rejected endings:** flared *(a measurement terminator — the mark becomes a technical drawing of
+  itself)* · tapered *(a flourish; breaks monoline)*.
+- **MOTION — intrinsic, not invented.** *The line writes the name.* Nothing was added to make it
+  work — the recorded idea is already *"YBMA lays a line and things sit on it."* **It confirms the
+  sheared terminal independently: a travelling line needs a leading edge.** Everything except a
+  single left-to-right pass was refused. **Recorded as a principle, not a system.**
+- **Scale of change: roughly nine units of a three-hundred-unit mark.** Correct for a refinement
+  round on a good baseline.
+- **Closed:** the endpoint, and the corner *(stays square — a square corner and a cut terminal read
+  as one deliberate pair)*. **Still open:** overrun length · Y-or-A.
+- **Decisions made:** none. **Questions: the two remaining drawing decisions, and whether a stylised
+  Y is an acceptable avatar.**
+
+### Session 22 — 2026-09-13 — Symbol study: two stones, one joint
+
+- **Founders rejected the Y avatar:** no single letter or anything resembling one; the symbol must be
+  **a subtle union of the letters or letter-agnostic.** Accepted without argument.
+- **About forty-five constructions drawn across four rounds.** Three families failed and are closed:
+  **letter unions** *(collapse into M, A, Y, X)* · **block on the line** *(reads as a laptop — the key
+  finding: the relationship only works in the wordmark because letters are what sit on the line)* ·
+  **the line carved as a white stroke** *(reads as an L, a hockey stick, a tick)*.
+- **The breakthrough was a construction change, not a new idea:** build the two pieces as **solid
+  masses** so the gap reads as a joint instead of a figure.
+- **RECOMMENDED: U3 "Sheared"** — two stones in one square; the joint follows the tail's full path
+  *(Y-arm angle → square turn → exit)*; the lower stone's corner is **sheared like the wordmark's
+  tail terminal**, which puts distinctiveness on the outline where it survives 16px.
+- **Answers "union" literally:** two masses made one by the identity's own line.
+- **Tests:** holds at 16px · fits a circular crop (the Y could not) · reverse works · joint narrows but
+  stays open under ink gain.
+- **Role set:** wordmark = the identity; symbol = where the wordmark cannot go. **No lockup beside the
+  full wordmark.**
+- **On record:** split-square genre proximity (real margin, not wide) · faint L in the joint · meaning
+  available, not obvious.
+- **Decisions made:** none. **One question: adopt U3?**
