@@ -32,7 +32,7 @@
 })();
 
 /* ── Easter eggs ─────────────────────────────────────────────────────────
-   Six small things for people who look closely. Each one obeys the identity: plain speech, the
+   Ten small things for people who look closely. Each one obeys the identity: plain speech, the
    three colours, and the motion rule (a cut or a quarter-turn; nothing else). All are inert for
    assistive technology and respect prefers-reduced-motion. */
 (function () {
@@ -65,8 +65,12 @@
     setTimeout(function () { symbol.classList.remove('is-turned'); }, reduce ? 0 : 1400);
   }
 
+  /* Typed words. A short buffer of the last keys; each word fires when the buffer ends with it. */
+  var typed = '';
+  var words = {};
+  function onWord(w, fn) { words[w] = fn; }
+
   /* 2 · Type the name: every wordmark on the page performs the four cuts. */
-  var word = 'ybma', wIndex = 0;
   function fourCuts() {
     var marks = document.querySelectorAll('.ltr');
     if (!marks.length) return;
@@ -90,10 +94,10 @@
     // Konami
     if (k === konami[kIndex] || k.toLowerCase() === konami[kIndex]) { kIndex++; if (kIndex === konami.length) { kIndex = 0; quarterTurn(); } }
     else kIndex = (k === konami[0]) ? 1 : 0;
-    // the name
-    if (k.length === 1) {
-      if (k.toLowerCase() === word[wIndex]) { wIndex++; if (wIndex === word.length) { wIndex = 0; fourCuts(); } }
-      else wIndex = (k.toLowerCase() === word[0]) ? 1 : 0;
+    // typed words
+    if (k.length === 1 && !e.metaKey && !e.ctrlKey && !e.altKey) {
+      typed = (typed + k.toLowerCase()).slice(-12);
+      for (var w in words) if (typed.slice(-w.length) === w) { typed = ''; words[w](); break; }
     }
     // 4 · The grid the site is built on.
     if (k === '.' && !e.metaKey && !e.ctrlKey) {
@@ -116,8 +120,95 @@
       var now = Date.now();
       clicks = clicks.filter(function (t) { return now - t < 2000; });
       clicks.push(now);
-      if (clicks.length >= 2) e.preventDefault();   // a fast second click is not a navigation
+      // On the home page the link goes nowhere, so no click navigates. Elsewhere the first
+      // click is a real navigation and the rest of the run happens on the home page.
+      if (clicks.length >= 2 || location.pathname === '/') e.preventDefault();
       if (clicks.length === 5) { clicks = []; toast('Two stones, one joint.'); }
+    });
+  }
+
+  onWord('ybma', fourCuts);
+
+  /* 7 · Type "turn": the whole page makes one quarter-turn and settles back. */
+  var turning = false;
+  onWord('turn', function () {
+    if (turning) return;
+    turning = true;
+    var el = document.documentElement;
+    document.body.style.transformOrigin = '50% ' + (window.scrollY + window.innerHeight / 2) + 'px';
+    el.classList.add('is-turning');
+    setTimeout(function () {
+      el.classList.remove('is-turning');
+      setTimeout(function () { document.body.style.transformOrigin = ''; turning = false; }, reduce ? 0 : 340);
+    }, reduce ? 0 : 1400);
+  });
+
+  /* 8 · Type "drop": the headline lets go of its letters, one by one, then takes them back. */
+  var dropping = false;
+  onWord('drop', function () {
+    var h = document.querySelector('h1');
+    if (!h || dropping) return;
+    dropping = true;
+    var original = h.innerHTML, text = h.textContent;
+    h.setAttribute('aria-label', text);
+    h.innerHTML = '';
+    var spans = [];
+    text.split('').forEach(function (ch) {
+      var sp = document.createElement('span');
+      sp.className = 's-drop';
+      sp.textContent = ch === ' ' ? '\u00a0' : ch;
+      h.appendChild(sp); spans.push(sp);
+    });
+    var delay = reduce ? 0 : 28;
+    spans.forEach(function (sp, i) { setTimeout(function () { sp.classList.add('is-gone'); }, i * delay); });
+    var fallen = spans.length * delay + 900;
+    spans.forEach(function (sp, i) { setTimeout(function () { sp.classList.remove('is-gone'); }, fallen + (spans.length - i) * delay); });
+    setTimeout(function () { h.innerHTML = original; h.removeAttribute('aria-label'); dropping = false; }, fallen * 2 + 400);
+  });
+
+  /* 9 · Type "ink": the site goes to its night ground. Type it again to come back. */
+  onWord('ink', function () {
+    var on = document.documentElement.classList.toggle('is-ink');
+    toast(on ? 'Ink.' : 'Chalk.');
+  });
+
+  /* 10 · Type "u3": the pointer becomes the symbol. Type it again to give it back. */
+  var cursorStyle = null;
+  onWord('u3', function () {
+    if (!cursorStyle) {
+      var svg = symbol && symbol.querySelector('svg');
+      if (!svg) return;
+      var src = svg.outerHTML
+        .replace(/<title>[^<]*<\/title>/, '')
+        .replace(/currentColor/g, '#1F2C6B')
+        .replace(/<svg /, '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" ');
+      cursorStyle = document.createElement('style');
+      cursorStyle.textContent = 'html.is-u3, html.is-u3 * { cursor: url("data:image/svg+xml;utf8,' + encodeURIComponent(src) + '") 4 4, auto !important; }';
+      document.head.appendChild(cursorStyle);
+    }
+    document.documentElement.classList.toggle('is-u3');
+  });
+
+  /* 6 · The 404 page: put the letter back. */
+  var nf = document.getElementById('s-nf');
+  if (nf) {
+    var loose = nf.querySelector('.s-nf__loose'), whole = nf.querySelector('.s-nf__mark');
+    var looseSvg = loose.querySelector('svg'), m = looseSvg.querySelector('.ltr-M');
+    // turn the loose letter about its own centre, not the centre of the hidden wordmark
+    try {
+      var bb = m.getBBox(), vb = looseSvg.viewBox.baseVal;
+      var tx = m.transform.baseVal.numberOfItems ? m.transform.baseVal.getItem(0).matrix.e : 0;
+      looseSvg.style.transformOrigin = ((bb.x + tx + bb.width / 2) / vb.width * 100) + '% ' + ((bb.y + bb.height / 2) / vb.height * 100) + '%';
+    } catch (err) {}
+    loose.addEventListener('click', function () {
+      if (nf.classList.contains('is-turned')) return;
+      var gap = loose.getBoundingClientRect().top - whole.getBoundingClientRect().top;
+      loose.style.transform = 'translateY(' + (-gap) + 'px)';
+      nf.classList.add('is-turned');
+      setTimeout(function () {
+        nf.classList.add('is-found');
+        ['.s-nf__h', '.s-nf__p'].forEach(function (sel) { var el = nf.querySelector(sel); el.textContent = el.getAttribute('data-found'); });
+      }, reduce ? 0 : 340);
     });
   }
 

@@ -208,3 +208,32 @@ ul, ol { list-style: none; padding: 0; }
 .s-header__logo .y-logo { display: inline-block; transition: transform var(--ybma-turn) var(--ybma-ease); }
 .s-header__logo .y-logo.is-turned { transform: rotate(90deg); }
 @media (prefers-reduced-motion: reduce) { .s-header__logo .y-logo { transition: none; } }
+
+/* 7 · the page's quarter-turn */
+body { transition: transform var(--ybma-turn) var(--ybma-ease); }
+html.is-turning { overflow-x: hidden; }
+html.is-turning body { transform: rotate(90deg); }
+/* 8 · the drop */
+.s-drop { display: inline-block; transition: transform var(--ybma-turn) var(--ybma-ease), opacity 0ms linear var(--ybma-turn); }
+.s-drop.is-gone { transform: translateY(120vh) rotate(90deg); opacity: 0; }
+/* 9 · ink: the night ground. Chalk and ink swap; indigo fields are unchanged. */
+html.is-ink { --ybma-chalk: #151412; --ybma-ink: #F5F4F0; --ybma-grey-700: #C9C7C0; --ybma-grey-500: #9A9892; --ybma-grey-300: #5A5954; --ybma-grey-200: #3A3935; --ybma-grey-100: #262523; background: var(--ybma-chalk); }
+@media (prefers-reduced-motion: reduce) { body, .s-drop { transition: none; } }
+
+/* ── 404 · the missing letter ─────────────────────────────────────────── */
+.s-nf { padding: var(--ybma-s9) 0 var(--ybma-s8); }
+.s-nf__inner { width: 100%; }
+.s-nf__text { max-width: 640px; }
+.s-nf__stage { position: relative; margin-top: var(--ybma-s8); max-width: 720px; color: var(--ybma-indigo); }
+.s-nf__mark, .s-nf__loose { display: block; width: 100%; }
+.s-nf__mark svg, .s-nf__loose svg { display: block; width: 100%; height: auto; }
+.s-nf__mark .ltr-M { visibility: hidden; }                       /* the gap */
+.s-nf__loose { appearance: none; background: none; border: 0; padding: 0; margin-top: var(--ybma-s6); color: inherit; cursor: pointer; transition: transform var(--ybma-turn) var(--ybma-ease); }
+.s-nf__loose .ltr:not(.ltr-M) { visibility: hidden; }            /* only the M is real */
+.s-nf__loose svg { transform: rotate(90deg); transition: transform var(--ybma-turn) var(--ybma-ease); }
+.s-nf__loose:focus-visible { outline: 2px solid var(--ybma-indigo); outline-offset: 8px; }
+.s-nf.is-turned .s-nf__loose svg { transform: rotate(0deg); }
+.s-nf.is-found .s-nf__loose { display: none; }
+.s-nf.is-found .s-nf__mark .ltr-M { visibility: visible; }
+@media (prefers-reduced-motion: reduce) { .s-nf__loose, .s-nf__loose svg { transition: none; } }
+@media (max-width: 900px) { .s-nf { min-height: 0; } .s-nf__stage { margin-top: var(--ybma-s8); } }

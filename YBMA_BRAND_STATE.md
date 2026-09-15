@@ -4,7 +4,7 @@
 > Read this file completely before doing any branding work in a new session.
 > Nothing in this file is CONFIRMED unless the founders explicitly agreed to it.
 
-Last updated: 2026-09-15 (Session 31)
+Last updated: 2026-09-15 (Session 32)
 
 **Standing rule:** every deliverable ships as a Markdown file in this workspace (decision D3).
 Status tags are written inline so they survive copy-paste into other tools.
@@ -28,6 +28,16 @@ presented; the founders decide. Recommendations are never recorded as decisions.
 ---
 
 ## Current Stage
+
+**WEBSITE PHASE CLOSED (Session 32) · deployment-ready · identity unchanged**
+
+Status: **Session 32 moved the build output to `site/dist/` with `vercel.json` at the repository
+root, added a 404 page and ten easter eggs, replaced the Technology hero photograph, and recorded
+the path for repointing the founder's existing Vercel project at this repository. The website phase
+(Sessions 28 to 32) is closed; the next phase begins from here.** See
+`YBMA_STRATEGY_ITERATION_32.md`.
+
+*(Session 31 status retained below.)*
 
 **WEBSITE: POSITIONING, IMAGERY, NAVBAR MARK AND LEGAL PAGES (Session 31) · identity unchanged**
 

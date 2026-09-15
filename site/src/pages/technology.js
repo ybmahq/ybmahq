@@ -45,7 +45,7 @@ module.exports = ctx => ({
         <a class="y-btn" href="/contact/">Start a conversation</a>
       </div>
     </div>
-    ${photo(photos.technologyHero, { crop: 'bl', ratio: '4 / 5', className: 's-hero__img', eager: true })}
+    ${photo(photos.technologyHero, { crop: 'bl', ratio: '4 / 5', className: 's-hero__img', eager: true, position: '68% 50%' })}
   </div>
 </section>
 

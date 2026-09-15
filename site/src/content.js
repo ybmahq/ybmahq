@@ -59,7 +59,7 @@ const values = [
 const photos = {
   homeHero: { file: 'home-hero.jpg', alt: 'Two colleagues working through something together on a laptop in a café workspace.', width: 1600, height: 1067 },
   homeTechnology: { file: 'home-technology.jpg', alt: 'A businesswoman on a call while reading information on her laptop.', width: 1600, height: 2400 },
-  technologyHero: { file: 'technology-hero.jpg', alt: 'A professional working at a laptop, a planning board on the wall behind her.', width: 1600, height: 2400 },
+  technologyHero: { file: 'technology-hero.jpg', alt: 'A professional thinking through a problem at his laptop in a modern office.', width: 1600, height: 1280 },
 };
 
 const meta = {
